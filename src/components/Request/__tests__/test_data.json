@@ -1,0 +1,1159 @@
+{
+    "CYMX": {
+        "icao_code": "CYMX",
+        "gps_code": "CYMX",
+        "iata_code": "YMX",
+        "name": "Montreal International (Mirabel) Airport",
+        "FIR": "CZUL",
+        "latitude_deg": "45.679501",
+        "longitude_deg": "-74.038696",
+        "continent": "NA",
+        "iso_country": "CA",
+        "iso_region": "CA-QC",
+        "municipality": "Montréal",
+        "last_updated": "2018-01-29T16:48:16+00:00",
+        "notam_EN": [
+            {
+                "type": "aerodrome",
+                "startValidity": "2019-10-24T20:31:00",
+                "title": "E0545/19 NOTAMR E0519/19\n",
+                "notam": "Q) CZUL/QMDCH/IV/NBO/A/000/999/4541N07402W005\nA) CYMX B) 1910242031 C) 1910252100\nE) FIRST 1700 FT RWY 29 CLSD DUE ARRESTOR CABLE. \nTHR 29 DISPLACED BY 1700 FT\nDECLARED DIST WITH RWY 11/29 LENGTH REDUCED:\nRWY 11 TORA 10300 TODA 10300 ASDA 10300 LDA 10300\nRWY 29 TORA 10300 TODA 10300 ASDA 10300 LDA 10300\n\nFR:\nPREMIERS 1700 FT RWY 29 CLSD CAUSE CABLE D'ARRET\nTHR 29 EST DECALLE DE 1700 FT\nDIST DECLAREES AVEC LONGUEUR REDUITE RWY 11/29:\nRWY 11 TORA 10300 TODA 10300 ASDA 10300 LDA 10300\nRWY 29 TORA 10300 TODA 10300 ASDA 10300 LDA 10300",
+                "radialDistance": 0
+            },
+            {
+                "type": "aerodrome",
+                "startValidity": "2019-10-23T21:03:00.235",
+                "title": "E0516/19 NOTAMN\n",
+                "notam": "Q) CZUL/QMXLC/IV/M/A/000/999/4541N07402W005\nA) CYMX B) 1910241100 C) 1910252130\nD) OCT 24 1100-2230, OCT 25 1100-2130\nE) TWY A5, J BTN E AND A, A, D, F SOUTH OF H \nAND HOLDING BAY 29 CLSD\n\nFR:\nTWY A5, J BTN E ET A, A, D, F SUD DE H ET \nBAIE D'ATTENTE 29 CLSD",
+                "radialDistance": 0
+            },
+            {
+                "type": "aerodrome",
+                "startValidity": "2019-10-23T20:09:00",
+                "title": "E0512/19 NOTAMR E0053/19\n",
+                "notam": "Q) CZUL/QMXLC/IV/M/A/000/999/4541N07402W005\nA) CYMX B) 1910232009 C) 1911212100\nE) TWY A CLSD BTN TWY H AND A5\n\nFR:\nTWY A CLSD BTN TWY H ET A5",
+                "radialDistance": 0
+            },
+            {
+                "type": "aerodrome",
+                "startValidity": "2019-10-23T19:53:00",
+                "title": "E0511/19 NOTAMN\n",
+                "notam": "Q) CZUL/QMXLC/IV/M/A/000/999/4541N07402W005\nA) CYMX B) 1910231953 C) 1911011400\nE) TWY A CLSD BTN HOLDING BAY 11 AND 161 FT FRM TWY AL\n\nFR:\nTWY A CLSD BTN BAIE D'ATTENTE 11 ET A 161 FT DU TWY AL",
+                "radialDistance": 0
+            },
+            {
+                "type": "aerodrome",
+                "startValidity": "2019-10-18T15:18:34.615",
+                "title": "H0170/19 NOTAMN\n",
+                "notam": "Q) CZUL/QXXXX/IV/NBO/A/000/001/4541N07402W005\nA) CYMX B) 1910181521 C) 1912012000\nE) CRANE 633FT BFR THR 06 AND 2980FT LEFT RCL, \n140FT AGL 396FT AMSL. LGTD, NOT PAINTED\n\nFR:\nGRUE 633FT AVANT THR 06 ET 2980FT DU COTE GAUCHE RCL, 140FT AGL \n396FT AMSL. LGTD, NON PEINTE",
+                "radialDistance": 0
+            },
+            {
+                "type": "aerodrome",
+                "startValidity": "2019-10-16T17:30:34.476",
+                "title": "V0170/19 NOTAMN\n",
+                "notam": "Q) CZUL/QOLAS/IV/M/AE/000/006/4542N07408W005\nA) CYMX B) 1910161733 C) 2001062359\nE) OBST LGT U/S TOWER 454214N 0740759W (APRX 4.2NM NW AD) 246FT AGL, \n558FT AMSL.\n\nFR:\nOBST LGT U/S TOUR 454214N 0740759W (APRX 4.2NM NW AD) 246FT AGL, \n558FT AMSL.",
+                "radialDistance": 0
+            },
+            {
+                "type": "national",
+                "startValidity": "2019-10-11T15:24:58.638",
+                "title": "H0083/19 NOTAMR H0046/19\n",
+                "notam": "Q) CZXX/QRTLP/IV/BO/W/000/999/5243N05321W999\nA) CZUL CZQM CZQX  B) 1910111527 C) PERM\nE) PURSUANT TO SECTION 5.1 OF THE AERONAUTICS ACT, THE MINISTER\nOF TRANSPORT IS OF THE OPINION IT IS NECESSARY FOR THE PROTECTION\nOF AVIATION SAFETY AND THE PUBLIC TO PROHIBIT THE OPS OF\nBOEING 737-8 MAX AND 737-9 MAX ACFT IN CANADIAN AIRSPACE.\nB737-8 MAX OR B737-9 MAX ACFT ARE PROHIBITED FM OPR IN CANADIAN\nAIRSPACE EXC FOR FERRY FLIGHTS OR ACFT IN FLIGHT FOR THE DURATION\nOF THAT FLIGHT ENROUTE TO OR FM OR WITHIN CANADA AT THE TIME THIS\nNOTICE TAKES EFFECT.\n\nFR:\nCONFORMEMENT A L'ARTICLE 5.1 DE LA LOI SUR L'AERONAUTIQUE, LE\n   MINISTRE DES TRANSPORTS ESTIME QU'IL EST NECESSAIRE POUR LA\n   PROTECTION DE LA SECURITE AERIENNE ET DU PUBLIC D'INTERDIRE\n   L'UTILISATION DES ACFT BOEING 737-8 MAX ET 737-9 MAX DANS\n   L'ESPACE AERIEN CANADIEN.\n   LES ACFT BOEING 737-8 MAX OU 737-9 MAX SONT INTERDITS DE VOL\n   DANS L'ESPACE AERIEN CANADIEN A L'EXC DES VOLS DE CONVOYAGE\n   OU LES VOLS A PARTIR, A DESTINATION OU A L'INTERIEUR DE \nL'ESPACE\n   AERIEN CANADIEN AU MOMENT DE L'ENTREE EN VIGUEUR DE CET AVIS.\nF) SFC G) UNL",
+                "radialDistance": 0
+            },
+            {
+                "type": "aerodrome",
+                "startValidity": "2019-10-10T04:52:18.487",
+                "title": "E0139/19 NOTAMR E0041/19\n",
+                "notam": "Q) CZUL/QFALT/IV/NBO/A/000/999/4541N07402W005\nA) CYMX B) 1910101100 C) 2001090300\nD) OCT 10 - NOV 02 1100-0200, NOV 03-JAN 09 1200-0300\nE) CFS: PRO: ADD: PPR FOR CIRCUITS OR SIMULATED IFR APCH FOR ACFT \nBASED WITHIN CYMX CTL ZONE (CAR 602.96). CTC ATS 514-633-3211\n\nFR:\nCFS: PRO: AJOUTEZ: PPR POUR EFFECTUER DES CIRCUITS OU DES APCH \nIFR SIMULEES POUR LES ACFT BASES DANS LA ZONE DE CTL DE CYMX (RAC \n602.96). CTC ATS 514-633-3211",
+                "radialDistance": 0
+            },
+            {
+                "type": "aerodrome",
+                "startValidity": "2019-10-10T03:54:25.660",
+                "title": "E0092/19 NOTAMN\n",
+                "notam": "Q) CZUL/QMRAM/IV/NBO/A/000/999/4541N07402W005\nA) CYMX B) 1910100901 C) 1912312100\nD) DAILY SR-SS\nE) RWY 11/29 AVBL FOR MIL ACFT ONLY, AVBL AS TWY FOR ALL ACFT\n\nFR:\nRWY 11/29 AVBL POUR MIL ACFT SEULEMENT, AVBL COMME TWY POUR \nTOUTES ACFT.",
+                "radialDistance": 0
+            },
+            {
+                "type": "aerodrome",
+                "startValidity": "2019-10-10T03:38:40.812",
+                "title": "E0080/19 NOTAMN\n",
+                "notam": "Q) CZUL/QFALV/V/NBO/A/000/999/4541N07402W005\nA) CYMX B) 1910100901 C) 1911151600\nE) PURSUANT TO SECTION 5.1 OF THE AERONAUTICS ACT,\nVFR FLT WITHIN MIRABEL CLASS E CTL ZONE ARE RESTRICTED.\nNO PERSON SHALL OPR AN ACFT WITHIN THE CTL ZONE UNLESS AUTH BY\nMIRABEL RDO ON 119.1, EXC ACFT BASED AT AN AD WITHIN THE CTL ZONE\n\nFR:\nCONFORMEMENT A L'ARTICLE 5.1 DE LA LOI SUR L'AERONAUTIQUE,\nLES VOLS VFR DANS LA ZONE DE CTL DE CLASSE E DE MIRABEL SONT\nREGLEMENTES. NUL DE DOIT OPR UN ACFT DANS LA ZONE DE CTL SANS\nAUTH DE MIRABEL RDO SUR 119.1, EXC ACFT BASES A UN AD DANS LA \nZONE DE CTL",
+                "radialDistance": 0
+            },
+            {
+                "type": "FIR",
+                "startValidity": "2019-10-10T03:35:25.731",
+                "title": "E0075/19 NOTAMN\n",
+                "notam": "Q) CZUL/QRTCA/IV/BO/W/000/020/4541N07402W007\nA) CZUL B) 1910100901 C) 1911151600\nE)  PURSUANT TO SECTION 5.1 OF THE AERONAUTICS ACT,\nVFR FLT WITHIN MIRABEL CLASS E CTL ZONE ARE RESTRICTED.\nNO PERSON SHALL OPR AN ACFT WITHIN THE CTL ZONE UNLESS AUTH BY\nMIRABEL RDO ON 119.1, EXC ACFT BASED AT AN AD WITHIN THE CTL ZONE\n\nFR:\nCONFORMEMENT A L'ARTICLE 5.1 DE LA LOI SUR L'AERONAUTIQUE,\nLES VOLS VFR DANS LA ZONE DE CTL DE CLASSE E DE MIRABEL SONT\nREGLEMENTES. NUL DE DOIT OPR UN ACFT DANS LA ZONE DE CTL SANS\nAUTH DE MIRABEL RDO SUR 119.1, EXC ACFT BASES A UN AD DANS LA\nZONE DE CTL\nF) SFC G) 2000FT AMSL",
+                "radialDistance": 0
+            },
+            {
+                "type": "aerodrome",
+                "startValidity": "2019-10-10T03:26:37.576",
+                "title": "E0052/19 NOTAMN\n",
+                "notam": "Q) CZUL/QMRLC/IV/NBO/A/000/999/4541N07402W005\nA) CYMX B) 1910100901 C) 1911212100\nD) SS-SR\nE) RWY 11/29 CLSD.\n\nFR:\nRWY 11/29 CLSD.",
+                "radialDistance": 0
+            },
+            {
+                "type": "aerodrome",
+                "startValidity": "2019-10-10T02:51:32.972",
+                "title": "E0019/19 NOTAMN\n",
+                "notam": "Q) CZUL/QFAXX/IV/NBO/A/000/999/4541N07402W005\nA) CYMX B) 1910100901 C) PERM\nE) AMEND CFS: COMM: GND ADV: TO READ MIRABEL 121.8 (E)\n(EMERGENCY ONLY 450-476-3141)\n\nFR:\nMODIFIEZ CFS: COMM: GND ADV: POUR LIRE MIRABEL 121.8 (E)\n(URGENCE SEULEMENT 450-476-3141)",
+                "radialDistance": 0
+            },
+            {
+                "type": "aerodrome",
+                "startValidity": "2019-10-10T02:51:30.465",
+                "title": "E0018/19 NOTAMN\n",
+                "notam": "Q) CZUL/QOBCE/IV/M/AE/000/005/4541N07356W005\nA) CYMX B) 1910100901 C) PERM\nE) AMEND PUBLICATIONS: MOBILE CRANE WITHIN 184FT RADIUS CENTRED ON \n454040N 0735541W (APRX 4.6NM ESE AD). 222FT AGL 440FT AMSL. LGTD, \nPAINTED.\n\nFR:\nMODIFIER PUBLICATIONS: GRUE MOBILE DANS UN RAYON DE 184FT CENTRE \n454040N 0735541W (APRX 4.6NM ESE AD). 222FT AGL 440FT AMSL. LGTD, \nPEINTE.",
+                "radialDistance": 0
+            }
+        ],
+        "metar": [
+            {
+                "type": "metar",
+                "pk": 384385283,
+                "location": "CYMX",
+                "startValidity": "2019-10-25T17:00:00",
+                "text": "METAR CYMX 251700Z 20004KT 170V260 45SM FEW030 SCT120 BKN220 08/04 A3027 RMK SC1AC3CI2 SLP254",
+                "hasError": false,
+                "pointReference": "CYMX",
+                "radialDistance": 0
+            },
+            {
+                "type": "metar",
+                "pk": 384378485,
+                "location": "CYMX",
+                "startValidity": "2019-10-25T16:00:00",
+                "text": "METAR CYMX 251600Z 24003KT 160V270 25SM FEW010 BKN120 OVC240 08/05 A3029 RMK SF1AS6CI2 SF TR SLP263",
+                "hasError": false,
+                "pointReference": "CYMX",
+                "radialDistance": 0
+            },
+            {
+                "type": "metar",
+                "pk": 384371889,
+                "location": "CYMX",
+                "startValidity": "2019-10-25T15:00:00",
+                "text": "METAR CYMX 251500Z VRB02KT 25SM FEW010 BKN130 06/06 A3030 RMK SF1AS7 SF TR SLP265",
+                "hasError": false,
+                "pointReference": "CYMX",
+                "radialDistance": 0
+            },
+            {
+                "type": "metar",
+                "pk": 384365178,
+                "location": "CYMX",
+                "startValidity": "2019-10-25T14:00:00",
+                "text": "METAR CYMX 251400Z 28003KT 250V310 20SM FEW001 BKN160 05/04 A3030 RMK ST1AS6 ST TR SLP266",
+                "hasError": false,
+                "pointReference": "CYMX",
+                "radialDistance": 0
+            }
+        ],
+        "taf": {
+            "type": "taf",
+            "pk": 187190794,
+            "location": "CYMX",
+            "startValidity": "2019-10-25T12:00:00",
+            "text": [
+                "TAF CYMX 251138Z 2512/2612 VRB03KT P6SM SCT180 BKN220 TEMPO 2512/2513 1/2SM FG BKN001 OVC180",
+                "FM251500 24005KT P6SM BKN160 BKN240",
+                "FM260200 26005KT P6SM SKC",
+                "FM260600 VRB03KT P6SM BKN040",
+                "PROB30 2606/2612 1/2SM FG BKN001",
+                "RMK NXT FCST BY 251800Z"
+            ],
+            "hasError": false,
+            "pointReference": "CYMX",
+            "radialDistance": 0
+        },
+        "gfa": [
+            {
+                "sv": "2019-10-25T18:00:00",
+                "ev": "2019-10-26T00:00:00",
+                "image": {
+                    "id": 5237449,
+                    "created": "2019-10-25T17:43:14.540"
+                },
+                "type": "CLDWX",
+                "imageURL": "https://cfps.azureedge.net/weather/images/5237449.image"
+            },
+            {
+                "sv": "2019-10-26T00:00:00",
+                "ev": "2019-10-26T06:00:00",
+                "image": {
+                    "id": 5237498,
+                    "created": "2019-10-25T17:45:09.965"
+                },
+                "type": "CLDWX",
+                "imageURL": "https://cfps.azureedge.net/weather/images/5237498.image"
+            },
+            {
+                "sv": "2019-10-26T06:00:00",
+                "ev": "2019-10-26T12:00:00",
+                "image": {
+                    "id": 5237499,
+                    "created": "2019-10-25T17:45:12.034"
+                },
+                "type": "CLDWX",
+                "imageURL": "https://cfps.azureedge.net/weather/images/5237499.image"
+            },
+            {
+                "sv": "2019-10-25T18:00:00",
+                "ev": "2019-10-26T00:00:00",
+                "image": {
+                    "id": 5237485,
+                    "created": "2019-10-25T17:44:29.797"
+                },
+                "type": "TURBC",
+                "imageURL": "https://cfps.azureedge.net/weather/images/5237485.image"
+            },
+            {
+                "sv": "2019-10-26T00:00:00",
+                "ev": "2019-10-26T06:00:00",
+                "image": {
+                    "id": 5237502,
+                    "created": "2019-10-25T17:45:18.342"
+                },
+                "type": "TURBC",
+                "imageURL": "https://cfps.azureedge.net/weather/images/5237502.image"
+            }
+        ]
+    },
+    "KSFO": {
+        "icao_code": "KSFO",
+        "gps_code": "KSFO",
+        "iata_code": "SFO",
+        "name": "San Francisco International Airport",
+        "FIR": "KZOA",
+        "latitude_deg": "37.61899948120117",
+        "longitude_deg": "-122.375",
+        "continent": "NA",
+        "iso_country": "US",
+        "iso_region": "US-CA",
+        "municipality": "San Francisco",
+        "last_updated": "2008-06-13T14:30:04+00:00",
+        "metar": [
+            {
+                "type": "metar",
+                "text": "METAR KSFO 251656Z 03003KT 10SM FEW200 19/12 A3012 RMK AO2 SLP198 T01940117"
+            },
+            {
+                "type": "metar",
+                "text": "METAR KSFO 251556Z 02003KT 10SM FEW200 19/11 A3011 RMK AO2 SLP196 T01940111"
+            },
+            {
+                "type": "metar",
+                "text": "METAR KSFO 251456Z 00000KT 10SM CLR 18/12 A3009 RMK AO2 SLP191 T01780122 53007"
+            },
+            {
+                "type": "metar",
+                "text": "SPECI KSFO 251356Z 00000KT 10SM CLR 16/06 A3009 RMK AO2 SLP188 T01610056 $"
+            }
+        ],
+        "taf": {
+            "type": "taf",
+            "text": [
+                "KSFO 251504Z 2515/2618 00000KT P6SM SKC",
+                "FM251600 10003KT 6SM FU FEW070",
+                "FM252000 04003KT 6SM FU FEW070",
+                "FM260000 29012KT 6SM FU FEW070",
+                "FM260400 28008KT 6SM FU FEW080"
+            ]
+        },
+        "notam_EN": [
+            {
+                "title": "AD SFO CONSTRUCTION ON AIRPORT - SEE CONSTRUCTION GRAPHIC",
+                "type": "aerodrome",
+                "notam": null,
+                "link": "https://nfdc.faa.gov/xwiki/bin/download/NFDC/Construction+Notices/sfo.pdf"
+            },
+            {
+                "title": "!SFO 02/024",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE 2016-AWP-3215-NRA 373656N1222304W (1500FT W APCH END RWY 01L) 133FT (125FT AGL) FLAGGED AND LGTD 1702031340-2208031340"
+            },
+            {
+                "title": "!SFO 02/023",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE 2016-AWP-3080-NRA 373654N1222303W (1500FT W APCH END RWY 01L) 133FT (125FT AGL) FLAGGED AND LGTD 1702031340-2208031340"
+            },
+            {
+                "title": "!SFO 02/025",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE 2016-AWP-3216-NRA 373650N1222318W (1500FT W APCH END RWY 01L) 133FT (125FT AGL) FLAGGED AND LGTD 1702031340-2208031340"
+            },
+            {
+                "title": "!SFO 02/026",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE 2016-AWP-3217-NRA 373643N1222311W (1500FT W APCH END RWY 01L) 133FT (125FT AGL) FLAGGED AND LGTD 1702031340-2208031340"
+            },
+            {
+                "title": "!SFO 02/027",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE 2016-AWP-3218-NRA 373648N1222258W (1500FT W APCH END RWY 01L) 133FT (125FT AGL) FLAGGED AND LGTD 1702031340-2208031340"
+            },
+            {
+                "title": "!FDC 9/6478",
+                "type": "aerodrome",
+                "notam": "SFO IAP SAN FRANCISCO INTL, San Francisco, CA.\nRNAV (GPS) RWY 19R, AMDT 3...\nDISREGARD NOTE: SIMULTANEOUS APPROACH NA BELOW 28C (52F). ADD NOTE: SIMULTANEOUS APPROACH NA BELOW 12C (52F).\n1909271142-2109271142EST"
+            },
+            {
+                "title": "!FDC 9/3163",
+                "type": "aerodrome",
+                "notam": "SFO IAP SAN FRANCISCO INTL, San Francisco, CA.\nILS RWY 28L (SA CAT II), AMDT 27B ...\nS-ILS 28L CATS A, B, C, D RA 113, RVR 1200, HAT 100, DA 113. 1906121506-2106131506EST"
+            },
+            {
+                "title": "!SFO 10/034",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2019-AWP-4660-NRA) 373659N1222259W (0.4NM WSW SFO) 179FT (170FT AGL) FLAGGED AND LGTD 1910082010-2104020100"
+            },
+            {
+                "title": "!SFO 09/005",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2019-AWP-4242-NRA) 373650N1222307W (0.5NM WSW SFO) 309FT (300FT AGL) FLAGGED AND LGTD 1909031835-2102010100"
+            },
+            {
+                "title": "!SFO 09/006",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2019-AWP-4243-NRA) 373647N1222305W (0.6NM SW SFO) 309FT (300FT AGL) FLAGGED AND LGTD 1909031837-2102010100"
+            },
+            {
+                "title": "!SFO 09/007",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2019-AWP-4244-NRA) 373641N1222309W (0.7NM SW SFO) 309FT (300FT AGL) FLAGGED AND LGTD 1909031839-2102010100"
+            },
+            {
+                "title": "!SFO 09/008",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2019-AWP-4245-NRA) 373641N1222310W (0.7NM SW SFO) 309FT (300FT AGL) FLAGGED AND LGTD 1909031840-2102010100"
+            },
+            {
+                "title": "!SFO 09/009",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2019-AWP-4246-NRA) 373643N1222314W (0.7NM SW SFO) 309FT (300FT AGL) FLAGGED AND LGTD 1909031842-2102010100"
+            },
+            {
+                "title": "!SFO 09/010",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2019-AWP-4247-NRA) 373647N1222311W (0.6NM WSW SFO) 309FT (300FT AGL) FLAGGED AND LGTD 1909031843-2102010100"
+            },
+            {
+                "title": "!SFO 09/011",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2019-AWP-4248-NRA) 373648N1222315W (0.7NM WSW SFO) 309FT (300FT AGL) FLAGGED AND LGTD 1909031845-2102010100"
+            },
+            {
+                "title": "!SFO 09/012",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2019-AWP-4249-NRA) 373651N1222316W (0.6NM WSW SFO) 309FT (300FT AGL) FLAGGED AND LGTD 1909031846-2102010100"
+            },
+            {
+                "title": "!SFO 09/013",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2019-AWP-4250-NRA) 373650N1222312W (0.6NM WSW SFO) 309FT (300FT AGL) FLAGGED AND LGTD 1909031848-2102010100"
+            },
+            {
+                "title": "!SFO 09/106",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2019-AWP-573-NRA) 373735N1222240W (0.5NM NNW SFO) 158FT (150FT AGL) FLAGGED AND LGTD 1909202055-2009070100"
+            },
+            {
+                "title": "!SFO 09/107",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2019-AWP-574-NRA) 373734N1222241W (0.5NM NNW SFO) 158FT (150FT AGL) FLAGGED AND LGTD 1909202056-2009070100"
+            },
+            {
+                "title": "!SFO 09/108",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2019-AWP-575-NRA) 373734N1222238W (0.5NM N SFO) 158FT (150FT AGL) FLAGGED AND LGTD 1909202057-2009070100"
+            },
+            {
+                "title": "!SFO 09/109",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2019-AWP-576-NRA) 373733N1222239W (0.4NM NNW SFO) 158FT (150FT AGL) FLAGGED AND LGTD 1909202059-2009070100"
+            },
+            {
+                "title": "!FDC 9/7616",
+                "type": "aerodrome",
+                "notam": "SFO SPECIAL SAN FRANCISCO INTL, SAN FRANCISCO, CA.\nRNAV VISUAL RWY 01R, AMDT 1... ARCHI MANDATORY 7000 \n1909301542-2002280901EST"
+            },
+            {
+                "title": "!SFO 02/069",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2017-AWP-1019-NRA) 373639N1222305W (0.6NM SW SFO) 308FT (300FT AGL) FLAGGED AND LGTD 1902090010-2001250200"
+            },
+            {
+                "title": "!SFO 02/070",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2017-AWP-1018-NRA) 373640N1222304W (0.6NM SW SFO) 308FT (300FT AGL) FLAGGED AND LGTD 1902090011-2001250200"
+            },
+            {
+                "title": "!SFO 02/071",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2017-AWP-1020-NRA) 373636N1222308W (0.7NM SW SFO) 309FT (300FT AGL) FLAGGED AND LGTD 1902090012-2001250200"
+            },
+            {
+                "title": "!SFO 02/072",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2017-AWP-1021-NRA) 373635N1222309W (0.7NM SW SFO) 309FT (300FT AGL) FLAGGED AND LGTD 1902090014-2001250200"
+            },
+            {
+                "title": "!SFO 02/073",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2017-AWP-1022-NRA) 373635N1222310W (0.7NM SW SFO) 309FT (300FT AGL) FLAGGED AND LGTD 1902090015-2001250200"
+            },
+            {
+                "title": "!SFO 02/074",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2017-AWP-1023-NRA) 373638N1222316W (0.8NM SW SFO) 310FT (300FT AGL) FLAGGED AND LGTD 1902090016-2001250200"
+            },
+            {
+                "title": "!SFO 02/075",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2017-AWP-1024-NRA) 373638N1222316W (0.8NM SW SFO) 310FT (300FT AGL) FLAGGED AND LGTD 1902090018-2001250200"
+            },
+            {
+                "title": "!SFO 02/076",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2017-AWP-1025-NRA) 373638N1222316W (0.8NM SW SFO) 310FT (300FT AGL) FLAGGED AND LGTD 1902090019-2001250200"
+            },
+            {
+                "title": "!SFO 02/077",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2017-AWP-1026-NRA) 373644N1222312W (0.7NM SW SFO) 308FT (300FT AGL) FLAGGED AND LGTD 1902090020-2001250200"
+            },
+            {
+                "title": "!SFO 02/078",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2017-AWP-1027-NRA) 373642N1222308W (0.6NM SW SFO) 308FT (300FT AGL) FLAGGED AND LGTD 1902090021-2001250200"
+            },
+            {
+                "title": "!SFO 02/079",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2017-AWP-1028-NRA) 373642N1222308W (0.6NM SW SFO) 308FT (300FT AGL) FLAGGED AND LGTD 1902090022-2001250200"
+            },
+            {
+                "title": "!SFO 09/053",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2018-AWP-1616-NRA) 373739N1222227W (0.5NM NE SFO) 154FT (150FT AGL) FLAGGED 1909101417-2001210100"
+            },
+            {
+                "title": "!SFO 09/054",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2018-AWP-1617-NRA) 373740N1222228W (0.5NM NE SFO) 156FT (150FT AGL) FLAGGED 1909101417-2001210100"
+            },
+            {
+                "title": "!SFO 09/055",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2018-AWP-1618-NRA) 373740N1222227W (0.5NM NE SFO) 156FT (150FT AGL) FLAGGED 1909101418-2001210100"
+            },
+            {
+                "title": "!SFO 09/056",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2018-AWP-1619-NRA) 373739N1222227W (0.5NM NE SFO) 156FT (150FT AGL) FLAGGED 1909101419-2001210100"
+            },
+            {
+                "title": "!SFO 09/057",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2018-AWP-1620-NRA) 373740N1222228W (0.5NM NE SFO) 156FT (150FT AGL) FLAGGED 1909101420-2001210100"
+            },
+            {
+                "title": "!SFO 09/105",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2018-AWP-1493-NRA) 373820N1222309W (1.3NM NNW SFO) 158FT (150FT AGL) FLAGGED AND LGTD 1909231300-2001030100"
+            },
+            {
+                "title": "!SFO 12/181",
+                "type": "aerodrome",
+                "notam": "SFO TWY J CLSD 1812241954-2001010800"
+            },
+            {
+                "title": "!SFO 10/097",
+                "type": "aerodrome",
+                "notam": "SFO OBST TOWER LGT (ASR 1001289) 374519.00N1222710.00W (9.1NM NNW SFO) 1810.7FT (976.7FT AGL) U/S 1910241558-1912312359"
+            },
+            {
+                "title": "!SFO 10/015",
+                "type": "aerodrome",
+                "notam": "SFO RWY 10L 7000FT DIST REMAINING SIGN S SIDE MISSING 1910050759-1912311800"
+            },
+            {
+                "title": "!SFO 10/016",
+                "type": "aerodrome",
+                "notam": "SFO RWY 28R 4000FT DIST REMAINING SIGN S SIDE MISSING 1910050800-1912311800"
+            },
+            {
+                "title": "!SFO 07/028",
+                "type": "aerodrome",
+                "notam": "SFO TWY H BTN TWY A AND TWY B CLSD TO EASTBOUND ACFT WINGSPAN MORE THAN 214FT 1907030056-1912311500"
+            },
+            {
+                "title": "!SFO 03/024",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2018-AWP-1352-NRA) 373700N1222258W (0.4NM WSW SFO) 217FT (210FT AGL) FLAGGED AND LGTD 1903011545-1912290100"
+            },
+            {
+                "title": "!SFO 06/130",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2018-AWP-1563-NRA) 373656N1222318W (0.6NM WSW SFO) 183FT (175FT AGL) FLAGGED AND LGTD 1807021400-1912140100"
+            },
+            {
+                "title": "!SFO 06/131",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2018-AWP-1564-NRA) 373656N1222304W (0.5NM WSW SFO) 183FT (175FT AGL) FLAGGED AND LGTD 1807021400-1912140100"
+            },
+            {
+                "title": "!SFO 06/132",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2018-AWP-1565-NRA) 373650N1222319W (0.7NM WSW SFO) 183FT (175FT AGL) FLAGGED AND LGTD 1807021400-1912140100"
+            },
+            {
+                "title": "!SFO 06/133",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2018-AWP-1566-NRA) 373643N1222311W (0.7NM SW SFO) 183FT (175FT AGL) FLAGGED AND LGTD 1807021400-1912140100"
+            },
+            {
+                "title": "!SFO 06/134",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN 2018-AWP-1567-NRA) 373648N1222260W (0.5NM SW SFO) 183FT (175FT AGL) FLAGGED AND LGTD 1807021400-1912140100"
+            },
+            {
+                "title": "!SFO 10/095",
+                "type": "aerodrome",
+                "notam": "SFO TWY A CL LGT BTN TWY F1 AND REP 5 U/S 1910230744-1911291500"
+            },
+            {
+                "title": "!SFO 10/018",
+                "type": "aerodrome",
+                "notam": "SFO TWY A CL LGT BTN TWY B2 AND TWY B3 U/S 1910070530-1911151300"
+            },
+            {
+                "title": "!SFO 05/068",
+                "type": "aerodrome",
+                "notam": "SFO SVC PRECISION RWY MNT OUT OF SERVICE 1905131531-1911102359EST"
+            },
+            {
+                "title": "!FDC 9/8655",
+                "type": "aerodrome",
+                "notam": "SFO PART 1 OF 2 ODP SAN FRANCISCO INTL,\nSan Francisco, CA.\nTAKEOFF MINIMUMS AND (OBSTACLE) DEPARTURE PROCEDURES AMDT 9...\nADD TAKEOFF OBSTACLE NOTES: RWY 28L: TEMPORARY CRANE 2581FT FROM\nDER, 759FT RIGHT OF CENTERLINE, 120FT AGL/127FT MSL\n(2019-AWP-519-NRA), TEMPORARY CRANE 2614FT FROM DER, 663FT RIGHT OF\nCENTERLINE, 120FT AGL/127FT MSL (2019-AWP-518-NRA), TEMPORARY CRANE\n2618FT FROM DER, 443FT RIGHT OF CENTERLINE, 120FT AGL/127FT MSL\n(2019-AWP-516-NRA), TEMPORARY CRANE 2618FT FROM DER, 537FT RIGHT OF\nCENTERLINE, 120FT AGL/127FT MSL (2019-AWP-517-NRA), TEMPORARY CRANE\n2681FT FROM DER, 1045FT RIGHT OF CENTERLINE, 120FT AGL/127FT MSL\n(2016-AWP-1983-NRA).\nRWY 28R: TEMPORARY CRANE 2092FT FROM DER, 9FT RIGHT OF CENTERLINE,\n120FT AGL/127FT MSL (2019-AWP-519-NRA), TEMPORARY CRANE 2125FT FROM\nDER, 86FT LEFT OF CENTERLINE, 120FT AGL/127FT MSL\n(2019-AWP-518-NRA), TEMPORARY CRANE 2129FT FROM DER, 212FT LEFT OF\nCENTERLINE, 120FT AGL/127FT MSL (2019-AWP-517-NRA), TEMPORARY CRANE\n2129FT FROM DER, 305FT LEFT OF CENTERLINE, 120FT AGL/127FT MSL\n(2019-AWP-516-NRA), TEMPORARY CRANE 2192FT FROM DER, 295FT RIGHT OF\nCENTERLINE, 120FT AGL/127FT MSL (2016-AWP-1983-NRA), TEMPORARY\nCRANE 2337FT FROM DER, 607FT RIGHT OF CENTERLINE, 120FT AGL/127FT\nMSL (2016-AWP-1984-NRA), TEMPORARY CRANE 2587FT FROM DER, 937FT\nREMAINS AS PUBLISHED. 1910211300-1911090000EST\nEND PART 1 OF 2\r\n!FDC 9/8655 SFO PART 2 OF 2 ODP SAN FRANCISCO INTL,\nSan Francisco, CA.\nRIGHT OF CENTERLINE, 120FT AGL/126FT MSL (2016-AWP-1985-NRA),\nTEMPORARY CRANE 2962FT FROM DER, 1194FT RIGHT OF CENTERLINE, 120FT\nAGL/126FT MSL (2016-AWP-1986-NRA). DAILY 1300-0000. ALL OTHER DATA\nREMAINS AS PUBLISHED. 1910211300-1911090000EST\nEND PART 2 OF 2\r\n"
+            },
+            {
+                "title": "!FDC 9/8656",
+                "type": "aerodrome",
+                "notam": "SFO PART 1 OF 2 SID SAN FRANCISCO INTL,\nSan Francisco, CA.\nGAP SEVEN DEPARTURE...\nGNNRR TWO DEPARTURE (RNAV)...\nMOLEN EIGHT DEPARTURE...\nNIITE THREE DEPARTURE (RNAV)...\nOFFSHORE TWO DEPARTURE...\nSAN FRANCISCO FOUR DEPARTURE...\nSNTNA TWO DEPARTURE (RNAV)...\nTRUKN TWO DEPARTURE (RNAV)...\nWESLA FOUR DEPARTURE (RNAV)...\nADD TAKEOFF OBSTACLE NOTES: RWY 28L: TEMPORARY CRANE 2581FT FROM\nDER, 759FT RIGHT OF CENTERLINE, 120FT AGL/127FT MSL\n(2019-AWP-519-NRA), TEMPORARY CRANE 2614FT FROM DER, 663FT RIGHT OF\nCENTERLINE, 120FT AGL/127FT MSL (2019-AWP-518-NRA), TEMPORARY CRANE\n2618FT FROM DER, 443FT RIGHT OF CENTERLINE, 120FT AGL/127FT MSL\n(2019-AWP-516-NRA), TEMPORARY CRANE 2618FT FROM DER, 537FT RIGHT OF\nCENTERLINE, 120FT AGL/127FT MSL (2019-AWP-517-NRA), TEMPORARY CRANE\n2681FT FROM DER, 1045FT RIGHT OF CENTERLINE, 120FT AGL/127FT MSL\n(2016-AWP-1983-NRA).\nRWY 28R: TEMPORARY CRANE 2092FT FROM DER, 9FT RIGHT OF CENTERLINE,\n120FT AGL/127FT MSL (2019-AWP-519-NRA), TEMPORARY CRANE 2125FT FROM\nREMAINS AS PUBLISHED. 1910211300-1911090000EST\nEND PART 1 OF 2\r\n!FDC 9/8656 SFO PART 2 OF 2 SID SAN FRANCISCO INTL,\nSan Francisco, CA.\nDER, 86FT LEFT OF CENTERLINE, 120FT AGL/127FT MSL\n(2019-AWP-518-NRA), TEMPORARY CRANE 2129FT FROM DER, 212FT LEFT OF\nCENTERLINE, 120FT AGL/127FT MSL (2019-AWP-517-NRA), TEMPORARY CRANE\n2129FT FROM DER, 305FT LEFT OF CENTERLINE, 120FT AGL/127FT MSL\n(2019-AWP-516-NRA), TEMPORARY CRANE 2192FT FROM DER, 295FT RIGHT OF\nCENTERLINE, 120FT AGL/127FT MSL (2016-AWP-1983-NRA), TEMPORARY\nCRANE 2337FT FROM DER, 607FT RIGHT OF CENTERLINE, 120FT AGL/127FT\nMSL (2016-AWP-1984-NRA), TEMPORARY CRANE 2587FT FROM DER, 937FT\nRIGHT OF CENTERLINE, 120FT AGL/126FT MSL (2016-AWP-1985-NRA),\nTEMPORARY CRANE 2962FT FROM DER, 1194FT RIGHT OF CENTERLINE, 120FT\nAGL/126FT MSL (2016-AWP-1986-NRA). DAILY 1300-0000. ALL OTHER DATA\nREMAINS AS PUBLISHED. 1910211300-1911090000EST\nEND PART 2 OF 2\r\n"
+            },
+            {
+                "title": "!SFO 10/032",
+                "type": "aerodrome",
+                "notam": "SFO TWY F CL LGT BTN APCH END RWY 28L AND TWY F2 U/S 1910081246-1911081500"
+            },
+            {
+                "title": "!SFO 08/082",
+                "type": "aerodrome",
+                "notam": "SFO TWY B CL LGT BTN TWY Q AND TWY K U/S 1908130957-1910310600"
+            },
+            {
+                "title": "!SFO 09/100",
+                "type": "aerodrome",
+                "notam": "SFO RWY 01L/19R BTN RWY 10L/28R AND RWY 10R/28L NOT\nGROOVED 1909200400-1910310400"
+            },
+            {
+                "title": "!SFO 09/101",
+                "type": "aerodrome",
+                "notam": "SFO RWY 10R/28L BTN TWY E AND TWY L NOT GROOVED 1909200400-1910310400"
+            },
+            {
+                "title": "!SFO 09/075",
+                "type": "aerodrome",
+                "notam": "SFO RWY 01R/19L INT BTN RWY 10L/28R AND RWY 10R/28L 100FT NOT GROOVED 1909140300-1910310300"
+            },
+            {
+                "title": "!SFO 10/025",
+                "type": "aerodrome",
+                "notam": "SFO OBST CRANE (ASN UNKNOWN) 373658N1222258W (0.5NM SW SFO) \n 179FT (170FT AGL) FLAGGED AND LGTD 1910071407-1910281400"
+            },
+            {
+                "title": "!SFO 10/074",
+                "type": "aerodrome",
+                "notam": "SFO RWY 10R/28L CLSD DLY 0700-1500 1910210700-1910261500"
+            },
+            {
+                "title": "!SFO 10/081",
+                "type": "aerodrome",
+                "notam": "SFO NAV ILS RWY 28L U/S DLY 0700-1500 1910210700-1910261500"
+            },
+            {
+                "title": "!SFO 10/090",
+                "type": "aerodrome",
+                "notam": "SFO RWY 01R/19L CLSD DLY 0700-1300 1910250700-1910261300"
+            },
+            {
+                "title": "NCT Wake Recategorization",
+                "type": "aerodrome",
+                "notam": null,
+                "link": "https://notams.aim.faa.gov/lta/main/viewlta?lookupid=1784401012526683658"
+            },
+            {
+                "title": "A1125/06 NOTAMN",
+                "type": "FIR",
+                "notam": "A) KZOA \nB) WIE\nC) UFN\nE) FOR AIRCRAFT DEPARTING FROM AIRPORTS ALONG THE WEST COAST OF \n   NORTH AMERICA AND HAWAII, OAKLAND ARTCC REQUESTS THAT DATA-LINK\n   AIRCRAFT NOT LOGON TO OAKLAND OCEANIC (KZAK) UNTIL LEAVING 10,000\n   FEET.  THIS WILL ELIMINATE ADS PERIODIC REPORTS FOR AIRCRAFT THAT\n   ARE STILL ON THE GROUND WHICH WILL ASSIST IN THE TRANSITION FROM \n   OUR DOMESTIC AIRSPACE AUTOMATION ENVIRONMENT TO THE OCEANIC \n   AIRSPACE AUTOMATION ENVIRONMENT. ADDITIONALLY, THIS WILL REDUCE \n   OPERATOR COSTS. ANY QUESTIONS SHOULD BE FORWARDED TO OAKLAND ARTCC\n   AT 510-745-3258/3320."
+            },
+            {
+                "title": "A2184/05 NOTAMN",
+                "type": "FIR",
+                "notam": "A) KZOA\nB) WIE\nC) UFN\nE) QXXXX FOLLOWING NAVAGATIONAL REFERENCE SYSTEM (NRS) WAYPOINTS ARE UNUSABLE KO33E, KO36C, KO39C, KO48C, KO51C, KO54C\n)"
+            },
+            {
+                "title": "!FDC 9/7832",
+                "type": "FIR",
+                "notam": "ZOA ROUTE ZOA.\nV165 MARRI INT, CA TO MUSTANG (FMG) VORTAC, NV MEA 15000.\nFMG VORTAC R-167 UNUSABLE BELOW 15000. 1905151522-2105151520EST"
+            },
+            {
+                "title": "!FDC 9/2025",
+                "type": "FIR",
+                "notam": "ZOA ROUTE ZOA.\nA222 POHNPEI (PNI) NDB/DME, undefined TO AXTEN,  NA EXCEPT FOR AIRCRAFT EQUIPPED WITH SUITABLE RNAV SYSTEM WITH GPS.\n1903041958-2103041958EST"
+            },
+            {
+                "title": "!FDC 9/2279",
+                "type": "FIR",
+                "notam": "ZOA ROUTE ZOA ZSE.\nV195 FORTUNA (FOT) VORTAC, CA TO RED BLUFF (RBL) VORTAC, CA CHANGE OVER POINT FOT 40 NM.\n1901081717-2101081717EST"
+            },
+            {
+                "title": "!OAK 10/107",
+                "type": "FIR",
+                "notam": "ZOA AIRSPACE ORDNANCE DISPOSAL WI AN AREA DEFINED AS 3NM RADIUS OF MVA232025 SFC-2500FT AGL DLY 1400-2359 1910161400-1912312359"
+            },
+            {
+                "title": "!OAK 03/150",
+                "type": "FIR",
+                "notam": "ZOA AIRSPACE UAS WI AN AREA DEFINED AS 383618.41N1220447.22W (9.8NM NW DWA) TO 383612.37N1220244.28W (8.4NM NW DWA) TO 383913.08N1220507.13W (11.4NM NNW DWA) TO 383903.39N1220254.16W (9.3NM NNW DWA) TO POINT OF ORIGIN SFC-1400FT 1903112013-1912251948"
+            },
+            {
+                "title": "!FDC 9/1746",
+                "type": "FIR",
+                "notam": "ZOA CA..AIRSPACE CLOVERDALE, CA...TEMPORARY FLIGHT\nRESTRICTIONS WI AN AREA BOUNDED BY\n384908N/1230118W (MENDOCINO VORTAC ENI124018.4) TO\n384954N/1224731W (SANTA ROSA VOR/DME STS347019.4) TO\n384222N/1223902W (SANTA ROSA VOR/DME STS016014.1) TO\n383752N/1224712W (SANTA ROSA VOR/DME STS353007.5) BACK TO THE\nORIGINAL POINT SFC-8000FT. TO PROVIDE A SAFE ENVIRONMENT FOR FIRE\nFIGHTING AVIATION OPS. PURSUANT TO 14 CFR SECTION 91.137(A)(2)\nTEMPORARY FLIGHT RESTRICTIONS ARE IN EFFECT. SONOMA LAKE NAPA UNIT\nTELEPHONE 707-963-4112 OR FREQ 123.1750/THE KINCADE FIRE IS IN\nCHARGE OF THE OPERATION. OAKLAND /ZOA/ ARTCC TELEPHONE 510-745-3331\nIS THE FAA CDN FACILITY.\n1910241930-1912241133EST"
+            },
+            {
+                "title": "!FDC 9/1437",
+                "type": "FIR",
+                "notam": "ZOA PART 1 OF 2 CA..AIRSPACE BEALE AFB, CA..TEMPORARY\n FLIGHT\nRESTRICTIONS.  \n      OCTOBER 27-NOVEMBER 3, 2019 LOCAL.  PURSUANT TO 49 USC \n40103(B)(3), THE FEDERAL AVIATION ADMINISTRATION (FAA) CLASSIFIES \nTHE AIRSPACE DEFINED IN THIS NOTAM AS &apos;NATIONAL DEFENSE AIRSPACE&apos;. \nANY PERSON WHO KNOWINGLY OR WILLFULLY VIOLATES THE RULES \nCONCERNING OPERATIONS IN THIS AIRSPACE MAY BE SUBJECT TO CERTAIN \nCRIMINAL PENALTIES UNDER 49 USC 46307.  PILOTS WHO DO NOT ADHERE \nTO THE FOLLOWING PROCEDURES MAY BE INTERCEPTED, DETAINED AND \nINTERVIEWED BY LAW ENFORCEMENT/SECURITY PERSONNEL.   \nPURSUANT TO TITLE 14 CFR SECTION 99.7, SPECIAL SECURITY \nINSTRUCTIONS, ALL AIRCRAFT FLIGHT OPERATIONS ARE PROHIBITED WITHIN \nAN AREA DEFINED AS 10NM RADIUS OF 390803N1212615W (MYV055006.7) \n4100FT MSL-FL180  \nEFFECTIVE 1910272200 UTC (1500 LOCAL 10/27/19) UNTIL 1911032159 UTC \n(1459 LOCAL 11/03/19).  \n\n\n\n EXCEPT AS SPECIFIED BELOW AND/OR UNLESS AUTHORIZED\n1910272200-1911032159\nEND PART 1 OF 2\r\n!FDC 9/1437 ZOA PART 2 OF 2 CA..AIRSPACE BEALE AFB, CA..TEMPORARY\n FLIGHT\nBY ATC:\n   1. ALL AIRCRAFT ENTERING OR EXITING THE TFR MUST\n      BE ON A DISCRETE CODE ASSIGNED BY AN AIR TRAFFIC\n      CONTROL (ATC) FACILITY.\n   2. AIRCRAFT MUST BE SQUAWKING THE DISCRETE CODE AT\n      ALL TIMES WHILE IN THE TFR.\n   3. ALL AIRCRAFT ENTERING OR EXITING THE TFR MUST\n      REMAIN IN TWO-WAY RADIO COMMUNICATIONS WITH ATC.\n   4. NORTHERN CALIFORNIA TRACON, PHONE 916-366-4080,\n      IS THE FAA COORDINATION FACILITY.\n \n1910272200-1911032159\nEND PART 2 OF 2\r\n"
+            },
+            {
+                "title": "!FDC 9/0606",
+                "type": "FIR",
+                "notam": "ZOA CA..AIRSPACE WHEATLAND, CA LASER LIGHT DEMONSTRATION\nWI AN AREA DEFINED AS 390301N1213049W OR THE MARYSVILLE /MYV/ VORTAC\n120 RADIAL AT 4NM, SFC-20583FT. LASER LIGHT BEAM MAY BE INJURIOUS TO\nPILOTS/PASSENGERS EYES WI 900FT VERTICALLY OR 00FT LATERALLY OF THE\nLGT SOURCE. FLASH BLINDNESS OR COCKPIT ILLUMINATION MAY OCCUR BEYOND\nTHESE DISTANCES. NORTHERN CALIFORNIA TRACON /NCT/ TELEPHONE\n916-366-4080 IS THE FAA CDN FACILITY\nDLY 0300-0700\n1910310300-1911030700"
+            },
+            {
+                "title": "!FDC 9/2185",
+                "type": "FIR",
+                "notam": "ZOA CA..AIRSPACE WHEATLAND, CA LASER LIGHT DEMONSTRATION\nWI AN AREA DEFINED AS 390152N1293047W OR THE MARYSVILLE /MYV/ VORTAC\n129 RADIAL AT 5NM, SFC-3360FT. LASER LIGHT BEAM MAY BE INJURIOUS TO\nPILOTS/PASSENGERS EYES WI 254FT VERTICALLY OR 1222FT LATERALLY OF\nTHE LGT SOURCE. FLASH BLINDNESS OR COCKPIT ILLUMINATION MAY OCCUR\nBEYOND THESE DISTANCES. NORTHERN CALIFORNIA TRACON /NCT/ TELEPHONE\n916-366-4080 IS THE FAA CDN FACILITY\n1911030430-1911030600"
+            },
+            {
+                "title": "!OAK 09/212",
+                "type": "FIR",
+                "notam": "ZOA AIRSPACE CONTROLLED BURN WI AN AREA DEFINED AS 4.34NM RADIUS OF SWR310041 SFC-7400FT 1909252112-1911020001"
+            },
+            {
+                "title": "!OAK 08/009",
+                "type": "FIR",
+                "notam": "ZOA AIRSPACE WI THE CONFINES OF R2504 UAS OPS IN CLASS\nE AND G AIRSPACE SFC-2500FT AGL\n\n1908011800-1911011800"
+            },
+            {
+                "title": "!OAK 10/156",
+                "type": "FIR",
+                "notam": "ZOA AIRSPACE LOW FLYING HEL OPS WI AN AREA DEFINED AS 1NM EITHER SIDE OF A LINE FROM 382956N1222739W (5.7NM S 2O3) TO 383059N1220549W (9.3NM NW VCB) SFC-500FT AVOIDANCE ADZ DLY SR-SS 1910211424-1911010128"
+            },
+            {
+                "title": "!GPS 10/189",
+                "type": "FIR",
+                "notam": "ZOA NAV GPS (FTIRCA GPS 19-67M) (INCLUDING WAAS, GBAS,\nAND ADS-B) MAY NOT BE AVBL WI A 120NM RADIUS CENTERED AT\n352121N1163405W (HEC 340034) FL400-UNL,\n118NM RADIUS AT FL250, \n108NM RADIUS AT 10000FT, \n104NM RADIUS AT 4000FT AGL, \n85NM RADIUS AT 50FT AGL,\n1910282130-1910282359"
+            },
+            {
+                "title": "!FDC 9/8639",
+                "type": "FIR",
+                "notam": "ZOA AIRSPACE ADS-B, AUTO DEPENDENT SURVEILLANCE \nREBROADCAST (ADS-R), TFC INFO SERVICE BCST (TIS-B), FLT INFO \nSERVICE BCST (FIS-B) SERVICES MAY NOT BE AVBL WI AN AREA DEFINED AS \n121NM RADIUS OF 395221N1175027W. AP AIRSPACE AFFECTED \nINCLUDES EKO, 05U, TPH, TVL, TRK, AHC, LOL. SFC-10000FT.\n1910012100-1910282200EST"
+            },
+            {
+                "title": "A0836/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) KZOA/QRACA////430/600/\nA) KZOA\nB) 1910271100\nC) 1910280300\nE) FOOTHILL MOA 1/2 STNR ALT RESERVATION WI AN AREA DEFINED AS THE\nLATERAL CONFINES OF FOOTHILL 1/2 MOA.\nF) FL430\nG) FL600"
+            },
+            {
+                "title": "!OAK 10/168",
+                "type": "FIR",
+                "notam": "ZOA AIRSPACE GLD WI AN AREA DEFINED AS 5NM RADIUS OF SGD359032 SFC-5000FT 1910241500-1910280200"
+            },
+            {
+                "title": "!GPS 10/187",
+                "type": "FIR",
+                "notam": "ZOA NAV GPS (FTIRCA GPS 19-67M) (INCLUDING WAAS, GBAS,\nAND ADS-B) MAY NOT BE AVBL WI A 120NM RADIUS CENTERED AT\n352121N1163405W (HEC 340034) FL400-UNL,\n118NM RADIUS AT FL250, \n108NM RADIUS AT 10000FT, \n104NM RADIUS AT 4000FT AGL, \n85NM RADIUS AT 50FT AGL,\nDLY 1600-1830, 2230-2359\n1910261600-1910272359"
+            },
+            {
+                "title": "!GPS 10/182",
+                "type": "FIR",
+                "notam": "ZOA NAV GPS (FTIRCA GPS 19-67H) (INCLUDING WAAS, GBAS,\nAND ADS-B) MAY NOT BE AVBL WI A 271NM RADIUS CENTERED AT\n352121N1163405W (HEC 340034) FL400-UNL,\n221NM RADIUS AT FL250, \n148NM RADIUS AT 10000FT, \n121NM RADIUS AT 4000FT AGL, \n89NM RADIUS AT 50FT AGL,\n1910271830-1910272230"
+            },
+            {
+                "title": "!FDC 9/7650",
+                "type": "FIR",
+                "notam": "ZOA PART 1 OF 2 CA..AIRSPACE BEALE AFB, CA..TEMPORARY\n FLIGHT\nRESTRICTIONS.  \n      OCTOBER 20-27, 2019 LOCAL. PURSUANT TO 49 USC 40103(B)(3), \nTHE FEDERAL AVIATION ADMINISTRATION (FAA) CLASSIFIES THE AIRSPACE \nDEFINED IN THIS NOTAM AS &apos;NATIONAL DEFENSE AIRSPACE&apos;. ANY PERSON \nWHO KNOWINGLY OR WILLFULLY VIOLATES THE RULES CONCERNING \nOPERATIONS IN THIS AIRSPACE MAY BE SUBJECT TO CERTAIN CRIMINAL \nPENALTIES UNDER 49 USC 46307. PILOTS WHO DO NOT ADHERE TO THE \nFOLLOWING PROCEDURES MAY BE INTERCEPTED, DETAINED AND INTERVIEWED \nBY LAW ENFORCEMENT/SECURITY PERSONNEL.   \nPURSUANT TO TITLE 14 CFR SECTION 99.7, SPECIAL SECURITY \nINSTRUCTIONS, ALL AIRCRAFT FLIGHT OPERATIONS ARE PROHIBITED:\n\nWI AN AREA DEFINED AS 10 NM RADIUS OF 390803N1212615W (MYV055006.7) \n4100FT MSL-FL180  \n     EFFECTIVE 1910202200 UTC (1500 LOCAL 10/20/19) \n         UNTIL 1910272159 UTC (1459 LOCAL 10/27/19).  \n\n EXCEPT AS SPECIFIED BELOW AND/OR UNLESS AUTHORIZED\nBY ATC:\n1910202200-1910272159\nEND PART 1 OF 2\r\n!FDC 9/7650 ZOA PART 2 OF 2 CA..AIRSPACE BEALE AFB, CA..TEMPORARY\n FLIGHT\n   1. ALL AIRCRAFT ENTERING OR EXITING THE TFR MUST\n      BE ON A DISCRETE CODE ASSIGNED BY AN AIR TRAFFIC\n      CONTROL (ATC) FACILITY.\n   2. AIRCRAFT MUST BE SQUAWKING THE DISCRETE CODE AT\n      ALL TIMES WHILE IN THE TFR.\n   3. ALL AIRCRAFT ENTERING OR EXITING THE TFR MUST\n      REMAIN IN TWO-WAY RADIO COMMUNICATIONS WITH ATC.\n   4. NORTHERN CALIFORNIA TRACON, PHONE 916-366-4080,\n      IS THE FAA COORDINATION FACILITY.\n1910202200-1910272159\nEND PART 2 OF 2\r\n"
+            },
+            {
+                "title": "!FDC 9/8887",
+                "type": "FIR",
+                "notam": "ZOA CA..AIRSPACE BERKELEY, CA LASER LIGHT DEMONSTRATION\nWI AN AREA DEFINED AS GREEK THEATRE OR 375225N1221516W OR THE\nOAKLAND /OAK/ VORTAC 334 RADIAL AT 9NM, SFC-13127FT AGL. LASER LIGHT\nBEAM MAY BE INJURIOUS TO PILOTS/PASSENGERS EYES WI 849FT VERTICALLY\nOR 2009FT LATERALLY OF THE LGT SOURCE. FLASH BLINDNESS OR COCKPIT\nILLUMINATION MAY OCCUR BEYOND THESE DISTANCES. NORTHERN CALIFORNIA\nTRACON /NCT/ TELEPHONE 916-366-4080 IS THE FAA COORDINATION FACILITY\n1910270200-1910270800"
+            },
+            {
+                "title": "A0835/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) KZOA/QRACA////430/600/\nA) KZOA\nB) 1910261100\nC) 1910270300\nE) FOOTHILL MOA 1/2 STNR ALT RESERVATION WI AN AREA DEFINED AS THE\nLATERAL CONFINES OF FOOTHILL 1/2 MOA.\nF) FL430\nG) FL600"
+            },
+            {
+                "title": "!CARF 10/011",
+                "type": "FIR",
+                "notam": "ZOA AIRSPACE SOUTH LAKE TAHOE, CA MARINE CORPS\nMOUNTAIN WARFARE TRAINING CENTER IS PERFORMING MILITARY ACTIVITY WI\nAN AREA DEFINED AS 3835N11930W TO 3835N11905W TO 3815N11920W\n3812N11941W TO 3830N11941W TO THE POINT OF ORIGIN. TRAINING\nEXERCISES INVOLVE HELICOPTERS, UAS, PARACHUTE OPERATIONS, SINGLE\nENGINE PROPELLER DRIVEN AIRCRAFT, AND SMALL JET AIRCRAFT AS WELL AS\nGROUND OPERATIONS. ALL NON-PARTICIPATING AIRCRAFT ARE ADVISED TO\nAVOID THE ABOVE NOTAMED AREA. SFC-FL180\n1910051300-1910262359"
+            },
+            {
+                "title": "!GPS 10/177",
+                "type": "FIR",
+                "notam": "ZOA NAV GPS (FTIRCA GPS 19-67H) (INCLUDING WAAS, GBAS,\nAND ADS-B) MAY NOT BE AVBL WI A 271NM RADIUS CENTERED AT\n352121N1163405W (HEC 340034) FL400-UNL,\n221NM RADIUS AT FL250, \n148NM RADIUS AT 10000FT, \n121NM RADIUS AT 4000FT AGL, \n89NM RADIUS AT 50FT AGL,\n0700-1300, 1830-2230\n1910260700-1910262230"
+            },
+            {
+                "title": "!OAK 10/186",
+                "type": "FIR",
+                "notam": "ZOA AIRSPACE UAS WI AN AREA DEFINED AS 1NM RADIUS OF\n 374305N1213935.70W (6.8NM S C83) SFC-300FT AGL 1910251400-1910252300"
+            },
+            {
+                "title": "!SUAW 10/912",
+                "type": "FIR",
+                "notam": "ZOA AIRSPACE HUNTER LOW C MOA ACT 3000FT AGL-10999FT 1910251600-1910252215"
+            },
+            {
+                "title": "!SUAW 10/913",
+                "type": "FIR",
+                "notam": "ZOA AIRSPACE HUNTER LOW D MOA ACT 1500FT AGL-6000FT 1910251600-1910252215"
+            },
+            {
+                "title": "!SUAW 10/914",
+                "type": "FIR",
+                "notam": "ZOA AIRSPACE HUNTER LOW B MOA ACT 2000FT AGL-10999FT 1910251600-1910252215"
+            },
+            {
+                "title": "!SUAW 10/915",
+                "type": "FIR",
+                "notam": "ZOA AIRSPACE HUNTER LOW E MOA ACT 1500FT AGL-3000FT 1910251600-1910252215"
+            },
+            {
+                "title": "!SUAW 10/916",
+                "type": "FIR",
+                "notam": "ZOA AIRSPACE HUNTER LOW A MOA ACT 200FT AGL-10999FT 1910251600-1910252215"
+            },
+            {
+                "title": "!SUAW 10/785",
+                "type": "FIR",
+                "notam": "ZOA AIRSPACE W532N ACT SFC-FL450 1910251745-1910252100"
+            }
+        ]
+    },
+    "EGPK": {
+        "icao_code": "EGPK",
+        "gps_code": "EGPK",
+        "iata_code": "PIK",
+        "name": "Glasgow Prestwick Airport",
+        "FIR": "EGPX",
+        "latitude_deg": "55.5093994140625",
+        "longitude_deg": "-4.586669921875",
+        "continent": "EU",
+        "iso_country": "GB",
+        "iso_region": "GB-SCT",
+        "municipality": "Glasgow",
+        "last_updated": "2009-02-24T17:23:11+00:00",
+        "metar": [
+            {
+                "type": "metar",
+                "text": "METAR EGPK 251720Z 00000KT 9999 -RA FEW018 SCT025 BKN035 06/05 Q1004"
+            },
+            {
+                "type": "metar",
+                "text": "METAR EGPK 251650Z 09002KT 9999 -RA FEW022 SCT030 06/05 Q1004"
+            },
+            {
+                "type": "metar",
+                "text": "METAR EGPK 251620Z 18002KT 9999 -RA FEW028 07/05 Q1004"
+            },
+            {
+                "type": "metar",
+                "text": "METAR EGPK 251550Z 00000KT 9999 FEW028 07/05 Q1004"
+            },
+            {
+                "type": "metar",
+                "text": "METAR EGPK 251520Z 00000KT 9999 FEW027 07/05 Q1004"
+            },
+            {
+                "type": "metar",
+                "text": "METAR EGPK 251450Z 18004KT 9999 FEW027 07/05 Q1005"
+            },
+            {
+                "type": "metar",
+                "text": "METAR EGPK 251420Z 18004KT 9999 FEW027 07/04 Q1005"
+            },
+            {
+                "type": "metar",
+                "text": "METAR EGPK 251350Z 18006KT 9999 FEW030 08/03 Q1005"
+            }
+        ],
+        "taf": {
+            "type": "taf",
+            "text": [
+                "TAF EGPK 251102Z 2512/2612 19007KT 9999 FEW020 SCT035",
+                "PROB30 TEMPO 2512/2518 6000 RA BKN012 BECMG 2609/2612 25012KT"
+            ]
+        },
+        "notam_EN": [
+            {
+                "title": "A2269/19 NOTAMN",
+                "type": "aerodrome",
+                "notam": "Q) EGPX/QFAXX/IV/NBO/A /000/999/5531N00436W005\nA) EGPK B) 1907180000 C) PERM\nE) FOLLOWING AN ICAO UPDATE TO THE METHOD FOR DETERMINATION OF AREA \nMINIMUM ALTITUDE (AMA) CRITERIA ALL USERS SHALL REFER TO ENR CHART \n6-81 AVAILABLE ON THE AIS WEBSITE WWW.AIS.ORG.UK FOR REVISED AMA \nFIGURES FOR THIS AERODROME&apos;S SID AND STAR PROCEDURES."
+            },
+            {
+                "title": "A2991/19 NOTAMR A2163/19",
+                "type": "aerodrome",
+                "notam": "Q) EGPX/QPIAU/I /NBO/A /000/999/5531N00436W005\nA) EGPK B) 1909230648 C) PERM\nE) WITH REFERENCE TO THE RNAV 1 APPROACH TRANSITION CHARTS. THESE \nARE NOT AVAILABLE.\nAD2 EGPK 7-3, AD2 EGPK 7-4 AND AD2 EGPK 7-5 REFER"
+            },
+            {
+                "title": "A3356/19 NOTAMN",
+                "type": "aerodrome",
+                "notam": "Q) EGPX/QFAHX/IV/NBO/A /000/999/5531N00436W005\nA) EGPK B) 1910240730 C) 2001240730\nE) HIGH BIRD ACTIVITY RUNWAY 12 APPROACH AT DAWN AND DUSK"
+            },
+            {
+                "title": "A3219/19 NOTAMN",
+                "type": "aerodrome",
+                "notam": "Q) EGPX/QOBCE/IV/M  /AE/000/002/5531N00436W001\nA) EGPK B) 1910280800 C) 1912201800\nD) 0800-1800\nE) 2 CRANES OPR PSN 553050N 0043534W, PRESTWICK AIRPORT, MAX HGT\n126FT AGL, 175FT AMSL"
+            },
+            {
+                "title": "H6581/19 NOTAMN",
+                "type": "aerodrome",
+                "notam": "Q) EGPX/QWMLW/IV/BO /AW/000/005/5533N00439W001\nA) EGPK B) 1911021915 C) 1911022015\nE) FIREWORK DISPLAY WI 0.5NM RADIUS 553305N 0043921W (TROON, SOUTH\nAYRSHIRE). FOR INFO 07917 343520. 2019-11-0235/AS2\nF) SFC G) 500FT AMSL"
+            },
+            {
+                "title": "A3376/19 NOTAMR A3373/19",
+                "type": "aerodrome",
+                "notam": "Q) EGPX/QNXAS/V /B  /A /000/999/5531N00436W005\nA) EGPK B) 1910251501 C) 1911011600\nE) HIGH RESOLUTION DIRECTION FINDER U/S"
+            },
+            {
+                "title": "B1158/19 NOTAMR B1154/19",
+                "type": "FIR",
+                "notam": "Q) EGXX/QAFXX/IV/NBO/E /000/999/5504N00500W999\nA) EGPX EGTT B) 1907060505 C) PERM\nE) CORRECTION TO VFR CHART DEPICTION OF BRIZE NORTON CTR FREQUENCY.\nFREQUENCY SHALL READ 119.000MHZ\nCHARTS 500K SOUTHERN ENGLAND EDITION 45 AND 250K ENGLAND SOUTH \nEDITION 23 REFER."
+            },
+            {
+                "title": "B1733/19 NOTAMR B1111/19",
+                "type": "FIR",
+                "notam": "Q) EGXX/QAFXX/IV/NBO/E /000/999/5504N00500W999\nA) EGTT EGPX B) 1909301450 C) 1912171300 EST\nE) SAFETY AND OPERATIONAL DIRECTIVE  BOEING 737-8 MAX AND BOEING\n737-9 MAX. THE CIVIL AVIATION AUTHORITY IN EXERCISE OF ITS POWERS\nUNDER ARTICLE 17(1) AND 248 OF THE AIR NAVIGATION ORDER 2016, AND\nSUBJECT TO, AND IN ACCORDANCE WITH REGULATION (EU) 2018/1139, ARTICLE\n70, DIRECTS PILOTS AND OPERATORS OF ANY BOEING 737-8 MAX AND BOEING\n737-9 MAX AIRCRAFT WHICH IS REGISTERED IN THE UNITED KINGDOM, NOT TO\nCONDUCT ANY FLIGHTS INCLUDING FERRY FLIGHTS AFTER 1300 HR ON 12 MAR\n19 OR REGISTERED IN A THIRD COUNTRY, NOT TO CONDUCT ANY FLIGHT IN THE\nAIRSPACE OF UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND\nAFTER 1300 HR ON 12 MAR 19. 2019-03-0217-AS6."
+            },
+            {
+                "title": "D1452/19 NOTAMR D1194/19",
+                "type": "FIR",
+                "notam": "Q) EGXX/QKKKK/K /K  /K /000/999/5218N01451W999\nA) EGGX EGPX EGTT B) 1910010005 C) 1911010005 EST\nE) CHECKLIST\nYEAR=2019 1198 1199 1371 1376 1407 1408 1410 1411 1412 1413 1414 1415\n          1416 1417 1418 1419 1421 1423 1424 1425 1427 1428 1431 1432\n          1433 1434 1435 1438 1439 1440 1442 1446 1448\n \nLATEST PUBLICATIONS\nAIP AIRAC AMDT IFR 012/2019 EFFECTIVE DATE 07 NOV 19\nAIP SUP IFR 047/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR W125/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR P011/2019 EFFECTIVE DATE 14 MAR 19\nAIC IFR Y038/2019 EFFECTIVE DATE 09 MAY 19\nAIC IFR M030/2019 EFFECTIVE DATE 11 APR 19\nAIC IFR G097/2009 EFFECTIVE DATE 31 DEC 09"
+            },
+            {
+                "title": "F0320/19 NOTAMR F0294/19",
+                "type": "FIR",
+                "notam": "Q) EGXX/QKKKK/K /K  /K /000/999/5218N01451W999\nA) EGGX EGPX EGTT B) 1910010005 C) 1911010005 EST\nE) CHECKLIST\nYEAR=2019 0281 0301 0304 0313 0314 0318\n \nLATEST PUBLICATIONS\nAIP AIRAC AMDT IFR 012/2019 EFFECTIVE DATE 07 NOV 19\nAIP SUP IFR 047/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR W125/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR P011/2019 EFFECTIVE DATE 14 MAR 19\nAIC IFR Y038/2019 EFFECTIVE DATE 09 MAY 19\nAIC IFR M030/2019 EFFECTIVE DATE 11 APR 19\nAIC IFR G097/2009 EFFECTIVE DATE 31 DEC 09"
+            },
+            {
+                "title": "G0242/19 NOTAMR G0205/19",
+                "type": "FIR",
+                "notam": "Q) EGXX/QKKKK/K /K  /K /000/999/5218N01451W999\nA) EGGX EGPX EGTT B) 1910010005 C) 1911010005 EST\nE) CHECKLIST\nYEAR=2019 0187 0218 0229 0231 0232 0233 0234 0237 0239 0241\n \nLATEST PUBLICATIONS\nAIP AIRAC AMDT IFR 012/2019 EFFECTIVE DATE 07 NOV 19\nAIP SUP IFR 047/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR W125/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR P011/2019 EFFECTIVE DATE 14 MAR 19\nAIC IFR Y038/2019 EFFECTIVE DATE 09 MAY 19\nAIC IFR M030/2019 EFFECTIVE DATE 11 APR 19\nAIC IFR G097/2009 EFFECTIVE DATE 31 DEC 09"
+            },
+            {
+                "title": "J0577/19 NOTAMR J0535/19",
+                "type": "FIR",
+                "notam": "Q) EGXX/QKKKK/K /K  /K /000/999/5218N01451W999\nA) EGGX EGPX EGTT B) 1910010005 C) 1911010005 EST\nE) CHECKLIST\nYEAR=2019 0389 0429 0468 0469 0470 0471 0472 0473 0474 0532 0537 0538\n          0574\n \nLATEST PUBLICATIONS\nAIP AIRAC AMDT IFR 012/2019 EFFECTIVE DATE 07 NOV 19\nAIP SUP IFR 047/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR W125/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR P011/2019 EFFECTIVE DATE 14 MAR 19\nAIC IFR Y038/2019 EFFECTIVE DATE 09 MAY 19\nAIC IFR M030/2019 EFFECTIVE DATE 11 APR 19\nAIC IFR G097/2009 EFFECTIVE DATE 31 DEC 09"
+            },
+            {
+                "title": "L7280/19 NOTAMR L6374/19",
+                "type": "FIR",
+                "notam": "Q) EGXX/QKKKK/K /K  /K /000/999/5218N01451W999\nA) EGGX EGPX EGTT B) 1910010005 C) 1911010005 EST\nE) CHECKLIST\nYEAR=2019 4397 4888 5065 5176 5179 5251 5261 5340 5341 5342 5367 5388\n          5551 5564 5588 5688 5894 5966 6053 6122 6192 6234 6260 6371\n          6381 6382 6400 6410 6428 6435 6450 6485 6528 6538 6634 6707\n          6708 6715 6768 6869 6870 6871 6900 6909 6910 6935 6988 6991\n          6992 6993 7013 7049 7069 7070 7074 7075 7082 7083 7084 7085\n          7087 7097 7107 7110 7115 7116 7119 7121 7122 7125 7126 7127\n          7138 7139 7141 7143 7147 7149 7154 7155 7156 7158 7159 7163\n          7166 7176 7189 7190 7191 7193 7194 7195 7196 7197 7198 7199\n          7200 7201 7202 7203 7204 7214 7215 7217 7223 7231 7236 7237\n          7239 7240 7241 7242 7248 7249 7250 7251 7252 7257 7258 7259\n          7260 7261 7262 7266 7267 7269 7270 7271 7272 7273 7274 7275\n          7276 7277 7278\n \nLATEST PUBLICATIONS\nAIP AIRAC AMDT IFR 012/2019 EFFECTIVE DATE 07 NOV 19\nAIP SUP IFR 047/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR W125/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR P011/2019 EFFECTIVE DATE 14 MAR 19\nAIC IFR Y038/2019 EFFECTIVE DATE 09 MAY 19\nAIC IFR M030/2019 EFFECTIVE DATE 11 APR 19\nAIC IFR G097/2009 EFFECTIVE DATE 31 DEC 09"
+            },
+            {
+                "title": "V0017/19 NOTAMR V0016/19",
+                "type": "FIR",
+                "notam": "Q) EGXX/QKKKK/K /K  /K /000/999/5218N01451W999\nA) EGGX EGPX EGTT B) 1910010005 C) 1911010005 EST\nE) CHECKLIST\nYEAR=2019 0013\n \nLATEST PUBLICATIONS\nAIP AIRAC AMDT IFR 012/2019 EFFECTIVE DATE 07 NOV 19\nAIP SUP IFR 047/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR W125/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR P011/2019 EFFECTIVE DATE 14 MAR 19\nAIC IFR Y038/2019 EFFECTIVE DATE 09 MAY 19\nAIC IFR M030/2019 EFFECTIVE DATE 11 APR 19\nAIC IFR G097/2009 EFFECTIVE DATE 31 DEC 09"
+            },
+            {
+                "title": "A3110/19 NOTAMR A2763/19",
+                "type": "FIR",
+                "notam": "Q) EGXX/QKKKK/K /K  /K /000/999/5218N01451W999\nA) EGGX EGPX EGTT B) 1910010005 C) 1911010005 EST\nE) CHECKLIST\nYEAR=2019 1868 1905 1937 2108 2109 2145 2154 2156 2187 2191 2192 2211\n          2258 2262 2263 2264 2265 2266 2267 2268 2269 2287 2338 2364\n          2366 2395 2443 2483 2489 2493 2529 2531 2543 2552 2553 2605\n          2627 2640 2641 2643 2647 2648 2650 2651 2654 2670 2692 2723\n          2724 2732 2733 2746 2748 2779 2780 2784 2794 2800 2814 2845\n          2855 2857 2881 2884 2888 2936 2937 2955 2956 2978 2990 2991\n          2995 2996 2999 3000 3002 3016 3017 3019 3022 3024 3025 3026\n          3030 3043 3044 3045 3047 3050 3051 3052 3053 3058 3060 3061\n          3063 3068 3069 3070 3074 3075 3077 3089 3092 3094 3097 3098\n          3101 3102 3106 3107\n \nLATEST PUBLICATIONS\nAIP AIRAC AMDT IFR 012/2019 EFFECTIVE DATE 07 NOV 19\nAIP SUP IFR 047/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR W125/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR P011/2019 EFFECTIVE DATE 14 MAR 19\nAIC IFR Y038/2019 EFFECTIVE DATE 09 MAY 19\nAIC IFR M030/2019 EFFECTIVE DATE 11 APR 19\nAIC IFR G097/2009 EFFECTIVE DATE 31 DEC 09"
+            },
+            {
+                "title": "B1736/19 NOTAMR B1547/19",
+                "type": "FIR",
+                "notam": "Q) EGXX/QKKKK/K /K  /K /000/999/5218N01451W999\nA) EGGX EGPX EGTT B) 1910010005 C) 1911010005 EST\nE) CHECKLIST\nYEAR=2019 1135 1158 1207 1208 1209 1223 1306 1391 1507 1544 1561 1622\n          1631 1643 1647 1649 1650 1651 1652 1653 1685 1689 1690 1691\n          1692 1693 1697 1711 1721 1722 1723 1725 1727 1728 1730 1732\n          1733 1734 1735\n \nLATEST PUBLICATIONS\nAIP AIRAC AMDT IFR 012/2019 EFFECTIVE DATE 07 NOV 19\nAIP SUP IFR 047/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR W125/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR P011/2019 EFFECTIVE DATE 14 MAR 19\nAIC IFR Y038/2019 EFFECTIVE DATE 09 MAY 19\nAIC IFR M030/2019 EFFECTIVE DATE 11 APR 19\nAIC IFR G097/2009 EFFECTIVE DATE 31 DEC 09"
+            },
+            {
+                "title": "C5223/19 NOTAMR C4690/19",
+                "type": "FIR",
+                "notam": "Q) EGXX/QKKKK/K /K  /K /000/999/5218N01451W999\nA) EGGX EGPX EGTT B) 1910010005 C) 1911010005 EST\nE) CHECKLIST\nYEAR=2019 2626 2627 2951 2952 3210 3356 3508 3773 3809 3810 3812 3818\n          3819 3820 3821 3822 3823 3824 3825 3826 3827 3828 3829 3830\n          3831 3832 3833 3863 3948 3996 4087 4106 4109 4132 4144 4157\n          4174 4255 4293 4301 4372 4448 4467 4544 4545 4650 4651 4658\n          4669 4682 4733 4734 4775 4776 4791 4792 4826 4835 4837 4871\n          4873 4874 4875 4876 4879 4888 4894 4895 4896 4897 4898 4899\n          4903 4926 4927 4928 4929 4954 4982 5009 5011 5018 5036 5037\n          5038 5039 5040 5042 5052 5062 5101 5104 5105 5106 5111 5123\n          5124 5127 5129 5131 5137 5138 5139 5140 5141 5147 5148 5150\n          5154 5155 5156 5158 5159 5160 5162 5170 5181 5182 5183 5185\n          5186 5187 5188 5189 5190 5191 5193 5194 5196 5197 5198 5199\n          5201 5202 5203 5204 5205 5206 5207 5208 5209 5210 5211 5213\n          5214 5215 5216 5218 5220 5221 5222\n \nLATEST PUBLICATIONS\nAIP AIRAC AMDT IFR 012/2019 EFFECTIVE DATE 07 NOV 19\nAIP SUP IFR 047/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR W125/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR P011/2019 EFFECTIVE DATE 14 MAR 19\nAIC IFR Y038/2019 EFFECTIVE DATE 09 MAY 19\nAIC IFR M030/2019 EFFECTIVE DATE 11 APR 19\nAIC IFR G097/2009 EFFECTIVE DATE 31 DEC 09"
+            },
+            {
+                "title": "K0114/19 NOTAMR K0105/19",
+                "type": "FIR",
+                "notam": "Q) EGXX/QKKKK/K /K  /K /000/999/5218N01451W999\nA) EGGX EGPX EGTT B) 1910010005 C) 1911010005 EST\nE) CHECKLIST\nYEAR=2019 0076 0078 0080 0081 0082 0084 0085 0086 0089 0090 0091 0092\n          0093 0094 0096 0099 0102 0104 0110 0112 0113\n \nLATEST PUBLICATIONS\nAIP AIRAC AMDT IFR 012/2019 EFFECTIVE DATE 07 NOV 19\nAIP SUP IFR 047/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR W125/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR P011/2019 EFFECTIVE DATE 14 MAR 19\nAIC IFR Y038/2019 EFFECTIVE DATE 09 MAY 19\nAIC IFR M030/2019 EFFECTIVE DATE 11 APR 19\nAIC IFR G097/2009 EFFECTIVE DATE 31 DEC 09"
+            },
+            {
+                "title": "N0196/19 NOTAMR N0166/19",
+                "type": "FIR",
+                "notam": "Q) EGXX/QKKKK/K /K  /K /000/999/5218N01451W999\nA) EGGX EGPX EGTT B) 1910010005 C) 1911010005 EST\nE) CHECKLIST\nYEAR=2019 0140 0146 0150 0153 0165 0170 0171 0172 0179 0180 0181 0182\n          0183 0192 0195\n \nLATEST PUBLICATIONS\nAIP AIRAC AMDT IFR 012/2019 EFFECTIVE DATE 07 NOV 19\nAIP SUP IFR 047/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR W125/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR P011/2019 EFFECTIVE DATE 14 MAR 19\nAIC IFR Y038/2019 EFFECTIVE DATE 09 MAY 19\nAIC IFR M030/2019 EFFECTIVE DATE 11 APR 19\nAIC IFR G097/2009 EFFECTIVE DATE 31 DEC 09"
+            },
+            {
+                "title": "M5449/19 NOTAMR M4803/19",
+                "type": "FIR",
+                "notam": "Q) EGXX/QKKKK/K /K  /K /000/999/5218N01451W999\nA) EGGX EGPX EGTT B) 1910010005 C) 1911010005 EST\nE) CHECKLIST\nYEAR=2019 5427 5428 5429 5431 5433 5434 5435 5436 5437 5438 5439 5440\n          5441 5442 5444 5445\n \nLATEST PUBLICATIONS\nAIP AIRAC AMDT IFR 012/2019 EFFECTIVE DATE 07 NOV 19\nAIP SUP IFR 047/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR W125/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR P011/2019 EFFECTIVE DATE 14 MAR 19\nAIC IFR Y038/2019 EFFECTIVE DATE 09 MAY 19\nAIC IFR M030/2019 EFFECTIVE DATE 11 APR 19\nAIC IFR G097/2009 EFFECTIVE DATE 31 DEC 09"
+            },
+            {
+                "title": "Q0362/19 NOTAMR Q0329/19",
+                "type": "FIR",
+                "notam": "Q) EGXX/QKKKK/K /K  /K /000/999/5218N01451W999\nA) EGGX EGPX EGTT B) 1910010005 C) 1911010005 EST\nE) CHECKLIST\nYEAR=2016 0322\nYEAR=2017 0317 0318 0319 0320 0321\nYEAR=2018 0337\nYEAR=2019 0135 0330 0331 0332 0343 0344 0347 0348 0355 0358 0359 0360\n \nLATEST PUBLICATIONS\nAIP AIRAC AMDT IFR 012/2019 EFFECTIVE DATE 07 NOV 19\nAIP SUP IFR 047/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR W125/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR P011/2019 EFFECTIVE DATE 14 MAR 19\nAIC IFR Y038/2019 EFFECTIVE DATE 09 MAY 19\nAIC IFR M030/2019 EFFECTIVE DATE 11 APR 19\nAIC IFR G097/2009 EFFECTIVE DATE 31 DEC 09"
+            },
+            {
+                "title": "U4283/19 NOTAMR U3777/19",
+                "type": "FIR",
+                "notam": "Q) EGXX/QKKKK/K /K  /K /000/999/5218N01451W999\nA) EGGX EGPX EGTT B) 1910010005 C) 1911010005 EST\nE) CHECKLIST\nYEAR=2019 1492 2264 2652 2817 2818 2833 2851 2880 2958 2966 2967 3002\n          3032 3046 3051 3097 3192 3194 3206 3208 3213 3215 3238 3260\n          3262 3301 3315 3387 3404 3414 3457 3460 3463 3486 3490 3491\n          3492 3495 3496 3499 3502 3546 3630 3641 3677 3681 3748 3764\n          3779 3781 3782 3789 3790 3826 3843 3910 3930 3947 3948 3951\n          3965 3966 3969 3979 3986 4007 4034 4036 4039 4046 4053 4054\n          4055 4056 4057 4058 4059 4060 4061 4062 4063 4064 4065 4066\n          4067 4068 4069 4070 4071 4072 4082 4083 4084 4085 4086 4090\n          4098 4116 4139 4143 4145 4147 4150 4151 4152 4153 4159 4160\n          4172 4173 4174 4179 4180 4181 4183 4185 4186 4187 4188 4191\n          4195 4202 4203 4206 4207 4210 4212 4218 4219 4220 4224 4225\n          4235 4237 4243 4246 4247 4251 4255 4257 4259 4260 4262 4263\n          4264 4265 4266 4267 4268 4269 4270 4271 4272 4273 4274 4275\n          4277 4280 4281 4282\n \nLATEST PUBLICATIONS\nAIP AIRAC AMDT IFR 012/2019 EFFECTIVE DATE 07 NOV 19\nAIP SUP IFR 047/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR W125/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR P011/2019 EFFECTIVE DATE 14 MAR 19\nAIC IFR Y038/2019 EFFECTIVE DATE 09 MAY 19\nAIC IFR M030/2019 EFFECTIVE DATE 11 APR 19\nAIC IFR G097/2009 EFFECTIVE DATE 31 DEC 09"
+            },
+            {
+                "title": "H6365/19 NOTAMR H5648/19",
+                "type": "FIR",
+                "notam": "Q) EGXX/QKKKK/K /K  /K /000/999/5218N01451W999\nA) EGGX EGPX EGTT B) 1910010005 C) 1911010005 EST\nE) CHECKLIST\nYEAR=2019 3241 3339 3341 3342 4004 4011 4041 4042 4043 4044 4046 4047\n  4138 4139 4140 4141 4142 4144 4159 4174 4176 4182 4375 4393\n  4394 4441 4442 4445 4446 4448 4541 4657 4658 4669 4681 4682\n  4683 4724 4726 4727 4728 4760 4786 4793 4794 4797 4798 4803\n  4806 4821 4824 4825 4826 4827 4828 4839 4840 4855 4911 4965\n  5059 5167 5185 5303 5362 5377 5515 5516 5578 5595 5629 5632\n  5667 5668 5669 5711 5815 5863 5878 5888 5889 5891 5893 5894\n  5895 5898 5920 5921 5924 5926 5927 5929 5932 5934 5935 5937\n  5938 5943 5945 5946 5947 5949 5950 5951 5953 5954 5973 5975\n  5976 5980 5998 5999 6000 6003 6025 6060 6079 6101 6102 6115\n  6117 6120 6121 6124 6125 6133 6135 6136 6137 6138 6139 6140\n  6147 6149 6156 6160 6162 6163 6171 6204 6208 6210 6211 6212\n  6213 6214 6215 6217 6218 6219 6221 6222 6224 6226 6229 6230\n  6231 6232 6237 6238 6239 6242 6248 6250 6254 6255 6260 6261\n  6271 6273 6274 6282 6283 6284 6285 6287 6290 6291 6292 6293\n  6294 6301 6302 6303 6304 6306 6307 6308 6309 6311 6312 6319\n  6321 6322 6325 6327 6328 6329 6330 6331 6333 6334 6335 6336\n  6337 6338 6339 6340 6341 6342 6343 6344 6345 6346 6347 6348\n  6349 6350 6351 6352 6353 6354 6355 6356 6357 6358 6359 6360\n  6361 6362 6364\nLATEST PUBLICATIONS\nAIP AIRAC AMDT IFR 012/2019 EFFECTIVE DATE 07 NOV 19\nAIP SUP IFR 047/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR W125/2019 EFFECTIVE DATE 26 SEP 19\nAIC IFR Y038/2019 EFFECTIVE DATE 09 MAY 19\nAIC IFR M030/2019 EFFECTIVE DATE 11 APR 19\nAIC IFR G097/2009 EFFECTIVE DATE 31 DEC 09"
+            },
+            {
+                "title": "B1801/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QAFXX/IV/NBO/E /000/035/5702N00304W001\nA) EGPX B) 1912010001 C) PERM\nE) UK AIP ADD NEW RESTRICTED AREA\nCOLUMN 1\nEG R705  BIRKHALL\nA CIRCLE, 1 NM  RADIUS CENTRED AT 570144N 0030427W\nCOLUMN 2\nUPPER LIMIT 3500 FT ALT\nLOWER LIMIT SFC\nCOLUMN 3\nFLIGHT PERMITTED BY\nANY AIRCRAFT OPERATED BY, OR ON BEHALF OF, POLICE SCOTLAND.\nANY AIRCRAFT OPERATED BY, OR ON BEHALF OF,  THE SCOTTISH AIR \nAMBULANCE SERVICE.\nANY AIRCRAFT OPERATED BY, OR ON BEHALF OF, THE MARITIME AND \nCOASTGUARD AGENCY FOR THE PURPOSES OF A SEARCH AND RESCUE\nOPERATION.\nANY AIRCRAFT OPERATED BY, OR ON BEHALF OF, THE QUEEN&apos;S HELICOPTER \nFLIGHT.\nANY AIRCRAFT FLYING IN ACCORDANCE WITH A PERMISSION ISSUED BY THE \nPOLICE SCOTLAND ROYALTY AND VIP PLANNING NORTH UNIT OR THE \nMETROPOLITAN POLICE, ROYALTY AND SPECIALIST PROTECTION. OR\nEITHER -\nOPERATED BY A MEMBER OF THE ROYAL FAMILY,\nOR LANDING IN THE GROUNDS OF BIRKHALL AT THE INVITATION OF THE \nPERSON IN CHARGE OF THE HOUSEHOLD THERE, PROVIDED THAT THE POLICE \nSCOTLAND ROYALTY AND VIP PLANNING NORTH UNIT OR THE METROPOLITAN \nPOLICE, ROYALTY AND SPECIALIST PROTECTION HAS BEEN INFORMED IN \nADVANCE OF SUCH INTENDED FLIGHT OR LANDING.\nS.I NUMBER 2019-1320\nCONTACT REFER TO STATUTORY INSTRUMENT.\nENR 5.1 REFERS"
+            },
+            {
+                "title": "V0018/19 NOTAMR V0013/19",
+                "type": "FIR",
+                "notam": "Q) EGXX/QROXX/IV/NBO/W /000/999/5218N01451W999\nA) EGTT EGPX EGGX B) 1910220850 C) 2001211300 EST\nE) AIRSPACE SECURITY WARNINGS ISSUED BY THE DEPARTMENT FOR TRANSPORT\nIN RESPONSE TO HAZARDOUS SITUATIONS WITHIN THE TERRITORY AND/OR\nAIRSPACE OF AFGHANISTAN, EGYPT, IRAQ, KENYA, LIBYA, MALI, NORTH\nKOREA, PAKISTAN, SOMALIA, SOUTH SUDAN, SYRIA, UP TO 200NM OUTSIDE THE\nDAMASCUS FIR, UKRAINE AND YEMEN. ALL OPERATORS ARE TO REFER TO THE\nTABLE IN UK AIP AT ENR 1.1 SECTION 1.4 FOR FURTHER DETAILS.\n2018-03-0229-AS1\nF) SFC G) UNL"
+            },
+            {
+                "title": "B1909/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGXX/QOATT/IV/M  /E /000/999/5218N01451W999\nA) EGTT EGPX EGGX B) 1912050000 C) 1912192359\nE) AIRAC EFFECTIVE DATE 05 DEC 2019 NIL"
+            },
+            {
+                "title": "H6505/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QWELW/IV/BO /W /000/999/5421N00738W001\nA) EGPX B) 1911291600 C) 1912142000\nD) 29-30 1600-2000, 01 06 08 13 14 1600-2000\nE) LASER DISPLAY WI 1NM 542042N 0073739W (ENNISKILLEN, FERMANAGH).\nFOR INFO 07729 639365. 2019-11-0213/AS2\nF) SFC G) UNL"
+            },
+            {
+                "title": "B1209/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QATXX/IV/NBO/E /055/195/5526N00336W008\nA) EGPX B) 1912101300 C) 1912101330\nE) EMERGENCY MANDATORY TRANSPONDER ZONE ESTABLISHED IN A PORTION OF\nTHE SCOTTISH TMA DUE TO CUMBERNAULD PRIMARY RADAR ON MAINTENANCE.\nAFFECTED AREA IS DEFINED BY COORD \n5533N 00341W - 5533N 00330W - 5520N 00330W - 5520N 00341W - \n5533N 00341W, \nBTN 5500FT AMSL/FL195. ALL ACFT OPR WI CONTROLLED AIRSPAC IN THIS \nAREA ARE REQUIRED TO OPERATE A SERVICEABLE TRANSPONDER."
+            },
+            {
+                "title": "U4417/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGXX/QAFXX/IV/NBO/E /000/999/5504N00500W999\nA) EGTT EGPX B) 1910050001 C) 1912052359\nE) LATEST MIL PUBLICATIONS\nUK MIL AIP AIC W MIL 005/2019\nUK MIL AIP AIC Y MIL 002/2019"
+            },
+            {
+                "title": "K0116/19 NOTAMR K0113/19",
+                "type": "FIR",
+                "notam": "Q) EGPX/QOBCE/IV/M  /E /000/003/5734N00207W001\nA) EGPX B) 1910010950 C) 1912012359\nE) REPORT OF A WIND TURBINE IN LOW FLYING AREA 14 AND NIGHT\nSECTOR 1D WI 1NM RADIUS OF PSN 573401N 0020632W (STRICHEN,\nABERDEENSHIRE) MAX HEIGHT 250FT AGL/619FT AMSL. 19/10/002/LFTP"
+            },
+            {
+                "title": "F0301/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGXX/QRDCA/IV/BO /W /000/350/5507N00523W012\nA) EGTT EGPX B) 1911220700 C) 1911232000\nE) DANGER AREA EG D509 CAMPBELTOWN ACTIVATED\nF) SFC G) 35000FT AMSL"
+            },
+            {
+                "title": "H4855/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QWMLW/IV/BO /W /000/160/5543N00448W002\nA) EGPX B) 1911231200 C) 1911231700\nE) MODEL ROCKET FIRING WI 2NM LOCATION 554300N 0044800W (FAIRLIE \nMOOR, NORTH AYRSHIRE). LAUNCH SUBJ ATC CLR. FOR INFO 07733 250135.\n2019-11-0004/AS2\nF) SFC G) 16000FT AMSL"
+            },
+            {
+                "title": "B1685/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGXX/QAFTT/IV/BO /E /000/999/5218N01451W999\nA) EGTT EGPX EGGX B) 1911070000 C) 1911212359\nE) TRIGGER NOTAM - PERM AIRAC AIP AMDT 12/19 WEF 07 NOV 2019.\nMULTIPLE CHANGES, SEE COVER SHEET FOR FULL DETAILS."
+            },
+            {
+                "title": "N0205/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QOLAS/IV/M  /E /000/013/5811N00635W001\nA) EGPX B) 1910120832 C) 1911122359\nE) AIR NAV OBST LGT UK0150J095F EITSHAL RTM SINGLE U/S\nPSN 581044.81N 0063505.79W. ELEV 1233FT, HGT 569FT"
+            },
+            {
+                "title": "F0364/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGXX/QRDCA/IV/BO /W /000/350/5507N00523W012\nA) EGTT EGPX B) 1911111000 C) 1911122359\nE) DANGER AREA EG D509 CAMPBELTOWN ACTIVATED\nF) SFC G) 35000FT AMSL"
+            },
+            {
+                "title": "H4965/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QWZLW/IV/M  /W /000/016/5601N00248W001\nA) EGPX B) 1908120405 C) 1911121639\nD) SR MINUS30-SS PLUS30\nE) FLYING OF LARGE MODEL ACFT WI 1NM RADIUS OF 560050N 0024738W\n(DREM, EAST LOTHIAN). FOR INFO, 07770 746850. 2019-05-0385/AS5.\nF) SFC G) 1600FT AMSL"
+            },
+            {
+                "title": "B1208/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QATXX/IV/NBO/E /055/195/5526N00336W008\nA) EGPX B) 1911101300 C) 1911101330\nE) EMERGENCY MANDATORY TRANSPONDER ZONE ESTABLISHED IN A PORTION OF\nTHE SCOTTISH TMA DUE TO CUMBERNAULD PRIMARY RADAR ON MAINTENANCE.\nAFFECTED AREA IS DEFINED BY COORD \n5533N 00341W - 5533N 00330W - 5520N 00330W - 5520N 00341W - \n5533N 00341W, \nBTN 5500FT AMSL/FL195. ALL ACFT OPR WI CONTROLLED AIRSPAC IN THIS \nAREA ARE REQUIRED TO OPERATE A SERVICEABLE TRANSPONDER."
+            },
+            {
+                "title": "B1913/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGXX/QAFTT/IV/BO /E /000/999/5218N01451W999\nA) EGTT EGPX EGGX B) 1910240944 C) 1911072359\nE) TRIGGER NOTAM - LATEST BATCH OF SUPPLEMENTS ISSUED ON 24 OCT 19\nSUP 051/2019 REFERS"
+            },
+            {
+                "title": "U4185/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGXX/QAFXX/IV/NBO/E /000/999/5504N00500W999\nA) EGTT EGPX B) 1909260000 C) 1911062359\nE) ALL PCN DATA CONTAINED WITHIN NO1 AIDU CURRENTLY PUBLISHED ERS \nFLIPS SHOULD BE CONSIDERED ERRONEOUS (BINA, SAAAFE, NOREU, EUMED) . \nCONSULT HOST COUNTRY AIP FOR CORRECT INFORMATION."
+            },
+            {
+                "title": "H6890/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QWMLW/IV/BO /W /000/008/5551N00414W001\nA) EGPX B) 1911051915 C) 1911052045\nE) FIREWORK DISPLAY WI 0.5NM RADIUS 555112N 0041423W (SALTMARKET,\nGLASGOW). FOR INFO 07768 116640. 2019-11-0174/AS5\nF) SFC G) 750FT AMSL"
+            },
+            {
+                "title": "H6913/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QWMLW/IV/BO /W /000/008/5556N00435W001\nA) EGPX B) 1911041915 C) 1911042045\nE) FIREWORK DISPLAY WI 0.5NM RADIUS 555618N 0043430W (DUMBARTON,\nDUMBARTONSHIRE). FOR INFO 077636 38313. 2019-11-0343/AS5\nF) SFC G) 750FT AMSL"
+            },
+            {
+                "title": "H6439/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QWMLW/IV/BO /W /000/008/5628N00257W001\nA) EGPX B) 1911021745 C) 1911022015\nE) FIREWORK DISPLAY WI 0.5NM RADIUS 562809N 0025704W (BAXTER PARK,\nDUNDEE). FOR INFO 07854473312. 2019-10-0191/AS2\nF) SFC G) 800FT AMSL"
+            },
+            {
+                "title": "H4806/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QWMLW/IV/BO /W /000/160/5543N00448W002\nA) EGPX B) 1911021200 C) 1911021700\nE) MODEL ROCKET FIRING WI 2NM LOCATION 554300N 0044800W (FAIRLIE \nMOOR, NORTH AYRSHIRE). LAUNCH SUBJ ATC CLR. FOR INFO 07733 250135. \n2019-11-0003/AS2\nF) SFC G) 16000FT AMSL"
+            },
+            {
+                "title": "K0126/19 NOTAMR K0118/19",
+                "type": "FIR",
+                "notam": "Q) EGPX/QOBCE/IV/M  /E /000/011/5503N00233W001\nA) EGPX B) 1910230756 C) 1911012359\nE) REPORT OF A CRANE IN LOW FLYING AREA 13 AND 20T WI 1NM RADIUS OF\nPSN 550303N 0023311W (RAF SPADEADAM, CUMBRIA) MAX HEIGHT 120FT\nAGL/1049FT AMSL. 19/10/030/LFTP"
+            },
+            {
+                "title": "H6375/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QWMLW/IV/BO /W /000/009/5557N00418W001\nA) EGPX B) 1911011915 C) 1911012015\nE) FIREWORK DISPLAY WI 0.5NM RADIUS 555651N 0041747W (MILNGAVIE,\nDUNBARTONSHIRE). FOR INFO 07851 978990. 2019-11-0147/AS2\nF) SFC G) 900FT AMSL"
+            },
+            {
+                "title": "H6662/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QWULW/IV/BO /W /000/017/5804N00351W005\nA) EGPX B) 1910140700 C) 1911011600\nD) 0700-1600\nE) UAS OPR EXTENDED VISUAL LINE OF SIGHT WI 5NM RADIUS OF\n580403N 0035111W (LOTHBEG, SCOTTISH HIGHLANDS) MAX HGT 600FT AGL. \nFOR INFO 07864 512974. 2019-10-0271/AS2\nF) SFC G) 1700FT AMSL"
+            },
+            {
+                "title": "H6306/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QWZLW/IV/M  /W /000/020/5515N00153W001\nA) EGPX B) 1910010930 C) 1910311703\nD) 01-26 0930-SS PLUS30, 27-31 1030-SS PLUS30\nE) FLYING OF LARGE MODEL ACFT WI 1NM RADIUS OF 551444N 0015250W\n(RITTON BANK, NORTHUMBERLAND). FOR INFO, 07880 592218.\n2019-10-0119/AS5.\nF) SFC G) 2000FT AMSL"
+            },
+            {
+                "title": "H5863/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QWDLW/IV/M  /W /000/011/5603N00341W001\nA) EGPX B) 1910310800 C) 1910311000\nE) EXPLOSIVE DEMOLITION WI 0.5NM RADIUS OF 560259N 0034050W\n(LONGANNET, FIFE). FOR INFO 07920 040350. 2019-10-0046/AS2\nF) SFC G) 1100FT AMSL"
+            },
+            {
+                "title": "H6379/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QWELW/IV/BO /W /000/999/5500N00719W001\nA) EGPX B) 1910281700 C) 1910301930\nD) 1700-1930\nE) LASER DISPLAY WI 1NM 545939N 0071917W (LONDONDERRY, NORTHERN\nIRELAND). FOR INFO 02871 373538. 2019-10-0148/AS2\nF) SFC G) UNL"
+            },
+            {
+                "title": "K0124/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QOBCE/IV/M  /E /000/003/5552N00425W001\nA) EGPX B) 1910280001 C) 1910282359\nE) REPORT OF A CRANE IN LOW FLYING AREA 16, NIGHT SECTOR 2B AND\nGLASGOW/PRESTWICK AVOIDANCE AREA WI 1NM RADIUS OF PSN \n555214N 0042451W (RENFREW, RENFREWSHIRE) MAX HEIGHT 230FT AGL/235FT \nAMSL. 19/10/025/LFTP"
+            },
+            {
+                "title": "H6985/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QWPLW/IV/M  /W /000/037/5647N00359W003\nA) EGPX B) 1910280700 C) 1910281900\nE) DROPPING OF ARTICLES FM ACFT WI 3NM RADIUS 564713N 0035853W\n(CLUNES, INVERNESS). FOR INFO CONTACT 01993 897894. 2019-10-0413/AS4\nF) SFC G) 3700FT AMSL"
+            },
+            {
+                "title": "H6986/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QWPLW/IV/M  /W /000/030/5634N00447W003\nA) EGPX B) 1910280700 C) 1910281900\nE) DROPPING OF ARTICLES FM ACFT WI 3NM RADIUS 563344N 0044726W\n(BLACKMOUNT, ARGYLL AND BUTE). FOR INFO CONTACT 01993 897894.\n2019-10-0409/AS4\nF) SFC G) 3000FT AMSL"
+            },
+            {
+                "title": "H6987/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QWPLW/IV/M  /W /000/045/5638N00446W003\nA) EGPX B) 1910280700 C) 1910281900\nE) DROPPING OF ARTICLES FM ACFT WI 3NM RADIUS 563732N 0044544W\n(RANNOCH MOOR, PERTHSHIRE). FOR INFO CONTACT 01993 897894.\n2019-10-0411/AS4\nF) SFC G) 4500FT AMSL"
+            },
+            {
+                "title": "H6989/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QWPLW/IV/M  /W /000/042/5644N00416W003\nA) EGPX B) 1910280700 C) 1910281900\nE) DROPPING OF ARTICLES FM ACFT WI 3NM RADIUS 564340N 0041544W\n(CRAIGANOUR, PERTHSHIRE). FOR INFO CONTACT 01993 897894.\n2019-10-0410/AS4\nF) SFC G) 4200FT AMSL"
+            },
+            {
+                "title": "H6990/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QWPLW/IV/M  /W /000/041/5625N00348W003\nA) EGPX B) 1910280700 C) 1910281900\nE) DROPPING OF ARTICLES FM ACFT WI 3NM RADIUS 562458N 0034820W\n(SHAGGIE BURN, PERTH AND KINROSS). FOR INFO CONTACT 01993 897894.\n2019-10-0412/AS4\nF) SFC G) 4100FT AMSL"
+            },
+            {
+                "title": "M6038/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QRDCA/IV/BO /W /000/300/5837N00204W049\nA) EGPX B) 1910281100 C) 1910281700\nE) THE FOLLOWING MORAY FIRTH DANGER AREAS ARE ACTIVATED:\nEG D809N 1100-1300 SFC-30000FT AMSL\nEG D809N 1500-1700 SFC-30000FT AMSL\nEG D809C 1100-1300 SFC-30000FT AMSL\nEG D809C 1500-1700 SFC-30000FT AMSL\nEG D809S 1100-1300 SFC-30000FT AMSL\nEG D809S 1500-1700 SFC-30000FT AMSL\nF) SFC G) 30000FT AMSL"
+            },
+            {
+                "title": "M6031/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGXX/QRDCA/IV/BO /W /050/660/5453N00036E062\nA) EGTT EGPX B) 1910280915 C) 1910281615\nE) THE FOLLOWING SOUTHERN MANAGED DANGER AREAS ARE ACTIVATED:\nEG D323A 0915-1045 FL050-FL660\nEG D323A 1400-1515 FL050-FL660\nEG D323A 1515-1615 FL050-FL660\nEG D323G 1515-1615 FL150-FL660\nEG D323L 0915-1045 FL100-FL300\nEG D323L 1400-1515 FL100-FL300\nEG D323L 1515-1615 FL100-FL660\nEG D323Q 0915-1045 FL100-FL300\nEG D323Q 1400-1515 FL100-FL300\nEG D323Q 1515-1615 FL100-FL660\nF) FL050 G) FL660"
+            },
+            {
+                "title": "M6032/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGXX/QRDCA/IV/BO /W /050/660/5442N00046E063\nA) EGTT EGPX B) 1910280915 C) 1910281615\nE) THE FOLLOWING SOUTHERN MANAGED DANGER AREAS ARE ACTIVATED:\nEG D323B 0915-1045 FL050-FL660\nEG D323B 1400-1515 FL050-FL660\nEG D323B 1515-1615 FL050-FL660\nEG D323H 1515-1615 FL150-FL660\nEG D323M 0915-1045 FL100-FL300\nEG D323M 1400-1515 FL100-FL300\nEG D323M 1515-1615 FL100-FL660\nEG D323R 0915-1045 FL100-FL300\nEG D323R 1400-1515 FL100-FL300\nEG D323R 1515-1615 FL100-FL660\nF) FL050 G) FL660"
+            },
+            {
+                "title": "M6036/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QRDCA/IV/BO /W /000/230/5530N00035W032\nA) EGPX B) 1910281400 C) 1910281500\nE) THE FOLLOWING DRURIDGE BAY DANGER AREAS ARE ACTIVATED:\nEG D513A 1400-1500 SFC-FL230\nEG D513B 1400-1500 SFC-FL230\nEG D513C 1400-1500 SFC-FL100\nF) SFC G) FL230"
+            },
+            {
+                "title": "M6037/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QRDCA/IV/BO /W /100/660/5640N00006E072\nA) EGPX B) 1910281400 C) 1910281500\nE) THE FOLLOWING CENTRAL MANAGED DANGER AREAS ARE ACTIVATED:\nEG D613A 1400-1500 FL100-FL660\nEG D613B 1400-1500 FL100-FL660\nEG D613C 1400-1500 FL100-FL660\nEG D613D 1400-1500 FL100-FL660\nF) FL100 G) FL660"
+            },
+            {
+                "title": "D1573/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QRDCA/IV/BO /W /000/055/5503N00235W002\nA) EGPX B) 1910270600 C) 1910271800\nE) SPADEADAM DANGER AREA ADDITIONALLY ACTIVE\nEG D510C SPADEADAM\nNO DANGER AREA CROSSING SERVICE AVAILABLE.\nF) SFC G) 5500FT AMSL"
+            },
+            {
+                "title": "H6820/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QWGLW/IV/M  /W /100/195/5539N00220W041\nA) EGPX B) 1910190900 C) 1910271730\nD) 0900-1730\nE) GLD FLY WO SSR TRANSPONDER WILL TAKE PLACE WI AREA\n561200N 0030000W - 561200N 0023500W - 560000N 0020000W -\n553800N 0013700W - 551200N 0013000W - 550000N 0021200W -\n550000N 0022700W - 551200N 0023000W - 552200N 0022200W -\n552700N 0023500W - 553800N 0024800W - 560000N 0024800W -\n561200N 0030000W\nREF AIP ENR 1.1\nF) FL100 G) FL195"
+            },
+            {
+                "title": "M6024/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QRDCA/IV/BO /W /000/300/5837N00204W049\nA) EGPX B) 1910271300 C) 1910271500\nE) THE FOLLOWING MORAY FIRTH DANGER AREAS ARE ACTIVATED:\nEG D809N 1300-1500 SFC-30000FT AMSL\nEG D809C 1300-1500 SFC-30000FT AMSL\nEG D809S 1300-1500 SFC-30000FT AMSL\nF) SFC G) 30000FT AMSL"
+            },
+            {
+                "title": "H6968/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QWMLW/IV/BO /W /000/005/5440N00544W001\nA) EGPX B) 1910261545 C) 1910261815\nE) FIREWORK DISPLAY WI 0.5NM RADIUS 543951N 0054357W (BANGOR,\nNORTHERN IRELAND) . FOR INFO 02891853307. 2019-10-0390/AS5\nF) SFC G) 500FT AMSL"
+            },
+            {
+                "title": "D1572/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QRDCA/IV/BO /W /000/055/5503N00235W002\nA) EGPX B) 1910260600 C) 1910261800\nE) SPADEADAM DANGER AREA ADDITIONALLY ACTIVE\nEG D510C SPADEADAM\nNO DANGER AREA CROSSING SERVICE AVAILABLE.\nF) SFC G) 5500FT AMSL"
+            },
+            {
+                "title": "H6972/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QWGLW/IV/M  /W /100/195/5716N00443W124\nA) EGPX B) 1910260706 C) 1910261649\nE) GLD FLY WO SSR TRANSPONDER WI 553000N 0063000W - 563000N 0063000W \n- 571500N 0050000W - 590000N 0050000W - 590000N 0024500W - \n573000N 0013000W - 570000N 0013000W - 560700N 0023000W - \n560703N 0040000W - 561400N 0040926W -555330N 0050000W - \n553000N 0050000W - 553000N 0063000W\nREF AIP ENR 1.1\nF) FL100 G) FL195"
+            },
+            {
+                "title": "D1571/19 NOTAMN",
+                "type": "FIR",
+                "notam": "Q) EGPX/QRDCA/IV/BO /W /000/055/5503N00235W002\nA) EGPX B) 1910251500 C) 1910252230\nE) SPADEADAM DANGER AREA ADDITIONALLY ACTIVE\nEG D510C SPADEADAM\nNO DANGER AREA CROSSING SERVICE AVAILABLE.\nF) SFC G) 5500FT AMSL"
+            }
+        ]
+    },
+    "other_notam": {
+        "KGPS": []
+    },
+    "Timestamp": "2019-10-25T17:48:08.230Z"
+}

@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content renders properly when empty 1`] = `ShallowWrapper {}`;
+
+exports[`content renders properly with data 1`] = `ShallowWrapper {}`;

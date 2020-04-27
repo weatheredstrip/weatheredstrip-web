@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`footer renders properly 1`] = `
+<div
+  class="footer"
+>
+  <div
+    class="footer-content"
+  >
+    <div
+      class="footer-item"
+    >
+      Data from 
+      <a
+        href="https://flightplanning.navcanada.ca"
+      >
+        NAV CANADA
+      </a>
+      ℠, 
+      <a
+        href="https://www.aviationweather.gov"
+      >
+        AWC
+      </a>
+      ℠ and
+       
+      <a
+        href="https://notams.aim.faa.gov"
+      >
+        FAA
+      </a>
+      ℠
+    </div>
+    <div
+      class="footer-item"
+    >
+      <div>
+        <a
+          href="https://github.com/GregoryHamel/weatheredstrip/issues"
+        >
+          Report an Issue
+        </a>
+      </div>
+      <div>
+        ©
+         
+        <a
+          href="http://www.greghamel.com"
+        >
+          Greg Hamel - 
+          2020
+        </a>
+      </div>
+    </div>
+    <div
+      class="footer-item"
+    >
+      Made in
+       
+      <span
+        aria-label="Canada"
+        role="img"
+      >
+        🍁
+      </span>
+       
+      with
+       
+      <span
+        aria-label="love"
+        role="img"
+      >
+        ❤️
+      </span>
+    </div>
+  </div>
+</div>
+`;

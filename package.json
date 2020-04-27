@@ -1,0 +1,70 @@
+{
+  "name": "client",
+  "version": "0.9.0",
+  "author": "Greg Hamel <hamegreg@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/react-fontawesome": "^0.1.8",
+    "@testing-library/react": "^9.0.1",
+    "@testing-library/user-event": "^8.1.0",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "evergreen-ui": "^4.27.2",
+    "firebase-tools": "^7.6.1",
+    "husky": "^3.0.7",
+    "moment": "^2.23.0",
+    "prettier": "^1.18.2",
+    "query-string": "^6.2.0",
+    "react": "^16.6.3",
+    "react-app-polyfill": "^1.0.1",
+    "react-dom": "^16.6.3",
+    "react-live-clock": "^3.0.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.2.0",
+    "react-to-print": "^2.4.0",
+    "recompose": "^0.30.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.8.0",
+    "firebase": "^7.2.2",
+    "jest-dom": "^3.0.0",
+    "react-test-renderer": "^16.7.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --coverage",
+    "eject": "react-scripts eject",
+    "test-local": "react-scripts test"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all",
+    "IE 11",
+    "IE 10",
+    "IE 9"
+  ],
+  "resolutions": {
+    "**/**/lodash": "^4.17.13",
+    "**/**/set-value": "^2.0.1",
+    "**/**/handlebars": "^4.3.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!<rootDir>/src/components/Firebase/",
+      "!<rootDir>/src/includes-polyfill.js",
+      "!<rootDir>/src/serviceWorker.js",
+      "!<rootDir>/src/index.js",
+      "!<rootDir>/node_modules/"
+    ]
+  }
+}

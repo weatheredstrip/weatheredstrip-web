@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`empty taf renders empty 1`] = `
+<div
+  class="tafs"
+>
+  <div>
+    No TAF is issued for this station.
+  </div>
+</div>
+`;
+
+exports[`no taf renders empty 1`] = `
+<div
+  class="tafs"
+>
+  <div>
+    No TAF is issued for this station.
+  </div>
+</div>
+`;
+
+exports[`taf renders properly 1`] = `
+<div
+  class="tafs"
+>
+  <div
+    class="notif-text"
+  >
+    TAF CYMX 251138Z 2512/2612 VRB03KT P6SM SCT180 BKN220 TEMPO 2512/2513 1/2SM FG BKN001 OVC180
+  </div>
+  <div
+    class="notif-text"
+  >
+    FM251500 24005KT P6SM BKN160 BKN240
+  </div>
+  <div
+    class="notif-text"
+  >
+    FM260200 26005KT P6SM SKC
+  </div>
+  <div
+    class="notif-text"
+  >
+    FM260600 VRB03KT P6SM BKN040
+  </div>
+  <div
+    class="notif-text"
+  >
+    PROB30 2606/2612 1/2SM FG BKN001
+  </div>
+  <div
+    class="notif-text"
+  >
+    RMK NXT FCST BY 251800Z
+  </div>
+</div>
+`;
+
+exports[`taf renders properly 2`] = `
+<div
+  class="tafs"
+>
+  <div
+    class="notif-text"
+  >
+    KSFO 251504Z 2515/2618 00000KT P6SM SKC
+  </div>
+  <div
+    class="notif-text"
+  >
+    FM251600 10003KT 6SM FU FEW070
+  </div>
+  <div
+    class="notif-text"
+  >
+    FM252000 04003KT 6SM FU FEW070
+  </div>
+  <div
+    class="notif-text"
+  >
+    FM260000 29012KT 6SM FU FEW070
+  </div>
+  <div
+    class="notif-text"
+  >
+    FM260400 28008KT 6SM FU FEW080
+  </div>
+</div>
+`;
+
+exports[`taf renders properly 3`] = `
+<div
+  class="tafs"
+>
+  <div
+    class="notif-text"
+  >
+    TAF EGPK 251102Z 2512/2612 19007KT 9999 FEW020 SCT035
+  </div>
+  <div
+    class="notif-text"
+  >
+    PROB30 TEMPO 2512/2518 6000 RA BKN012 BECMG 2609/2612 25012KT
+  </div>
+</div>
+`;
+
+exports[`taf renders properly 4`] = `
+<div
+  class="tafs"
+>
+  <div>
+    No TAF is issued for this station.
+  </div>
+</div>
+`;
+
+exports[`taf renders properly 5`] = `
+<div
+  class="tafs"
+>
+  <div>
+    No TAF is issued for this station.
+  </div>
+</div>
+`;

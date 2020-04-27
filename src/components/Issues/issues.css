@@ -1,0 +1,10 @@
+.issues-title {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+}
+
+.issues-popover {
+  position: relative;
+  z-index: 99;
+}

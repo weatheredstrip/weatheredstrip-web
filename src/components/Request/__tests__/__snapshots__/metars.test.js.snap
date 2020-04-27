@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`empty metar renders nothing 1`] = `
+<div
+  class="Metars"
+>
+  <div>
+    No METAR is issued for this station.
+  </div>
+</div>
+`;
+
+exports[`empty metar renders nothing 2`] = `
+<div
+  class="Metars"
+>
+  <div>
+    No METAR is issued for this station.
+  </div>
+</div>
+`;
+
+exports[`metar renders properly 1`] = `
+<div
+  class="Metars"
+>
+  <div
+    class="notif-text"
+  >
+    METAR CYMX 251700Z 20004KT 170V260 45SM FEW030 SCT120 BKN220 08/04 A3027 RMK SC1AC3CI2 SLP254
+  </div>
+  <div
+    class="notif-text"
+  >
+    METAR CYMX 251600Z 24003KT 160V270 25SM FEW010 BKN120 OVC240 08/05 A3029 RMK SF1AS6CI2 SF TR SLP263
+  </div>
+  <div
+    class="notif-text"
+  >
+    METAR CYMX 251500Z VRB02KT 25SM FEW010 BKN130 06/06 A3030 RMK SF1AS7 SF TR SLP265
+  </div>
+  <div
+    class="notif-text"
+  >
+    METAR CYMX 251400Z 28003KT 250V310 20SM FEW001 BKN160 05/04 A3030 RMK ST1AS6 ST TR SLP266
+  </div>
+</div>
+`;
+
+exports[`metar renders properly 2`] = `
+<div
+  class="Metars"
+>
+  <div
+    class="notif-text"
+  >
+    METAR KSFO 251656Z 03003KT 10SM FEW200 19/12 A3012 RMK AO2 SLP198 T01940117
+  </div>
+  <div
+    class="notif-text"
+  >
+    METAR KSFO 251556Z 02003KT 10SM FEW200 19/11 A3011 RMK AO2 SLP196 T01940111
+  </div>
+  <div
+    class="notif-text"
+  >
+    METAR KSFO 251456Z 00000KT 10SM CLR 18/12 A3009 RMK AO2 SLP191 T01780122 53007
+  </div>
+  <div
+    class="notif-text"
+  >
+    SPECI KSFO 251356Z 00000KT 10SM CLR 16/06 A3009 RMK AO2 SLP188 T01610056 $
+  </div>
+</div>
+`;
+
+exports[`metar renders properly 3`] = `
+<div
+  class="Metars"
+>
+  <div
+    class="notif-text"
+  >
+    METAR EGPK 251720Z 00000KT 9999 -RA FEW018 SCT025 BKN035 06/05 Q1004
+  </div>
+  <div
+    class="notif-text"
+  >
+    METAR EGPK 251650Z 09002KT 9999 -RA FEW022 SCT030 06/05 Q1004
+  </div>
+  <div
+    class="notif-text"
+  >
+    METAR EGPK 251620Z 18002KT 9999 -RA FEW028 07/05 Q1004
+  </div>
+  <div
+    class="notif-text"
+  >
+    METAR EGPK 251550Z 00000KT 9999 FEW028 07/05 Q1004
+  </div>
+  <div
+    class="notif-text"
+  >
+    METAR EGPK 251520Z 00000KT 9999 FEW027 07/05 Q1004
+  </div>
+  <div
+    class="notif-text"
+  >
+    METAR EGPK 251450Z 18004KT 9999 FEW027 07/05 Q1005
+  </div>
+  <div
+    class="notif-text"
+  >
+    METAR EGPK 251420Z 18004KT 9999 FEW027 07/04 Q1005
+  </div>
+  <div
+    class="notif-text"
+  >
+    METAR EGPK 251350Z 18006KT 9999 FEW030 08/03 Q1005
+  </div>
+</div>
+`;
+
+exports[`metar renders properly 4`] = `
+<div
+  class="Metars"
+>
+  <div>
+    No METAR is issued for this station.
+  </div>
+</div>
+`;
+
+exports[`metar renders properly 5`] = `
+<div
+  class="Metars"
+>
+  <div>
+    No METAR is issued for this station.
+  </div>
+</div>
+`;
