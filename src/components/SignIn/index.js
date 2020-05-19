@@ -1,86 +1,126 @@
-import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
-import { compose } from 'recompose';
+import React, { Component, useState, useContext } from 'react';
+import { Dialog, Button, Pane, TextInput, Spinner, Menu } from 'evergreen-ui'
 
 import { SignUpLink } from '../SignUp';
 import { PasswordForgetLink } from '../PasswordForget';
 import { withFirebase } from '../Firebase';
-import * as ROUTES from '../../constants/routes';
 
 import './SignIn.css'
 
-const SignInPage = () => (
-  <div className="content">
-    <div className="user-content form-background">
-      <div className="login-form">
-        <div className="subtitle">Sign In</div>
-        <SignInForm />
-        <PasswordForgetLink />
-        <SignUpLink />
-      </div>
-    </div>
-  </div>
-);
+const SignInMenu = () => {
+  const [showSignIn, setShown] = useState(false)
+  return (
+    <>
+      <SignInDialog isShown={showSignIn} onClose={() => setShown(false)}/>
+      <Menu.Item icon="log-in" 
+        onSelect={() => {
+          setShown(true)
+        }}
+      >
+        Sign In
+      </Menu.Item>
+    </>
+  )
+}
+
+const LoadingContext = React.createContext({ isLoading: false });
+
+const SignInFooter = ({ isInvalid, onSubmit }) => {
+  const { isLoading } = useContext(LoadingContext)
+  const text = isLoading ? "Loading..." : "Sign In"
+  return(
+    <Button
+      appearance="primary"
+      disabled={isInvalid || isLoading}
+      className="login-form-button" 
+      type="submit" 
+      form="signInForm"
+      onClick={onSubmit}
+    >
+      {isLoading ? <Spinner size={12}/> : null}
+      {text}
+    </Button>
+  )
+}
 
 const INITIAL_STATE = {
   email: '',
   password: '',
   error: null,
+  isLoading: false,
 };
 
-class SignInFormBase extends Component {
+class SignInDialogBase extends Component {
   constructor(props) {
     super(props);
     this.state = { ...INITIAL_STATE };
   }
-  onSubmit = event => {
-    const { email, password } = this.state;
-    this.props.firebase
-      .doSignInWithEmailAndPassword(email, password)
-      .then(() => {
-        this.setState({ ...INITIAL_STATE });
-        this.props.history.push(ROUTES.LANDING);
-      })
-      .catch(error => {
-        this.setState({ error });
-      });
+
+  onSubmit = async (event) => {
     event.preventDefault();
+    const { email, password } = this.state;
+    this.setState({isLoading: true})
+    try {
+      await this.props.firebase.doSignInWithEmailAndPassword(email, password)
+      this.props.onClose()
+      this.setState({ ...INITIAL_STATE });
+    } catch (error) {
+      this.setState({ error, isLoading: false });
+    }
   };
+
   onChange = event => {
     this.setState({ [event.target.name]: event.target.value });
   };
+
   render() {
     const { email, password, error } = this.state;
     const isInvalid = password === '' || email === '';
     return (
-      <form onSubmit={this.onSubmit} className="login-form-content">
-        <input
-          name="email"
-          value={email}
-          onChange={this.onChange}
-          type="text"
-          placeholder="Email Address"
-        />
-        <input
-          name="password"
-          value={password}
-          onChange={this.onChange}
-          type="password"
-          placeholder="Password"
-        />
-        <button disabled={isInvalid} className="login-form-button" type="submit">
-          Sign In
-        </button>
-        {error && <p className="login-form-error">{error.message}</p>}
-      </form>
+      <LoadingContext.Provider value={{ isLoading: this.state.isLoading }}>
+        <Dialog
+          title="Sign In"
+          isShown={this.props.isShown}
+          onCloseComplete={() => {
+            this.props.onClose()
+            this.setState({ ...INITIAL_STATE })
+          }}
+          footer={<SignInFooter isInvalid={isInvalid} onSubmit={this.onSubmit}/>}
+        >
+          <form onSubmit={this.onSubmit} id="signInForm">
+            <Pane
+              display="flex"
+              flexDirection="column"
+              alignItems="center"
+              justifyContent="space-around"
+              minHeight="150px"
+            >
+              <TextInput
+                name="email"
+                value={email}
+                onChange={this.onChange}
+                type="text"
+                placeholder="Email Address"
+              />
+              <TextInput
+                name="password"
+                value={password}
+                onChange={this.onChange}
+                type="password"
+                placeholder="Password"
+              />    
+              <PasswordForgetLink />
+              <SignUpLink />
+              {error && <div className="login-form-error">{error.message}</div>}
+            </Pane>
+          </form>
+        </Dialog>
+      </LoadingContext.Provider>
     );
   }
 }
 
-const SignInForm = compose(
-  withRouter,
-  withFirebase,
-)(SignInFormBase);
+const SignInDialog = withFirebase(SignInDialogBase);
 
-export default SignInPage;
-export { SignInForm };
+export default SignInMenu;
+export { SignInDialog };

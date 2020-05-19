@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { withRouter } from 'react-router-dom'
 import './landing.css'
 
-import Issues from '../Issues'
+import Navigation from '../Navigation'
 
 import * as ROUTES from '../../constants/routes'
 
@@ -13,7 +14,7 @@ import logo from '../logo.svg'
 const LandingPage = () => {
   return (
     <>
-      <Issues position="absolute" top="20px" right="20px"/>
+      <Navigation position="absolute" top="20px" right="20px" appearance="default"/>
       <div className="landing-page">
         <div className="landing-content">
           <div className="logo-title">

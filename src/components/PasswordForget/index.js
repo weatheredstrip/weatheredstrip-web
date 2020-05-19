@@ -5,12 +5,10 @@ import { withFirebase } from '../Firebase';
 import * as ROUTES from '../../constants/routes';
 
 const PasswordForgetPage = () => (
-  <div className="content">
-    <div className="user-content form-background">
-      <div className="login-form">
-        <div className="subtitle">Password Reset</div>
-        <PasswordForgetForm />
-      </div>
+  <div className="landing-page">
+    <div className="login-form">
+      <div className="subtitle">Password Reset</div>
+      <PasswordForgetForm />
     </div>
   </div>
 );
@@ -65,9 +63,9 @@ class PasswordForgetFormBase extends Component {
 }
 
 const PasswordForgetLink = () => (
-  <p className="login-form-note">
+  <div className="login-form-note">
     <Link to={ROUTES.PASSWORD_FORGET}>Forgot Password?</Link>
-  </p>
+  </div>
 );
 
 export default PasswordForgetPage;

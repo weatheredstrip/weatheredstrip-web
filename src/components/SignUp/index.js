@@ -1,33 +1,50 @@
-import React, { Component } from 'react';
+import React, { Component, useContext } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { compose } from 'recompose';
+import { TextInput, Dialog, Button, Spinner } from 'evergreen-ui'
 
 import { withFirebase } from '../Firebase';
 import * as ROUTES from '../../constants/routes';
 
 const SignUpPage = () => (
-  <div className="content">
-    <div className="user-content form-background">
-      <div className="login-form">
-        <div className="subtitle">Sign Up</div>
-        <SignUpForm />
-      </div>
-    </div>
+  <div className="landing-page">
+    <SignUpForm />
   </div>
 );
 
+const LoadingContext = React.createContext({ isLoading: false });
+
+const SignUpFooter = ({ isInvalid, onSubmit }) => {
+  const { isLoading } = useContext(LoadingContext)
+  const text = isLoading ? "Loading..." : "Sign Up"
+  return(
+    <Button
+      appearance="primary"
+      disabled={isInvalid || isLoading}
+      className="login-form-button" 
+      type="submit" 
+      form="signInForm"
+      onClick={onSubmit}
+    >
+      {isLoading ? <Spinner size={12}/> : null}
+      {text}
+    </Button>
+  )
+}
+
 const INITIAL_STATE = {
-  username: '',
+  firstName: '',
+  lastName: '',
   email: '',
   passwordOne: '',
   passwordTwo: '',
   error: null,
+  isLoading: false,
 };
 
 class SignUpFormBase extends Component {
   constructor(props) {
     super(props);
-
     this.state = { ...INITIAL_STATE };
   }
 
@@ -74,38 +91,46 @@ class SignUpFormBase extends Component {
       username === '';
 
     return (
-      <form onSubmit={this.onSubmit} className="login-form-content">
-        <input
-          name="username"
-          value={username}
-          onChange={this.onChange}
-          type="text"
-          placeholder="Username"
-        />
-        <input
-          name="email"
-          value={email}
-          onChange={this.onChange}
-          type="text"
-          placeholder="Email Address"
-        />
-        <input
-          name="passwordOne"
-          value={passwordOne}
-          onChange={this.onChange}
-          type="password"
-          placeholder="Password"
-        />
-        <input
-          name="passwordTwo"
-          value={passwordTwo}
-          onChange={this.onChange}
-          type="password"
-          placeholder="Confirm Password"
-        />
-        <button type="submit" className="login-form-button" disabled={isInvalid}>Sign Up</button>
-        {error && <p className="login-form-error">{error.message}</p>}
-      </form>
+      <LoadingContext.Provider value={{ isLoading: this.state.isLoading }}>
+        <Dialog
+          isShown
+          title="Sign Up"
+          onCloseComplete={() => {this.props.history.push(ROUTES.LANDING);}}
+          footer={ <SignUpFooter isInvalid={isInvalid} onSubmit={this.onSubmit}/> }
+        >
+          <form onSubmit={this.onSubmit}>
+            <TextInput
+              name="username"
+              value={username}
+              onChange={this.onChange}
+              type="text"
+              placeholder="Username"
+            />
+            <TextInput
+              name="email"
+              value={email}
+              onChange={this.onChange}
+              type="text"
+              placeholder="Email Address"
+            />
+            <TextInput
+              name="passwordOne"
+              value={passwordOne}
+              onChange={this.onChange}
+              type="password"
+              placeholder="Password"
+            />
+            <TextInput
+              name="passwordTwo"
+              value={passwordTwo}
+              onChange={this.onChange}
+              type="password"
+              placeholder="Confirm Password"
+            />
+            {error && <p className="login-form-error">{error.message}</p>}
+          </form>
+        </Dialog>
+      </LoadingContext.Provider>
     );
   }
 }

@@ -7,13 +7,11 @@ import PasswordChangeForm from '../PasswordChange';
 const AccountPage = () => (
   <AuthUserContext.Consumer>
     {authUser => (
-      <div className="content">
-        <div className="user-content form-background">
-          <div className="login-form">
-            <div className="subtitle">Account: {authUser.email}</div>
-            <PasswordForgetForm />
-            <PasswordChangeForm />
-          </div>
+      <div className="landing-page">
+        <div className="login-form">
+          <div className="subtitle">Account: {authUser.email}</div>
+          <PasswordForgetForm />
+          <PasswordChangeForm />
         </div>
       </div>
     )}

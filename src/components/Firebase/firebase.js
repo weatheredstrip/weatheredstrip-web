@@ -27,8 +27,16 @@ class Firebase {
   doCreateUserWithEmailAndPassword = (email, password) => 
     this.auth.createUserWithEmailAndPassword(email, password);
 
-  doSignInWithEmailAndPassword = (email, password) =>
-    this.auth.signInWithEmailAndPassword(email, password);
+  doSignInWithEmailAndPassword = (email, password) => {
+    /* Implementaiton to allow Async/Await
+       and prevent UnCaught Error
+    */
+    return new Promise((resolve, reject) => {
+      this.auth.signInWithEmailAndPassword(email, password)
+        .then((userCreds) => resolve(userCreds))
+        .catch((reason) => reject(reason));
+    });
+  }
 
   doSignOut = () => this.auth.signOut();
 
