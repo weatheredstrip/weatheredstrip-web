@@ -68,3 +68,6 @@ build/
 .env
 
 .DS_Store
+
+# Yarn cache
+.yarn/cache
