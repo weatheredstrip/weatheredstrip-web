@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { Heading, IconButton, Menu, Pane, SideSheet, Text, Pill} from 'evergreen-ui'
+import { Heading, ErrorIcon, IconButton, Menu, Pane, SideSheet, Text, Pill} from 'evergreen-ui'
 import './nav.css'
 
 import { AuthUserContext } from '../Session';
@@ -39,7 +39,7 @@ const MenuIssues = ({onSelection}) => {
             alignItems="center"
           >
             Issues
-            <Pill margin={8} color="red" isSolid>{numIssues}</Pill>
+            <Pill margin={8} color="orange" isSolid>{numIssues}</Pill>
           </Menu.Item>
       )}
     </>
@@ -125,17 +125,25 @@ const Navigation = ({
         >
           {({close}) => (<UserMenu onSelection={close}/>)}
       </SideSheet>
-      <IconButton 
-        onClick={() => setNavShown(true)}
-        appearance={appearance || "minimal"}
-        icon="menu"
-        iconSize={24}
+      <Pane
         position={position}
         right={right}
         top={top}
         left={left}
         bottom={bottom}
-      />
+      >
+        <IconButton 
+          onClick={() => setNavShown(true)}
+          appearance={appearance || "minimal"}
+          icon="menu"
+          iconSize={24}
+        />
+        {numIssues > 0 && (
+          <ErrorIcon icon="error" color="orange" elevation={1} className="nav-button-notif" />
+        )}
+        
+      </Pane>
+      
 
     </IssuesContext.Provider>
   )

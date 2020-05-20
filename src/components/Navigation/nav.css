@@ -1,0 +1,13 @@
+.nav-button-notif {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  border-radius: 50%;
+  background: #425A70;
+  animation: pop 0.3s linear 1;
+  z-index: 15;
+}
+
+@keyframes pop{
+  50%  {transform: scale(1.5);}
+}
