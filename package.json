@@ -16,7 +16,7 @@
     "evergreen-ui": "^4.27.2",
     "firebase-tools": "^8.0.0",
     "firebaseui": "^4.5.0",
-    "husky": "^3.0.7",
+    "husky": "^4.0.7",
     "moment": "^2.23.0",
     "prettier": "^1.18.2",
     "query-string": "^6.2.0",
@@ -24,6 +24,7 @@
     "react-app-polyfill": "^1.0.1",
     "react-dom": "^16.6.3",
     "react-live-clock": "^3.0.0",
+    "react-router": "^5.2.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.2.0",
     "react-to-print": "^2.4.0",
@@ -53,11 +54,6 @@
     "IE 10",
     "IE 9"
   ],
-  "resolutions": {
-    "**/**/lodash": "^4.17.13",
-    "**/**/set-value": "^2.0.1",
-    "**/**/handlebars": "^4.3.0"
-  },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
