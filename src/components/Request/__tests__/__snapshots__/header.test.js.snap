@@ -26,7 +26,7 @@ exports[`header renders properly 1`] = `
       </div>
     </a>
     <div
-      class="search-nav"
+      class="search-nav css-nil 📦box-szg_border-box"
     >
       <form
         class="searchbox"
@@ -61,6 +61,25 @@ exports[`header renders properly 1`] = `
           </svg>
         </button>
       </form>
+      <div
+        class="css-nil 📦pst_relative 📦box-szg_border-box"
+      >
+        <button
+          class="css-1ii3p2c 📦fnt-fam_b77syt 📦mt_0px 📦fnt-sze_12px 📦f-wght_500 📦ln-ht_32px 📦ltr-spc_0 📦btrr_3px 📦bbrr_3px 📦btlr_3px 📦bblr_3px 📦pt_0px 📦pb_0px 📦pr_0px 📦pl_0px 📦ml_0px 📦mr_0px 📦mb_0px 📦h_32px 📦pst_relative 📦dspl_flex 📦algn-itms_center 📦flx-wrap_nowrap 📦w_32px 📦just-cnt_center 📦box-szg_border-box"
+        >
+          <svg
+            class="📦w_24px 📦h_24px 📦box-szg_border-box"
+            data-icon="menu"
+            style="fill: #66788A;"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M1 6h18c.55 0 1-.45 1-1s-.45-1-1-1H1c-.55 0-1 .45-1 1s.45 1 1 1zm18 3H1c-.55 0-1 .45-1 1s.45 1 1 1h18c.55 0 1-.45 1-1s-.45-1-1-1zm0 5H1c-.55 0-1 .45-1 1s.45 1 1 1h18c.55 0 1-.45 1-1s-.45-1-1-1z"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </header>
