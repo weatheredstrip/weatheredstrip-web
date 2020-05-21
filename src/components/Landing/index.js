@@ -1,9 +1,11 @@
-import React, { Component } from 'react'
-
+import React, { Component, useState } from 'react'
+import { Alert, Pane } from 'evergreen-ui'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { withRouter } from 'react-router-dom'
 import './landing.css'
+
+import { AuthUserContext } from '../Session';
 
 import Navigation from '../Navigation'
 
@@ -11,10 +13,42 @@ import * as ROUTES from '../../constants/routes'
 
 import logo from '../logo.svg'
 
+const NewAccountAlert = () => {
+  const [display, setDisplay] = useState('flex')
+  return (
+    <AuthUserContext.Consumer>
+      {authUser => !authUser && (
+        <Pane
+          position="absolute"
+          top={20}
+          right="50%"
+          zIndex={1}
+        >
+          <Alert
+            hasTrim={true}
+            intent="none"
+            position="relative"
+            right="-50%"
+            display={display}
+            appearance="card"
+            title="You can now create an account!"
+            maxWidth={360}
+            minWidth={200}
+            hasIcon={false}
+            isRemoveable={true}
+            onRemove={() => setDisplay('none')}
+          />
+        </Pane>
+      )}
+    </AuthUserContext.Consumer>
+)
+}
+
 const LandingPage = () => {
   return (
     <>
       <Navigation position="absolute" top="20px" right="20px" appearance="default"/>
+      <NewAccountAlert />
       <div className="landing-page">
         <div className="landing-content">
           <div className="logo-title">

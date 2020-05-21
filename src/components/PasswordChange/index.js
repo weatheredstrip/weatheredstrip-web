@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { withFirebase } from '../Firebase';
+import { TextInput, Button, Pane, Alert } from 'evergreen-ui'
+
 const INITIAL_STATE = {
   passwordOne: '',
   passwordTwo: '',
@@ -30,25 +32,35 @@ class PasswordChangeForm extends Component {
     const isInvalid =
       passwordOne !== passwordTwo || passwordOne === '';
     return (
-      <form onSubmit={this.onSubmit} className="login-form-content">
-        <input
-          name="passwordOne"
-          value={passwordOne}
-          onChange={this.onChange}
-          type="password"
-          placeholder="New Password"
-        />
-        <input
-          name="passwordTwo"
-          value={passwordTwo}
-          onChange={this.onChange}
-          type="password"
-          placeholder="Confirm New Password"
-        />
-        <button disabled={isInvalid} className="login-form-button" type="submit">
-          Change My Password
-        </button>
-        {error && <p className="login-form-error">{error.message}</p>}
+      <form onSubmit={this.onSubmit}>
+        <Pane display="flex" flexDirection="column" marginTop={10}>
+          {error && (
+            <Alert
+              intent="warning"
+              title={error.message}
+              marginBottom={10}
+            />
+          )}
+          <TextInput
+            name="passwordOne"
+            value={passwordOne}
+            onChange={this.onChange}
+            type="password"
+            placeholder="New Password"
+            marginBottom={10}
+          />
+          <TextInput
+            name="passwordTwo"
+            value={passwordTwo}
+            onChange={this.onChange}
+            type="password"
+            placeholder="Confirm New Password"
+            marginBottom={10}
+          />
+          <Button disabled={isInvalid} type="submit" width={160}>
+            Change My Password
+          </Button>
+        </Pane>
       </form>
     );
   }

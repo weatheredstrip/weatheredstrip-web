@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
-import { Link } from 'react-router-dom';
-import { Heading, ErrorIcon, IconButton, Menu, Pane, SideSheet, Text, Pill} from 'evergreen-ui'
+import { Link as RouterLink } from 'react-router-dom';
+import { Heading, ErrorIcon, IconButton, Menu, Pane, SideSheet, Link, Pill} from 'evergreen-ui'
 import './nav.css'
 
 import { AuthUserContext } from '../Session';
@@ -13,7 +13,7 @@ const IssuesContext = React.createContext({ numIssues: 0 });
 
 const MenuAuth = ({onSelection}) => (
     <>
-      <Menu.Item icon="user" to={ROUTES.ACCOUNT} is={Link} onSelect={onSelection}>
+      <Menu.Item icon="user" to={ROUTES.ACCOUNT} is={RouterLink} onSelect={onSelection}>
         Account
       </Menu.Item>
       <SignOutButton />
@@ -59,12 +59,12 @@ const UserMenu = ({onSelection}) => (
               alignItems="center"
               justifyContent="center"
             >
-              {authUser ? authUser.username : "Anonymous"}
+              {authUser ? authUser.firstName : "Anonymous"}
             </Heading>
           </Menu.Group>
           <Menu.Divider />
           <Menu.Group>
-            <Menu.Item icon="search" to={ROUTES.LANDING} is={Link} onSelect={onSelection}>
+            <Menu.Item icon="search" to={ROUTES.LANDING} is={RouterLink} onSelect={onSelection}>
               Search
             </Menu.Item>
             <MenuIssues onSelection={onSelection}/>
@@ -86,9 +86,9 @@ const UserMenu = ({onSelection}) => (
             </Menu.Item>  
           </Menu.Group>
         </Menu>
-        <Pane display="flex" flexDirection="column" alignItems="center">
-          <Text size={300}>Privacy Policy</Text>
-          <Text size={300}>Terms of Service</Text> 
+        <Pane display="flex" flexDirection="column" alignItems="center" marginBottom={20}>
+          <Link is={RouterLink} size={300} to={ROUTES.PRIVACY_POLICY} marginBottom={10}>Privacy Policy</Link>
+          <Link is={RouterLink} size={300} to={ROUTES.TERMS_OF_SERVICE}>Terms of Service</Link> 
         </Pane>
       </Pane>
     )}
@@ -132,7 +132,7 @@ const Navigation = ({
         left={left}
         bottom={bottom}
       >
-        <IconButton 
+        <IconButton
           onClick={() => setNavShown(true)}
           appearance={appearance || "minimal"}
           icon="menu"
@@ -141,7 +141,6 @@ const Navigation = ({
         {numIssues > 0 && (
           <ErrorIcon icon="error" color="orange" elevation={1} className="nav-button-notif" />
         )}
-        
       </Pane>
       
 

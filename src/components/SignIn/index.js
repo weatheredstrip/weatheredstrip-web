@@ -1,5 +1,5 @@
 import React, { Component, useState, useContext } from 'react';
-import { Dialog, Button, Pane, TextInput, Spinner, Menu } from 'evergreen-ui'
+import { Alert, Dialog, Button, Pane, TextInput, Spinner, Menu } from 'evergreen-ui'
 
 import { SignUpLink } from '../SignUp';
 import { PasswordForgetLink } from '../PasswordForget';
@@ -92,15 +92,21 @@ class SignInDialogBase extends Component {
               display="flex"
               flexDirection="column"
               alignItems="center"
-              justifyContent="space-around"
-              minHeight="150px"
             >
+              {error && (
+                <Alert
+                  intent="danger"
+                  title={error.message}
+                  marginBottom={10}
+                />
+              )}
               <TextInput
                 name="email"
                 value={email}
                 onChange={this.onChange}
                 type="text"
                 placeholder="Email Address"
+                marginBottom={10}
               />
               <TextInput
                 name="password"
@@ -108,10 +114,10 @@ class SignInDialogBase extends Component {
                 onChange={this.onChange}
                 type="password"
                 placeholder="Password"
+                marginBottom={10}
               />    
               <PasswordForgetLink />
               <SignUpLink />
-              {error && <div className="login-form-error">{error.message}</div>}
             </Pane>
           </form>
         </Dialog>

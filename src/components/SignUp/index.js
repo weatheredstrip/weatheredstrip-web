@@ -1,7 +1,7 @@
 import React, { Component, useContext } from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { Link as RouterLink, withRouter } from 'react-router-dom';
 import { compose } from 'recompose';
-import { TextInput, Dialog, Button, Spinner } from 'evergreen-ui'
+import { TextInput, Dialog, Button, Spinner, Pane, Text, Checkbox, Link } from 'evergreen-ui'
 
 import { withFirebase } from '../Firebase';
 import * as ROUTES from '../../constants/routes';
@@ -21,7 +21,7 @@ const SignUpFooter = ({ isInvalid, onSubmit }) => {
     <Button
       appearance="primary"
       disabled={isInvalid || isLoading}
-      className="login-form-button" 
+      className="login-form-button"
       type="submit" 
       form="signInForm"
       onClick={onSubmit}
@@ -39,6 +39,7 @@ const INITIAL_STATE = {
   passwordOne: '',
   passwordTwo: '',
   error: null,
+  readBoth: false,
   isLoading: false,
 };
 
@@ -49,7 +50,7 @@ class SignUpFormBase extends Component {
   }
 
   onSubmit = event => {
-    const { username, email, passwordOne } = this.state;
+    const { firstName, lastName, email, passwordOne } = this.state;
     this.props.firebase
       .doCreateUserWithEmailAndPassword(email, passwordOne)
       .then(authUser => {
@@ -57,7 +58,8 @@ class SignUpFormBase extends Component {
         return this.props.firebase
           .user(authUser.user.uid)
           .set({
-            username,
+            firstName,
+            lastName,
             email,
           });
       })
@@ -75,59 +77,108 @@ class SignUpFormBase extends Component {
     this.setState({ [event.target.name]: event.target.value });
   };
 
+  onCheck = () => {
+    this.setState({ readBoth: !this.state.readBoth })
+  }
+
   render() {
     const {
-      username,
+      firstName,
+      lastName,
       email,
       passwordOne,
       passwordTwo,
       error,
+      readBoth,
     } = this.state;
 
     const isInvalid =
       passwordOne !== passwordTwo ||
       passwordOne === '' ||
       email === '' ||
-      username === '';
+      firstName === '' ||
+      lastName === '' ||
+      !readBoth;
 
     return (
       <LoadingContext.Provider value={{ isLoading: this.state.isLoading }}>
         <Dialog
           isShown
           title="Sign Up"
+          asClose={false}
           onCloseComplete={() => {this.props.history.push(ROUTES.LANDING);}}
           footer={ <SignUpFooter isInvalid={isInvalid} onSubmit={this.onSubmit}/> }
         >
           <form onSubmit={this.onSubmit}>
-            <TextInput
-              name="username"
-              value={username}
-              onChange={this.onChange}
-              type="text"
-              placeholder="Username"
-            />
-            <TextInput
-              name="email"
-              value={email}
-              onChange={this.onChange}
-              type="text"
-              placeholder="Email Address"
-            />
-            <TextInput
-              name="passwordOne"
-              value={passwordOne}
-              onChange={this.onChange}
-              type="password"
-              placeholder="Password"
-            />
-            <TextInput
-              name="passwordTwo"
-              value={passwordTwo}
-              onChange={this.onChange}
-              type="password"
-              placeholder="Confirm Password"
-            />
-            {error && <p className="login-form-error">{error.message}</p>}
+            <Pane
+              display="flex"
+              alignItems="center"
+              flexDirection="column"
+            >
+              <Text >
+                Accounts will provide ability to add presets in the future.
+              </Text>
+              <Text marginBottom={20}>
+                Option for feature update emails will also be provided.
+              </Text>
+              <TextInput
+                name="firstName"
+                value={firstName}
+                onChange={this.onChange}
+                type="text"
+                placeholder="First Name"
+                marginBottom={10}
+              />
+              <TextInput
+                name="lastName"
+                value={lastName}
+                onChange={this.onChange}
+                type="text"
+                placeholder="Last Name"
+                marginBottom={10}
+              />
+              <TextInput
+                name="email"
+                value={email}
+                onChange={this.onChange}
+                type="text"
+                placeholder="Email Address"
+                marginBottom={10}
+              />
+              <TextInput
+                name="passwordOne"
+                value={passwordOne}
+                onChange={this.onChange}
+                type="password"
+                placeholder="Password"
+                marginBottom={10}
+              />
+              <TextInput
+                name="passwordTwo"
+                value={passwordTwo}
+                onChange={this.onChange}
+                type="password"
+                placeholder="Confirm Password"
+                marginBottom={10}
+              />
+              <Pane
+                display="flex"
+                flexDirection="row"
+                alignItems="center"
+              >
+                <Checkbox
+                  marginRight={20} 
+                  name="readBoth"
+                  checked={readBoth}
+                  onChange={this.onCheck}
+                  label={
+                  <Text>
+                    I have read the <Link href="#" color="dark">Terms of Service</Link> and <Link href="#" color="dark">Privacy Policy</Link>
+                  </Text>
+                }/>
+              </Pane>
+              {error && <p className="login-form-error">{error.message}</p>}
+            </Pane>
           </form>
         </Dialog>
       </LoadingContext.Provider>
@@ -135,9 +186,7 @@ class SignUpFormBase extends Component {
   }
 }
 const SignUpLink = () => (
-  <p className="login-form-note">
-    Don't have an account? <Link to={ROUTES.SIGN_UP}>Sign Up</Link>
-  </p>
+    <Text>Don't have an account? <Link is={RouterLink} to={ROUTES.SIGN_UP}>Sign Up</Link></Text>
 );
 
 const SignUpForm = compose(

@@ -2,12 +2,12 @@ import React from 'react'
 import SearchBox from './searchbox.react'
 import logo from '../logo.svg'
 import Navigation from '../Navigation'
-// import Issues from '../Issues'
 import { Link } from 'react-router-dom'
+import { Pane } from 'evergreen-ui'
 
 import * as ROUTES from '../../constants/routes'
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header className="app-header">
       <div className="app-header-content">
@@ -17,14 +17,13 @@ const Header = () => {
             <div className="app-title">Weathered Strip</div>
           </div>
         </Link>
-        <div className="search-nav">
+        <Pane className="search-nav">
           <SearchBox
-            searchSubmit={this.props.searchSubmit}
-            currentResults={this.props.currentResults}
+            searchSubmit={props.searchSubmit}
+            currentResults={props.currentResults}
           />
-          {/* <Issues /> */}
-          <Navigation />
-        </div>
+          <Navigation position="relative"/>
+        </Pane>
       </div>
     </header>
   )
