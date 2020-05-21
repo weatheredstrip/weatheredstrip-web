@@ -66,3 +66,11 @@ build/
 
 # dotenv environment variables file
 .env
+
+.DS_Store
+
+# Yarn Modern (Not Zero Install)
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*

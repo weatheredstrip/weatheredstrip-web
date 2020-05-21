@@ -181,6 +181,7 @@ h3 {
   margin: auto;
   flex-direction: column;
   background-color: #fff;
+  max-height: 200px;
   border-radius: 5px;
   padding: 20px 30px;
 }
@@ -188,6 +189,7 @@ h3 {
 .login-form-content {
   display: flex;
   flex-direction: column;
+  
   min-width: 250px;
 }
 

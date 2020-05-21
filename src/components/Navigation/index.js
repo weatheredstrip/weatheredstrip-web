@@ -1,70 +1,150 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUserCircle, faUserAlt, faSignInAlt } from '@fortawesome/free-solid-svg-icons'
+import React, { useState, useContext } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
+import { Heading, ErrorIcon, IconButton, Menu, Pane, SideSheet, Link, Pill} from 'evergreen-ui'
 import './nav.css'
 
 import { AuthUserContext } from '../Session';
+import SignInMenu from '../SignIn'
 
 import SignOutButton from '../SignOut'
 import * as ROUTES from '../../constants/routes';
 
-const MenuAuth = () => (
-  <>
-    <Link className="nav-button" to={ROUTES.ACCOUNT}>
-      <FontAwesomeIcon icon={faUserAlt} className="nav-button-icon"/>
-      My Account
-    </Link>
-    <SignOutButton className="nav-button" icon/>
-  </>
-)
+const IssuesContext = React.createContext({ numIssues: 0 });
+
+const MenuAuth = ({onSelection}) => (
+    <>
+      <Menu.Item icon="user" to={ROUTES.ACCOUNT} is={RouterLink} onSelect={onSelection}>
+        Account
+      </Menu.Item>
+      <SignOutButton />
+    </>
+  )
 
 const MenuNonAuth= () => (
-  <Link className="nav-button" to={ROUTES.SIGN_IN}>
-    <FontAwesomeIcon icon={faSignInAlt} className="nav-button-icon"/>
-    Sign In
-  </Link>
+  <SignInMenu />
 )
 
-const Menu = ({authUser}) => (
-  <div className="navigation">
-    <div className="nav-arrow"/>
-    <div className="nav-buttons">
-      <AuthUserContext.Consumer>
-        {authUser => authUser ? <MenuAuth /> : <MenuNonAuth />}
-      </AuthUserContext.Consumer>
-    </div>
-  </div>
+const MenuIssues = ({onSelection}) => {
+  const { numIssues } = useContext(IssuesContext)
+  return (
+    <>
+      {numIssues > 0 && (
+          <Menu.Item
+            icon="warning-sign"
+            is='a'
+            href="https://github.com/Greg-Hamel/weatheredstrip/issues?q=is%3Aissue+is%3Aopen+label%3A%22service+issue%22"
+            target="_blank"
+            onSelect={onSelection}
+            display="flex"
+            alignItems="center"
+          >
+            Issues
+            <Pill margin={8} color="orange" isSolid>{numIssues}</Pill>
+          </Menu.Item>
+      )}
+    </>
+  )
+
+
+}
+
+const UserMenu = ({onSelection}) => (
+  <AuthUserContext.Consumer>
+    {authUser => (
+      <Pane height="100%" display="flex" flexDirection="column" justifyContent="space-between">
+        <Menu>
+          <Menu.Group>
+            <Heading 
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+            >
+              {authUser ? authUser.firstName : "Anonymous"}
+            </Heading>
+          </Menu.Group>
+          <Menu.Divider />
+          <Menu.Group>
+            <Menu.Item icon="search" to={ROUTES.LANDING} is={RouterLink} onSelect={onSelection}>
+              Search
+            </Menu.Item>
+            <MenuIssues onSelection={onSelection}/>
+          </Menu.Group>
+          <Menu.Divider />
+          <Menu.Group>
+            {authUser ? <MenuAuth onSelection={onSelection}/> : <MenuNonAuth onSelection={onSelection}/>}
+          </Menu.Group>
+          <Menu.Divider />
+          <Menu.Group>
+            <Menu.Item
+              icon="code"
+              is='a'
+              href="https://devblog.weatheredstrip.com"
+              target="_blank"
+              onSelect={onSelection}
+            >
+              DevBlog
+            </Menu.Item>  
+          </Menu.Group>
+        </Menu>
+        <Pane display="flex" flexDirection="column" alignItems="center" marginBottom={20}>
+          <Link is={RouterLink} size={300} to={ROUTES.PRIVACY_POLICY} marginBottom={10}>Privacy Policy</Link>
+          <Link is={RouterLink} size={300} to={ROUTES.TERMS_OF_SERVICE}>Terms of Service</Link> 
+        </Pane>
+      </Pane>
+    )}
+  </AuthUserContext.Consumer>
 )
 
-const Navigation = ({authUser}) => {
-  const [showMenu, setShowMenu] = useState(false)
+const Navigation = ({
+  position,
+  top,
+  right,
+  bottom,
+  left,
+  appearance,
+}) => {
+  const [navShown, setNavShown] = useState(false)
+  const [numIssues, setNumIssues] = useState(null)
 
-  const node = useRef();
-
-  const handleClick = e => {
-    if (!node.current.contains(e.target)) {
-      // outside click
-      setShowMenu(false);
-    }
-    // nothing happens if clicked inside
-  };
-  
-  useEffect(() => {
-    // add when mounted
-    document.addEventListener("mousedown", handleClick);
-
-    // return function to be called when unmounted
-    return () => {
-      document.removeEventListener("mousedown", handleClick);
-    };
-  }, []);
+  if (numIssues === null) {
+    fetch('https://us-central1-weatheredstrip.cloudfunctions.net/queryIssues')
+      .then(response => {
+        return response.json()
+      })
+      .then(result => setNumIssues(result.length))
+      .catch(error => console.log('error', error))
+  }
 
   return (
-    <div ref={node} className="user-button">
-      <FontAwesomeIcon icon={faUserCircle} className="user-icon" size="2x" onClick={() => setShowMenu(!showMenu)}/>
-      {showMenu && <Menu />}
-    </div>
+    <IssuesContext.Provider value={{ numIssues: numIssues }}>
+      <SideSheet
+          isShown={navShown}
+          onCloseComplete={() => setNavShown(false)}
+          width={150}
+          display="flex"
+        >
+          {({close}) => (<UserMenu onSelection={close}/>)}
+      </SideSheet>
+      <Pane
+        position={position}
+        right={right}
+        top={top}
+        left={left}
+        bottom={bottom}
+      >
+        <IconButton
+          onClick={() => setNavShown(true)}
+          appearance={appearance || "minimal"}
+          icon="menu"
+          iconSize={24}
+        />
+        {numIssues > 0 && (
+          <ErrorIcon icon="error" color="orange" elevation={1} className="nav-button-notif" />
+        )}
+      </Pane>
+      
+
+    </IssuesContext.Provider>
   )
 };
 export default Navigation;

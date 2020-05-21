@@ -1,39 +1,32 @@
-import React, { Component } from 'react'
+import React from 'react'
 import SearchBox from './searchbox.react'
 import logo from '../logo.svg'
 import Navigation from '../Navigation'
-import Issues from '../Issues'
 import { Link } from 'react-router-dom'
+import { Pane } from 'evergreen-ui'
 
 import * as ROUTES from '../../constants/routes'
 
-class Header extends Component {
-  constructor(props) {
-    super(props)
-  }
-
-  render() {
-    return (
-      <header className="app-header">
-        <div className="app-header-content">
-          <Link to={ROUTES.LANDING}>
-            <div id="app-info">
-              <img id="app-logo" src={logo} alt="App Logo" />
-              <div className="app-title">Weathered Strip</div>
-            </div>
-          </Link>
-          <div className="search-nav">
-            <SearchBox
-              searchSubmit={this.props.searchSubmit}
-              currentResults={this.props.currentResults}
-            />
-            <Issues />
-            {/* <Navigation /> */}
+const Header = (props) => {
+  return (
+    <header className="app-header">
+      <div className="app-header-content">
+        <Link to={ROUTES.LANDING}>
+          <div id="app-info">
+            <img id="app-logo" src={logo} alt="App Logo" />
+            <div className="app-title">Weathered Strip</div>
           </div>
-        </div>
-      </header>
-    )
-  }
+        </Link>
+        <Pane className="search-nav">
+          <SearchBox
+            searchSubmit={props.searchSubmit}
+            currentResults={props.currentResults}
+          />
+          <Navigation position="relative"/>
+        </Pane>
+      </div>
+    </header>
+  )
 }
 
 export default Header

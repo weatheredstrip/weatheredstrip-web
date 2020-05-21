@@ -13,6 +13,7 @@ import SignInPage from '../SignIn';
 import PasswordForgetPage from '../PasswordForget';
 import AccountPage from '../Account';
 import RequestPage from '../Request';
+import { PrivacyPolicy, ToS } from '../Policies';
 
 import * as ROUTES from '../../constants/routes';
 
@@ -25,6 +26,8 @@ const App = () => (
       <Route path={ROUTES.SIGN_IN} component={SignInPage} />
       <Route path={ROUTES.PASSWORD_FORGET} component={PasswordForgetPage} />
       <Route path={ROUTES.ACCOUNT} component={AccountPage} />
+      <Route path={ROUTES.PRIVACY_POLICY} component={PrivacyPolicy} />
+      <Route path={ROUTES.TERMS_OF_SERVICE} component={ToS} />
     </div>
   </Router>
 )
