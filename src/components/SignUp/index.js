@@ -63,7 +63,11 @@ class SignUpFormBase extends Component {
             email,
           });
       })
-      .then(authUser => {
+      .then(() => {
+        // Add correct Display Name to firebase
+        return this.props.firebase.doAddProfileName(firstName)
+      })
+      .then(() => {
         this.setState({ ...INITIAL_STATE });
         this.props.history.push(ROUTES.LANDING);
       })

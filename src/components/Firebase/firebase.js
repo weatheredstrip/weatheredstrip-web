@@ -47,6 +47,10 @@ class Firebase {
   doPasswordUpdate = password =>
     this.auth.currentUser.updatePassword(password);
 
+  doAddProfileName = name => this.auth.currentUser.updateProfile({
+    displayName: name
+  })
+
   // *** Merge Auth and DB User API *** //
   onAuthUserListener = (next, fallback) => this.auth.onAuthStateChanged(authUser => {
     if (authUser) { 
