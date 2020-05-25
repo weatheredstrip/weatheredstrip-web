@@ -1,7 +1,13 @@
 import React from 'react'
-import { Dialog, Text } from 'evergreen-ui'
-import { withRouter } from 'react-router'
-import { AuthUserContext, withAuthorization } from '../Session';
+import { Pane, Text, Card, Button, Heading } from 'evergreen-ui'
+import { withRouter } from 'react-router-dom'
+import { compose } from 'recompose'
+
+import { 
+  AuthUserContext, 
+  withAuthorization, 
+  withEmailVerification 
+} from '../Session';
 import PasswordChangeForm from '../PasswordChange';
 
 const AccountPageBase = (props) => (
@@ -13,17 +19,35 @@ const AccountPageBase = (props) => (
 const AccountDialog = (props) => (
   <AuthUserContext.Consumer>
     {authUser => (
-        <Dialog
-          title="Account"
-          isShown={true}
-          hasClose={false}
-          hasCancel={false}
-          confirmLabel="Back"
-          onCloseComplete={() => { props.history.goBack() }}
+      <Card
+        width={560}
+        background="tint1"
+        elevation={2}
+      >
+        <Pane
+          padding={16}
+          borderBottom
+        >
+          <Heading size={500} fontSize={20}>Account</Heading>
+        </Pane>
+        <Pane
+          padding={16}
+          display="flex"
+          alignItems="left"
+          flexDirection="column"
         >
           <Text size={500}>{authUser.email}</Text>
           <PasswordChangeForm />
-        </Dialog>
+        </Pane>
+        <Pane
+          display="flex"
+          padding={16}
+          borderTop
+          justifyContent="flex-end"
+        >
+          <Button onClick={()=> props.history.goBack()}>Back</Button>
+        </Pane>
+      </Card>
     )}
   </AuthUserContext.Consumer>
 )
@@ -31,4 +55,7 @@ const AccountDialog = (props) => (
 const condition = authUser => !!authUser;
 const AccountPage = withRouter(AccountPageBase)
 
-export default withAuthorization(condition)(AccountPage);
+export default compose(
+  withEmailVerification,
+  withAuthorization(condition),
+)(AccountPage);

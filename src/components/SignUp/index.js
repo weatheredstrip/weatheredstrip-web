@@ -1,7 +1,7 @@
-import React, { Component, useContext } from 'react';
+import React, { Component } from 'react';
 import { Link as RouterLink, withRouter } from 'react-router-dom';
 import { compose } from 'recompose';
-import { TextInput, Dialog, Button, Spinner, Pane, Text, Checkbox, Link } from 'evergreen-ui'
+import { TextInput, Heading, Button, Spinner, Pane, Text, Checkbox, Link, Card } from 'evergreen-ui'
 
 import { withFirebase } from '../Firebase';
 import * as ROUTES from '../../constants/routes';
@@ -13,24 +13,6 @@ const SignUpPage = () => (
 );
 
 const LoadingContext = React.createContext({ isLoading: false });
-
-const SignUpFooter = ({ isInvalid, onSubmit }) => {
-  const { isLoading } = useContext(LoadingContext)
-  const text = isLoading ? "Loading..." : "Sign Up"
-  return(
-    <Button
-      appearance="primary"
-      disabled={isInvalid || isLoading}
-      className="login-form-button"
-      type="submit" 
-      form="signInForm"
-      onClick={onSubmit}
-    >
-      {isLoading ? <Spinner size={12}/> : null}
-      {text}
-    </Button>
-  )
-}
 
 const INITIAL_STATE = {
   firstName: '',
@@ -67,6 +49,9 @@ class SignUpFormBase extends Component {
         /* Add firstName as Display Name to firebase authentication
          * this will be used by authentication templates */
         return this.props.firebase.doAddProfileName(firstName)
+      })
+      .then(() => {
+        return this.props.firebase.doSendEmailVerification()
       })
       .then(() => {
         this.setState({ ...INITIAL_STATE });
@@ -107,21 +92,26 @@ class SignUpFormBase extends Component {
 
     return (
       <LoadingContext.Provider value={{ isLoading: this.state.isLoading }}>
-        <Dialog
-          isShown
-          title="Sign Up"
-          asClose={false}
-          onCloseComplete={() => {this.props.history.push(ROUTES.LANDING);}}
-          footer={ <SignUpFooter isInvalid={isInvalid} onSubmit={this.onSubmit}/> }
+        <Card
+          width={560}
+          background="tint1"
+          elevation={2}
         >
+          <Pane
+            padding={16}
+            borderBottom
+          >
+            <Heading size={500} fontSize={20}>Sign Up</Heading>
+          </Pane>
           <form onSubmit={this.onSubmit}>
             <Pane
+              padding={16}
               display="flex"
               alignItems="center"
               flexDirection="column"
             >
               <Text >
-                Accounts will provide ability to add presets in the future.
+                Accounts will provide the ability to add presets in the future.
               </Text>
               <Text marginBottom={20}>
                 Option for feature update emails will also be provided.
@@ -178,14 +168,35 @@ class SignUpFormBase extends Component {
                   onChange={this.onCheck}
                   label={
                   <Text>
-                    I have read the <Link href="#" color="dark">Terms of Service</Link> and <Link href="#" color="dark">Privacy Policy</Link>
+                      I have read the <Link is={RouterLink} to={ROUTES.TERMS_OF_SERVICE} color="dark">Terms of Service</Link> and <Link is={RouterLink} to={ROUTES.PRIVACY_POLICY} color="dark">Privacy Policy</Link>
                   </Text>
                 }/>
               </Pane>
               {error && <p className="login-form-error">{error.message}</p>}
             </Pane>
+            <Pane
+              display="flex"
+              padding={16}
+              borderTop
+              justifyContent="flex-end"
+            >
+              <Button
+              marginRight={20}
+              onClick={() => this.props.history.goBack()}
+              >Back</Button>
+              <Button
+                appearance="primary"
+                disabled={isInvalid || this.state.isLoading}
+                className="login-form-button"
+                type="submit"
+                onClick={this.onSubmit}
+              >
+                {this.state.isLoading ? <Spinner size={12} /> : null}
+                {this.state.isLoading ? "Loading..." : "Sign Up"}
+              </Button>
+            </Pane>
           </form>
-        </Dialog>
+        </Card>
       </LoadingContext.Provider>
     );
   }
