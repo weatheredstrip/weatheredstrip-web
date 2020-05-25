@@ -64,7 +64,8 @@ class SignUpFormBase extends Component {
           });
       })
       .then(() => {
-        // Add correct Display Name to firebase
+        /* Add firstName as Display Name to firebase authentication
+         * this will be used by authentication templates */
         return this.props.firebase.doAddProfileName(firstName)
       })
       .then(() => {
