@@ -17,9 +17,7 @@ const config = {
 class Firebase {
   constructor() {
     firebase.initializeApp(config)
-    if (process.env.NODE_ENV === 'production') {
-      firebase.analytics()
-    }
+    firebase.analytics()
 
     this.auth = firebase.auth();
     this.db = firebase.database();
