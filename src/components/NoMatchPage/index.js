@@ -7,6 +7,7 @@ import * as ROUTES from '../../constants/routes';
 const NoMatchPage = (props) => (
   <div className="landing-page">
     <Card
+      maxWidth="calc(100vw - 16px * 2)"
       width={560}
       background="tint1"
       elevation={2}
