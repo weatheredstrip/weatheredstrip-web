@@ -20,6 +20,7 @@ const AccountDialog = (props) => (
   <AuthUserContext.Consumer>
     {authUser => (
       <Card
+        maxWidth="calc(100vw - 16px * 2)"
         width={560}
         background="tint1"
         elevation={2}

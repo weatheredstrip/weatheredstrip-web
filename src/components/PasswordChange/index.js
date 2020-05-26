@@ -48,6 +48,7 @@ class PasswordChangeForm extends Component {
             type="password"
             placeholder="New Password"
             marginBottom={10}
+            maxWidth="100%"
           />
           <TextInput
             name="passwordTwo"
@@ -56,6 +57,7 @@ class PasswordChangeForm extends Component {
             type="password"
             placeholder="Confirm New Password"
             marginBottom={10}
+            maxWidth="100%"
           />
           <Button disabled={isInvalid} type="submit" width={160}>
             Change My Password
