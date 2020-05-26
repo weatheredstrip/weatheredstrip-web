@@ -3,7 +3,7 @@ import { withRouter } from 'react-router'
 
 import AuthUserContext from './context'
 import { withFirebase } from '../Firebase'
-import { Paragraph, Button, Dialog } from 'evergreen-ui'
+import { Alert, Button, Dialog } from 'evergreen-ui'
 
 const needsEmailVerification = authUser => (
   authUser &&
@@ -17,14 +17,17 @@ const withEmailVerification = Component => {
   class WithEmailVerification extends React.Component {
     constructor(props) {
       super(props)
-      
-      this.state = { isSent: false }
+      this.state = { isSent: false, isLoading: false, error: '' }
     }
 
     onSendEmailVerification = () => {
+      this.setState({ isLoading: true })
       this.props.firebase
         .doSendEmailVerification()
-        .then(() => this.setState({ isSent: true }))
+        .then(() => this.setState({ isSent: true, isLoading: false }))
+        .catch((error) => {
+          this.setState({ error, isLoading: false });
+        })
     }
 
     renderFooter = () => (
@@ -39,8 +42,9 @@ const withEmailVerification = Component => {
           onClick={this.onSendEmailVerification}
           appearance="primary"
           disabled={this.state.isSent}
+          isLoading={this.state.isLoading}
         >
-          Send confirmation E-Mail
+          Resend Email
         </Button>
       </>
     )
@@ -52,21 +56,32 @@ const withEmailVerification = Component => {
           {authUser => 
             needsEmailVerification(authUser) ? (
               <Dialog
-                title="E-Mail verification required"
+                title="Email verification required"
                 isShown={true}
                 footer={this.renderFooter}
                 hasClose={false}
                 shouldCloseOnOverlayClick={false}
                 shouldCloseOnEscapePress={false}
               >
-                {this.state.isSent ? (
-                  <Paragraph>
-                    E-Mail confirmation sent: Check your E-Mails (Spam folder included) for a confirmation E-Mail or send another confirmation E-Mail.
-                  </Paragraph>
+                {this.state.error ? (
+                  <Alert
+                    title={this.state.error.message}
+                    intent="danger"
+                  />
+                ) : this.state.isSent ? (
+                  <Alert
+                    title="Email confirmation sent!"
+                    intent="success"
+                  >
+                    Check your emails (spam folder included) for a confirmation email.
+                  </Alert>
                 ) : (
-                  <Paragraph>
-                    Your E-Mail needs to be verified: Check your E-Mails (Spam folder included) for a confirmation E-Mail or send another confirmation E-Mail.
-                  </Paragraph>
+                  <Alert
+                    title="Your email needs to be verified..."
+                    intent="warning"
+                  >
+                    Check your emails (spam folder included) for a confirmation email or send another confirmation email.
+                  </Alert>
                 )}
               </Dialog>
             ) : (
