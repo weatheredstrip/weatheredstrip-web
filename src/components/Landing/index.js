@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react'
-import { Alert, Pane } from 'evergreen-ui'
+import { Alert, Pane, Text } from 'evergreen-ui'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { withRouter } from 'react-router-dom'
@@ -57,8 +57,18 @@ const LandingPage = () => {
           </div>
           <SearchForm />
         </div>
+        <Pane
+          position="absolute"
+          bottom={20}
+        >
+          <Text
+            color="white"
+          >
+            By Greg Hamel &copy; 2020
+          </Text>
+        </Pane>
       </div>
-    </>
+    </> 
   )
 }
 
