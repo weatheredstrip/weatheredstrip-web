@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Link as RouterLink, withRouter } from 'react-router-dom';
 import { compose } from 'recompose';
-import { Alert, TextInput, Heading, Button, Spinner, Pane, Text, Checkbox, Link, Card } from 'evergreen-ui'
+import { Alert, TextInput, Heading, Button, Pane, Text, Checkbox, Link, Card } from 'evergreen-ui'
 
 import { withFirebase } from '../Firebase';
-import { ToSDialogLink, PrivacyPolicyDialogLink, ToSDialog } from '../Policies'
+import { ToSDialogLink, PrivacyPolicyDialogLink } from '../Policies'
 import * as ROUTES from '../../constants/routes';
 
 const SignUpPage = () => (

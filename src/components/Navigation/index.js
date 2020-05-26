@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
-import { Heading, ErrorIcon, IconButton, Menu, Pane, SideSheet, Link, Pill} from 'evergreen-ui'
+import { Heading, ErrorIcon, IconButton, Menu, Pane, SideSheet, Pill} from 'evergreen-ui'
 import './nav.css'
 
 import { AuthUserContext } from '../Session';

@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { withRouter } from 'react-router-dom';
-import { compose } from 'recompose';
 import { Dialog, Paragraph, Heading, OrderedList, ListItem, Link } from 'evergreen-ui'
 
 

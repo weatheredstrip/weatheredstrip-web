@@ -1,5 +1,5 @@
-import React, { Component, useState, useContext } from 'react';
-import { Alert, Dialog, Button, Pane, TextInput, Spinner, Menu } from 'evergreen-ui'
+import React, { Component, useState } from 'react';
+import { Alert, Dialog, Button, Pane, TextInput, Menu } from 'evergreen-ui'
 
 import { SignUpLink } from '../SignUp';
 import { PasswordForgetLink } from '../PasswordForget';
