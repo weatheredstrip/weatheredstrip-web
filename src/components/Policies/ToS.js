@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
 import { compose } from 'recompose';
 import { Dialog, Paragraph, Heading, OrderedList, ListItem, Link } from 'evergreen-ui'
@@ -41,22 +41,27 @@ const ToS = () => (
   </>
 )
 
-const ToSPageBase = ({ history }) => (
+const ToSDialog = ({ isShown, onCloseComplete }) => (
   <Dialog
     title="Terms of Service"
-    isShown={true}
-    hasClose={false}
+    isShown={isShown}
     hasCancel={false}
-    confirmLabel="Back"
-    onCloseComplete={() => { history.goBack() }}
+    confirmLabel="Close"
+    onCloseComplete={onCloseComplete}
   >
     <ToS />
   </Dialog>
 )
 
-const ToSPage = compose(
-  withRouter
-)(ToSPageBase);
+const ToSDialogLink = () => {
+  const [isShown, setShown] = useState(false)
 
+  return (
+    <>
+      <ToSDialog isShown={isShown} onCloseComplete={() => setShown(false)}/>
+      <Link href="#" onClick={() => setShown(true)}>Terms of Service</Link>
+    </>
+  )
+}
 
-export default ToSPage;
+export { ToSDialog, ToSDialogLink }

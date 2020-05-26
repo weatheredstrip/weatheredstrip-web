@@ -4,6 +4,7 @@ import { compose } from 'recompose';
 import { TextInput, Heading, Button, Spinner, Pane, Text, Checkbox, Link, Card } from 'evergreen-ui'
 
 import { withFirebase } from '../Firebase';
+import { ToSDialogLink, PrivacyPolicyDialogLink, ToSDialog } from '../Policies'
 import * as ROUTES from '../../constants/routes';
 
 const SignUpPage = () => (
@@ -168,7 +169,7 @@ class SignUpFormBase extends Component {
                   onChange={this.onCheck}
                   label={
                   <Text>
-                      I have read the <Link is={RouterLink} to={ROUTES.TERMS_OF_SERVICE} color="dark">Terms of Service</Link> and <Link is={RouterLink} to={ROUTES.PRIVACY_POLICY} color="dark">Privacy Policy</Link>
+                      I have read the <ToSDialogLink /> and <PrivacyPolicyDialogLink/>
                   </Text>
                 }/>
               </Pane>

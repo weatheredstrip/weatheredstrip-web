@@ -6,12 +6,14 @@ import { withRouter } from 'react-router-dom'
 import './landing.css'
 
 import { AuthUserContext } from '../Session';
-
 import Navigation from '../Navigation'
+import { PrivacyPolicyDialog, ToSDialog } from '../Policies'
 
 import * as ROUTES from '../../constants/routes'
 
 import logo from '../logo.svg'
+
+const year = new Date();
 
 const NewAccountAlert = () => {
   const [display, setDisplay] = useState('flex')
@@ -44,7 +46,9 @@ const NewAccountAlert = () => {
 )
 }
 
-const LandingPage = () => {
+const LandingPage = ({privacy=false, terms=false}) => {
+  const [isPrivacyShown, setPrivacy] = useState(privacy)
+  const [isTermsShown, setTerms] = useState(terms)
   return (
     <>
       <Navigation position="absolute" top="20px" right="20px" appearance="default"/>
@@ -63,11 +67,20 @@ const LandingPage = () => {
         >
           <Text
             color="white"
+            size={300}
           >
-            By Greg Hamel &copy; 2020
+            By Greg Hamel &copy; {year.getUTCFullYear()}
           </Text>
         </Pane>
       </div>
+      <PrivacyPolicyDialog
+        isShown={isPrivacyShown}
+        onCloseComplete={() => setPrivacy(false)}
+      />
+      <ToSDialog
+        isShown={isTermsShown}
+        onCloseComplete={() => setTerms(false)}
+      />
     </> 
   )
 }

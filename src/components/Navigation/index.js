@@ -4,6 +4,7 @@ import { Heading, ErrorIcon, IconButton, Menu, Pane, SideSheet, Link, Pill} from
 import './nav.css'
 
 import { AuthUserContext } from '../Session';
+import { ToSDialogLink, PrivacyPolicyDialogLink } from '../Policies'
 import SignInMenu from '../SignIn'
 
 import SignOutButton from '../SignOut'
@@ -87,8 +88,8 @@ const UserMenu = ({onSelection}) => (
           </Menu.Group>
         </Menu>
         <Pane display="flex" flexDirection="column" alignItems="center" marginBottom={20}>
-          <Link is={RouterLink} size={300} to={ROUTES.PRIVACY_POLICY} marginBottom={10}>Privacy Policy</Link>
-          <Link is={RouterLink} size={300} to={ROUTES.TERMS_OF_SERVICE}>Terms of Service</Link> 
+          <PrivacyPolicyDialogLink />
+          <ToSDialogLink />
         </Pane>
       </Pane>
     )}

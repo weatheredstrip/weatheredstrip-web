@@ -1,6 +1,4 @@
-import React from 'react';
-import { withRouter } from 'react-router-dom';
-import { compose } from 'recompose';
+import React, { useState } from 'react';
 import { Dialog, Paragraph, Link } from 'evergreen-ui'
 
 
@@ -18,22 +16,28 @@ const PP = () => (
   </>
 )
 
-const PrivacyPolicyPageBase = ({ history }) => (
+const PrivacyPolicyDialog = ({ isShown, onCloseComplete }) => (
   <Dialog
     title="Privacy Policy"
-    isShown={true}
-    hasClose={false}
+    isShown={isShown}
     hasCancel={false}
-    confirmLabel="Back"
-    onCloseComplete={() => { history.goBack() }}
+    confirmLabel="Close"
+    onCloseComplete={onCloseComplete}
   >
     <PP />
   </Dialog>
 )
 
-const PrivacyPolicyPage = compose(
-  withRouter
-)(PrivacyPolicyPageBase);
+const PrivacyPolicyDialogLink = () => {
+  const [isShown, setShown] = useState(false)
+
+  return (
+    <>
+      <PrivacyPolicyDialog isShown={isShown} onCloseComplete={() => setShown(false)}/>
+      <Link href="#" onClick={() => setShown(true)}>Privacy Policy</Link>
+    </>
+  )
+}
 
 
-export default PrivacyPolicyPage;
+export { PrivacyPolicyDialog, PrivacyPolicyDialogLink }
