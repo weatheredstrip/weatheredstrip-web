@@ -2,7 +2,7 @@ import React from 'react'
 import { render, cleanup } from '@testing-library/react'
 import StationNav from '../stationNav.react'
 import testData from './test_data.json'
-import 'jest-dom/extend-expect'
+import '@testing-library/jest-dom/extend-expect'
 afterEach(cleanup)
 
 it('stationNav renders properly', () => {

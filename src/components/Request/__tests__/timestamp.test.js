@@ -2,7 +2,7 @@ import React from 'react'
 import { render, cleanup } from '@testing-library/react'
 import Timestamp from '../timestamp.react'
 import moment from 'moment'
-import 'jest-dom/extend-expect'
+import '@testing-library/jest-dom/extend-expect'
 afterEach(cleanup)
 
 it('timestamp titles render properly', () => {

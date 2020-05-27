@@ -6,7 +6,10 @@ const INITIAL_STATE = {
   passwordOne: '',
   passwordTwo: '',
   error: null,
+  isLoading: false,
+  isComplete: false
 };
+
 class PasswordChangeForm extends Component {
   constructor(props) {
     super(props);
@@ -14,13 +17,14 @@ class PasswordChangeForm extends Component {
   }
   onSubmit = event => {
     const { passwordOne } = this.state;
+    this.setState({ isLoading: true })
     this.props.firebase
       .doPasswordUpdate(passwordOne)
       .then(() => {
-        this.setState({ ...INITIAL_STATE });
+        this.setState({ ...INITIAL_STATE, isComplete: true });
       })
       .catch(error => {
-        this.setState({ error });
+        this.setState({ ...INITIAL_STATE, error, isLoading: false });
       });
     event.preventDefault();
   };
@@ -28,7 +32,7 @@ class PasswordChangeForm extends Component {
     this.setState({ [event.target.name]: event.target.value });
   };
   render() {
-    const { passwordOne, passwordTwo, error } = this.state;
+    const { passwordOne, passwordTwo, error, isComplete } = this.state;
     const isInvalid =
       passwordOne !== passwordTwo || passwordOne === '';
     return (
@@ -36,8 +40,15 @@ class PasswordChangeForm extends Component {
         <Pane display="flex" flexDirection="column" marginTop={10}>
           {error && (
             <Alert
-              intent="warning"
+              intent="danger"
               title={error.message}
+              marginBottom={10}
+            />
+          )}
+          {isComplete && (
+            <Alert
+              intent="success"
+              title="The password was changed successfully"
               marginBottom={10}
             />
           )}
@@ -48,6 +59,7 @@ class PasswordChangeForm extends Component {
             type="password"
             placeholder="New Password"
             marginBottom={10}
+            maxWidth="100%"
           />
           <TextInput
             name="passwordTwo"
@@ -56,6 +68,7 @@ class PasswordChangeForm extends Component {
             type="password"
             placeholder="Confirm New Password"
             marginBottom={10}
+            maxWidth="100%"
           />
           <Button disabled={isInvalid} type="submit" width={160}>
             Change My Password

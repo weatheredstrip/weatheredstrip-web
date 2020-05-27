@@ -1,7 +1,7 @@
 import React from 'react'
 import { render, cleanup } from '@testing-library/react'
 import Footer from '../footer.react'
-import 'jest-dom/extend-expect'
+import '@testing-library/jest-dom/extend-expect'
 afterEach(cleanup)
 
 it('footer renders properly', () => {

@@ -1,5 +1,5 @@
-import React, { Component, useState, useContext } from 'react';
-import { Alert, Dialog, Button, Pane, TextInput, Spinner, Menu } from 'evergreen-ui'
+import React, { Component, useState } from 'react';
+import { Alert, Dialog, Button, Pane, TextInput, Menu } from 'evergreen-ui'
 
 import { SignUpLink } from '../SignUp';
 import { PasswordForgetLink } from '../PasswordForget';
@@ -25,23 +25,7 @@ const SignInMenu = () => {
 
 const LoadingContext = React.createContext({ isLoading: false });
 
-const SignInFooter = ({ isInvalid, onSubmit }) => {
-  const { isLoading } = useContext(LoadingContext)
-  const text = isLoading ? "Loading..." : "Sign In"
-  return(
-    <Button
-      appearance="primary"
-      disabled={isInvalid || isLoading}
-      className="login-form-button" 
-      type="submit" 
-      form="signInForm"
-      onClick={onSubmit}
-    >
-      {isLoading ? <Spinner size={12}/> : null}
-      {text}
-    </Button>
-  )
-}
+
 
 const INITIAL_STATE = {
   email: '',
@@ -73,6 +57,22 @@ class SignInDialogBase extends Component {
     this.setState({ [event.target.name]: event.target.value });
   };
 
+  signInFooter = ({ isInvalid }) => {
+    const { isLoading } = this.state
+    return (
+      <Button
+        appearance="primary"
+        disabled={isInvalid || isLoading}
+        type="submit"
+        form="signInForm"
+        onClick={this.onSubmit}
+        isLoading={isLoading}
+      >
+        {isLoading ? "Loading..." : "Sign In"}
+      </Button>
+    )
+  }
+
   render() {
     const { email, password, error } = this.state;
     const isInvalid = password === '' || email === '';
@@ -85,7 +85,7 @@ class SignInDialogBase extends Component {
             this.props.onClose()
             this.setState({ ...INITIAL_STATE })
           }}
-          footer={<SignInFooter isInvalid={isInvalid} onSubmit={this.onSubmit}/>}
+          footer={ this.signInFooter({isInvalid: isInvalid}) }
         >
           <form onSubmit={this.onSubmit} id="signInForm">
             <Pane

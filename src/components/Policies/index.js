@@ -1,2 +1,9 @@
-export { default as PrivacyPolicy } from './privacyPolicy'
-export { default as ToS } from './ToS'
+import { PrivacyPolicyDialog, PrivacyPolicyDialogLink } from './privacyPolicy'
+import { ToSDialog, ToSDialogLink } from './ToS'
+
+export {
+  PrivacyPolicyDialog,
+  PrivacyPolicyDialogLink,
+  ToSDialog,
+  ToSDialogLink,
+}

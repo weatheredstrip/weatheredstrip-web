@@ -17,9 +17,7 @@ const config = {
 class Firebase {
   constructor() {
     firebase.initializeApp(config)
-    if (process.env.NODE_ENV === 'production') {
-      firebase.analytics()
-    }
+    firebase.analytics()
 
     this.auth = firebase.auth();
     this.db = firebase.database();
@@ -47,6 +45,15 @@ class Firebase {
   doPasswordUpdate = password =>
     this.auth.currentUser.updatePassword(password);
 
+  doAddProfileName = name => this.auth.currentUser.updateProfile({
+    displayName: name
+  })
+
+  doSendEmailVerification = () =>
+    this.auth.currentUser.sendEmailVerification({
+      url: process.env.REACT_APP_CONFIRMATION_EMAIL_REDIRECT,
+    })
+
   // *** Merge Auth and DB User API *** //
   onAuthUserListener = (next, fallback) => this.auth.onAuthStateChanged(authUser => {
     if (authUser) { 
@@ -63,6 +70,8 @@ class Firebase {
           authUser = {
             uid: authUser.uid,
             email: authUser.email,
+            emailVerified: authUser.emailVerified,
+            providerData: authUser.providerData,
             ...dbUser,
           };
           next(authUser);
@@ -73,9 +82,20 @@ class Firebase {
     });
   
   // *** User API ***
-  user = uid => this.db.ref(`users/${uid}`);
+  
+  user = uid => (
+    /* Point to different DB based on the environment */
+    process.env.NODE_ENV === 'production' ?
+      this.db.ref(`users/${uid}`) :
+      this.db.ref(`test_users/${uid}`)
+  )
 
-  users = () => this.db.ref('users');
+  users = () => (
+    /* Point to different DB based on the environment */
+    process.env.NODE_ENV === 'production' ?
+      this.db.ref('users') :
+      this.db.ref('test_users')
+  )
 }
 
 export default Firebase

@@ -3,7 +3,7 @@ import { render, cleanup } from '@testing-library/react'
 import Header from '../header.react'
 import { Router } from 'react-router-dom'
 import { createMemoryHistory } from 'history'
-import 'jest-dom/extend-expect'
+import '@testing-library/jest-dom/extend-expect'
 afterEach(cleanup)
 
 function renderWithRouter(
