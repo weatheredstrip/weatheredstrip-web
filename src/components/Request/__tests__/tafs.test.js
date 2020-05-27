@@ -1,7 +1,7 @@
 import React from 'react'
 import { render, cleanup } from '@testing-library/react'
 import Tafs from '../tafs.react'
-import 'jest-dom/extend-expect'
+import '@testing-library/jest-dom/extend-expect'
 import testData from './test_data.json'
 afterEach(cleanup)
 

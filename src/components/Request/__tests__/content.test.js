@@ -1,7 +1,7 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 import Content from '../content.react'
-import 'jest-dom/extend-expect'
+import '@testing-library/jest-dom/extend-expect'
 import testData from './test_data.json'
 
 // Full content is not tested yet, because timestamp is dependent on current time.

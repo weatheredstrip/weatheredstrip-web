@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router
 } from 'react-router-dom'
 import Landing from '../index'
-import 'jest-dom/extend-expect'
+import '@testing-library/jest-dom/extend-expect'
 afterEach(cleanup)
 
 it('landing renders properly', () => {

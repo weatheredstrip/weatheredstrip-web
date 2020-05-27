@@ -4,7 +4,7 @@ import userEvent from '@testing-library/user-event'
 import { createMemoryHistory } from 'history'
 import { shallow } from 'enzyme'
 import SearchBox, {SearchBoxBase} from '../searchbox.react'
-import 'jest-dom/extend-expect'
+import '@testing-library/jest-dom/extend-expect'
 import { Router } from 'react-router-dom'
 
 it('searchbox renders properly', () => {
@@ -22,7 +22,7 @@ it('searchbox data entry changes state', () => {
   userEvent.type(input, 'CYOD')
   expect(getByLabelText("search-input")).toHaveAttribute('value', 'CYOD')
 
-  userEvent.type(input, 'CYOD CYUL')
+  userEvent.type(input, ' CYUL')
 
   expect(getByLabelText("search-input")).toHaveAttribute('value', 'CYOD CYUL')
 })
