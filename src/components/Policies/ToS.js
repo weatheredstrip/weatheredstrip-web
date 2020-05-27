@@ -57,7 +57,7 @@ const ToSDialogLink = () => {
   return (
     <>
       <ToSDialog isShown={isShown} onCloseComplete={() => setShown(false)}/>
-      <Link href="#" onClick={() => setShown(true)}>Terms of Service</Link>
+      <Link href="#" data-testid="privButton" onClick={() => setShown(true)}>Terms of Service</Link>
     </>
   )
 }

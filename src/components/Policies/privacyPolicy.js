@@ -34,7 +34,7 @@ const PrivacyPolicyDialogLink = () => {
   return (
     <>
       <PrivacyPolicyDialog isShown={isShown} onCloseComplete={() => setShown(false)}/>
-      <Link href="#" onClick={() => setShown(true)}>Privacy Policy</Link>
+      <Link href="#" data-testid="privButton" onClick={() => setShown(true)}>Privacy Policy</Link>
     </>
   )
 }
