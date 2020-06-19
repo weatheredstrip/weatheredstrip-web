@@ -36,9 +36,11 @@ class Content extends Component {
 
   componentDidUpdate() {
     const { data } = this.props
+
     if (data) {
-      const airports = Object.keys(data)
+      const airports = data.filter(station => !!station.name).map(station => station.codes[1])
       if (airports.indexOf(this.state.stationSelection) < 0) {
+
         this.setState({
           stationSelection: airports[0],
         })
@@ -53,16 +55,29 @@ class Content extends Component {
     let selectedData = null
     let lengths = null
 
-    if (data && data[this.state.stationSelection]) {
+    if (data && data.length > 0 && this.state.stationSelection)  {
       const selected = this.state.stationSelection
-      const stationData = data[selected]
+      const stationData = data.filter(
+        station => station.codes.indexOf(selected) >= 0
+      )[0]
+
+      const gpsNotams = data.filter(
+        station => station.codes.indexOf("KGPS") >= 0
+      )[0].notam_EN
+
       if (stationData.notam_EN) {
         const stationAerodrome = stationData.notam_EN.filter(
           notam => notam.type === 'aerodrome',
         )
-        const stationFIR = stationData.notam_EN.filter(
-          notam => notam.type === 'FIR',
+        const stationFIR = stationData.iso_country === "CA" ? (
+          stationData.notam_EN.filter(
+            notam => notam.type === 'FIR',
+          )
+        ) : (
+          data.filter(firStation => firStation.codes[0] === stationData.FIR)[0].notam_EN
         )
+        
+
         const stationArea = stationData.notam_EN.filter(
           notam => notam.type === 'area',
         )
@@ -73,7 +88,7 @@ class Content extends Component {
           Aerodrome: stationAerodrome ? stationAerodrome.length : null,
           Area: stationArea ? stationArea.length : null,
           FIR: stationFIR ? stationFIR.length : null,
-          GPS: data['other_notam'].KGPS.length,
+          GPS: gpsNotams ? gpsNotams.length : null,
           National: stationNational ? stationNational.length : null,
         }
 
@@ -125,24 +140,24 @@ class Content extends Component {
               <>
                 <div className="content-header">
                   <div className="station-name">
-                    {data[selected].name.length > 40
-                      ? data[selected].name.substring(0, 41) + '...'
-                      : data[selected].name}
+                      {stationData.name.length > 40
+                        ? stationData.name.substring(0, 41) + '...'
+                        : stationData.name}
                   </div>
                   <Timestamp dataTime={data.Timestamp} />
                 </div>
                 <div className="selected-content">
                   <div className="metar-rvr">
-                    <GFA data={data[selected]} />
-                    <Rvr data={data[selected].rvr} />
+                      <GFA data={stationData} />
+                      <Rvr data={stationData.rvr} />
                     <div className="col">
                       <div>
                         <div className="subtitle">METAR</div>
-                        <Metars data={data[selected].metar} />
+                          <Metars data={stationData.metar} />
                       </div>
                       <div>
                         <div className="subtitle">TAF</div>
-                        <Tafs data={data[selected].taf} />
+                          <Tafs data={stationData.taf} />
                       </div>
                     </div>
                   </div>

@@ -3,17 +3,19 @@ import {
   withRouter
 } from 'react-router-dom'
 import queryString from 'query-string'
-import * as ROUTES from '../../constants/routes';
 
+import * as ROUTES from '../../constants/routes';
 import Content from './content.react'
 import Footer from './footer.react'
 import Header from './header.react'
+import { withFirebase } from '../Firebase';
 
 import './Request.css'
 
 const INITIAL_STATE = {
   data: null,
   stations: null,
+  isLoading: true,
 }
 
 class Request extends Component {
@@ -22,38 +24,31 @@ class Request extends Component {
     this.state = { ...INITIAL_STATE }
   }
 
-  serverRequest = (stations, callback) => {
-    const data = null
-
-    var xhr = new XMLHttpRequest()
-
-    xhr.addEventListener('readystatechange', function() {
-      if (this.readyState === 4) {
-        if (this.status === 200) {
-          callback(JSON.parse(this.responseText))
-        } else {
-          window.alert('The server is unreachable...')
-        }
-      }
-    })
-
-    if (process.env.NODE_ENV === 'production') {
-      xhr.open('GET', `https://api.weatheredstrip.com/airport?q=${stations}`)
-    } else if (process.env.NODE_ENV === 'development') {
-      xhr.open('GET', `http://localhost:3001/airport?q=${stations}`)
+  serverRequest = async (stations) => {
+    if (process.env.NODE_ENV !== 'production') {
+      this.props.firebase.doLocalHttpsCall('http://localhost:5001')
     }
-
-    xhr.send(data)
+    const stationRequest = this.props.firebase.doHttpsCall('stations')
+    try {
+      const result = await stationRequest({ stations: stations })
+      this.setState({data: result.data})
+    } catch (err) {
+      // Getting the Error details.
+      var code = err.code;
+      var message = err.message;
+      var details = err.details;
+      console.err(code, message)
+      console.err(details)
+    }
   }
 
   getInfo = (stations, refresh = false) => {
     if (stations && (stations !== this.state.stations || refresh)) {
-      this.serverRequest(stations, res => {
-        this.setState({
-          data: res,
-          stations: stations,
-        })
+      const stationsArray = stations.split(/(\s|,)/)
+      this.setState({
+        stations: stationsArray
       })
+      this.serverRequest(stationsArray.filter(item => item !== ' ' && item !== ','))
     } else if (!stations) {
       // if an empty searchbox is searched for.
       this.setState({
@@ -64,21 +59,18 @@ class Request extends Component {
     }
   }
 
-  render() {
-    let rendered;
+  componentDidMount() {
     const stations = queryString.parse(this.props.location.search).stations
     if (!this.state.stations && stations) {
       // first initialization with GET request
       this.getInfo(stations.toUpperCase())
-      rendered = <Content data={this.state.data} />
-    } else if (stations) {
-      // GET Request after first initialization
-      rendered = <Content data={this.state.data} />
     } else {
       // anything else.
       this.props.history.push(ROUTES.LANDING);
     }
+  }
 
+  render() {
     return (
       <>
         <Header
@@ -87,14 +79,14 @@ class Request extends Component {
           }
           currentResults={this.state.stations}
         />
-        {rendered}
+        <Content data={this.state.data} search={this.state.stations}/>
         <Footer />
       </>
     )
   }
 }
 
-export default withRouter(Request)
+export default withRouter(withFirebase(Request))
 
 export { default as Content } from './content.react'
 export { default as Footer } from './footer.react'

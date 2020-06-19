@@ -5,18 +5,18 @@ import PrintView from './printview.react'
 function StationNav({ data, selected, onClick }) {
   const componentRef = useRef()
   if (data) {
-    const stations = Object.keys(data)
-      .filter(title => title !== 'other_notam' && title !== 'Timestamp')
+    const stations = data
+      .filter(station => station.name !== undefined)
       .map(airport => {
         const divClass =
-          selected === airport ? 'station station-selected' : 'station'
+          selected === airport.codes[1] ? 'station station-selected' : 'station'
         return (
           <button
             className={divClass}
-            key={airport}
-            onClick={() => onClick(airport)}
+            key={airport.codes[0]}
+            onClick={() => onClick(airport.codes[1])}
           >
-            {airport}
+            {airport.codes[1]}
           </button>
         )
       })

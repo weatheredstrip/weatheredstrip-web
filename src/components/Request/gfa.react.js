@@ -39,7 +39,7 @@ const GFA = ({ data }) => {
     const gfa_array = gfaLinks.map((link, index) => {
       return (
         <img
-          key={gfas[index].image.id}
+          key={gfas[index].imageURL}
           className={'gfa-img' + (index !== currentGFA ? ' hidden' : '')}
           src={link}
           alt="Graphical Area Forecast"

@@ -7,7 +7,7 @@ function Metars({ children, className, data }) {
     metars = data.map((metar, index) => {
       return (
         <div className="notif-text" key={index}>
-          {metar.text}
+          {metar}
         </div>
       )
     })

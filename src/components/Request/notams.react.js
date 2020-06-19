@@ -1,4 +1,5 @@
 import React from 'react'
+import moment from 'moment'
 
 function Notams({ children, data, selectedType, onTypeSelection, dataLength }) {
   let notams
@@ -6,19 +7,43 @@ function Notams({ children, data, selectedType, onTypeSelection, dataLength }) {
 
   if (data) {
     notams = data.map((notam, index) => {
+      const startValidity = new Date(notam.startValidity)
+      const now = new Date()
+      const isActive = now > startValidity
       return (
         <div className="notif-text" key={index}>
-          {notam && notam.link ? (
-            <div>
-              <a href={notam.link} rel="noopener noreferrer" target="_blank">
-                <strong>{notam.title} - </strong>
-                <i className="fas fa-external-link-alt"></i>
-              </a>
+          <div className="notam-heading">
+            {notam && notam.link ? (
+              <div>
+                <a href={notam.link} rel="noopener noreferrer" target="_blank">
+                  <strong>{notam.title} - </strong>
+                  <i className="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            ) : (
+                <div className="notam-title">{notam.title}</div>
+              )}
+            <div
+              className={
+                "notam-effective-pill" + (isActive ? " notam-active" : " notam-waiting")
+              }
+            >
+              <div className="notam-time" title="NOTAM Effective Start (UTC)">
+                {moment(notam.startValidity).format("YYMMDDHHmm")}
+              </div>
+              <div className="notam-time notam-time-more" title="NOTAM Effective End (UTC)">
+                {notam.endValidity === "PERM" || notam.endValidity === null ? "PERMANENT" : moment(notam.endValidity).format("YYMMDDHHmm")}
+              </div>
+              {notam.isEndEstimated && (
+                <div
+                  className="notam-time notam-time-more"
+                  title="NOTAM Effective End is estimated"
+                >
+                  EST.
+                </div>
+              )}
             </div>
-          ) : (
-            <div className="notam-title">{notam.title}</div>
-          )}
-
+          </div>
           <div className="notam-text">{notam.notam}</div>
         </div>
       )
