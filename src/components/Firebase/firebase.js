@@ -2,6 +2,7 @@ import * as firebase from 'firebase/app';
 import "firebase/analytics";
 import 'firebase/auth';
 import 'firebase/database';
+import 'firebase/functions'
 
 const config = {
   apiKey: process.env.REACT_APP_API_KEY,
@@ -19,6 +20,7 @@ class Firebase {
     firebase.initializeApp(config)
     firebase.analytics()
 
+    this.functions = firebase.functions()
     this.auth = firebase.auth();
     this.db = firebase.database();
   }
@@ -96,6 +98,13 @@ class Firebase {
       this.db.ref('users') :
       this.db.ref('test_users')
   )
+
+  // *** Callable Functions ***
+  doHttpsCall = (functionName) => 
+    this.functions.httpsCallable(functionName);
+
+  doLocalHttpsCall = ( functionURL ) => 
+    this.functions.useFunctionsEmulator(functionURL)
 }
 
 export default Firebase
