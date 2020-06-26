@@ -18,31 +18,31 @@ const year = new Date();
 const NewAccountAlert = () => {
   const [display, setDisplay] = useState('flex')
   return (
-    <AuthUserContext.Consumer>
-      {authUser => !authUser && (
-        <Pane
-          position="absolute"
-          top={20}
-          right="50%"
-          zIndex={1}
-        >
-          <Alert
-            hasTrim={true}
-            intent="none"
-            position="relative"
-            right="-50%"
-            display={display}
-            appearance="card"
-            title="You can now create an account!"
-            maxWidth={360}
-            minWidth={200}
-            hasIcon={false}
-            isRemoveable={true}
-            onRemove={() => setDisplay('none')}
-          />
-        </Pane>
-      )}
-    </AuthUserContext.Consumer>
+    <Pane
+      position="absolute"
+      top={20}
+      right="50%"
+      zIndex={1}
+    >
+      <AuthUserContext.Consumer>
+        {authUser => !authUser && (
+            <Alert
+              hasTrim={true}
+              intent="none"
+              position="relative"
+              right="-50%"
+              display={display}
+              appearance="card"
+              title="You can now create an account!"
+              maxWidth={360}
+              minWidth={200}
+              hasIcon={false}
+              isRemoveable={true}
+              onRemove={() => setDisplay('none')}
+            />
+        )}
+      </AuthUserContext.Consumer>
+    </Pane>
 )
 }
 
