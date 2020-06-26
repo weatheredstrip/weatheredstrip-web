@@ -37,8 +37,8 @@ class Request extends Component {
       var code = err.code;
       var message = err.message;
       var details = err.details;
-      console.err(code, message)
-      console.err(details)
+      console.error(code, message)
+      console.error(details)
     }
   }
 

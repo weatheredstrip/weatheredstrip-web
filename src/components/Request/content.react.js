@@ -40,7 +40,6 @@ class Content extends Component {
     if (data) {
       const airports = data.filter(station => !!station.name).map(station => station.codes[1])
       if (airports.indexOf(this.state.stationSelection) < 0) {
-
         this.setState({
           stationSelection: airports[0],
         })
@@ -94,7 +93,7 @@ class Content extends Component {
 
         switch (this.state.notamType) {
           case 'GPS':
-            selectedData = data['other_notam'].KGPS
+            selectedData = gpsNotams
             break
           case 'FIR':
             selectedData = stationFIR
@@ -109,7 +108,7 @@ class Content extends Component {
             selectedData = stationNational
             break
           default:
-            selectedData = data['other_notam'].KGPS
+            selectedData = gpsNotams
         }
       }
 
