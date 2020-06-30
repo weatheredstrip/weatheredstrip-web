@@ -42,6 +42,21 @@ const NewAccountAlert = () => {
             />
         )}
       </AuthUserContext.Consumer>
+      <Alert
+        hasTrim={true}
+        intent="warning"
+        position="relative"
+        right="-50%"
+        appearance="card"
+        title="Service Outages"
+        maxWidth={360}
+        minWidth={200}
+        marginTop={10}
+        hasIcon={false}
+        isRemoveable={false}
+      >
+        Sorry for any problems related to service outage, NAVCanada has been busy upgrading and reverting back their changes for the past few days which causes lots of issue on our end. We are tracking the issue...
+      </Alert>
     </Pane>
 )
 }
